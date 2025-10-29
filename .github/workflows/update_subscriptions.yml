@@ -74,6 +74,10 @@ jobs:
             git fetch
             git config pull.rebase false
             git pull --no-edit -X ours origin main || echo "Merge failed, pushing anyway"
+            # If a PAT is provided as a secret, use it as push credential (fallback)
+            if [ -n "${{ secrets.PAT_FOR_PUSH }}" ]; then
+              git remote set-url origin https://x-access-token:${{ secrets.PAT_FOR_PUSH }}@github.com/${{ github.repository }}.git
+            fi
             git push
             echo "✅ Changes committed and pushed"
           fi
