@@ -1,0 +1,54 @@
+name: Quick User Update
+
+on:
+  push:
+    paths:
+      - 'user_list.txt'
+      - 'blocked_users.txt'
+
+jobs:
+  quick-update:
+    runs-on: ubuntu-latest
+    # Prevent concurrent runs of this workflow
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for all branches and tags
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pytz
+
+      - name: Run quick subscription update (FAST_RUN)
+        env:
+          FAST_RUN: '1'
+        run: |
+          python scripts/update_subscriptions.py
+
+      - name: Commit changes if any
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git add -A
+            git commit -m "Quick user update [$(date '+%Y-%m-%d %H:%M')]"
+            # Fetch latest changes and use ours in case of conflict
+            git fetch
+            git config pull.rebase false
+            git pull --no-edit -X ours origin main || echo "Merge failed, pushing anyway"
+            git push
+          fi 

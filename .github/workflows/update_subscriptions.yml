@@ -1,0 +1,76 @@
+name: Update V2Ray Subscriptions
+
+on:
+  push:
+    paths:
+      - 'servers.txt'
+      - 'scripts/update_subscriptions.py'
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
+    inputs:
+      blocked_users:
+        description: 'Comma-separated usernames to block (e.g. john,mary,admin)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  update-subscriptions:
+    runs-on: ubuntu-latest
+    # Prevent concurrent runs of this workflow
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for all branches and tags
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pytz
+
+      - name: Create blocked_users.txt from manual input
+        if: github.event.inputs.blocked_users != ''
+        run: |
+          echo "Creating blocked_users.txt from manual input"
+          echo "${{ github.event.inputs.blocked_users }}" | tr ',' '\n' > blocked_users.txt
+
+      - name: Update subscription files
+        run: |
+          echo "=== V2Ray Subscription Update ==="
+          python scripts/update_subscriptions.py
+          echo "=== Update Complete ==="
+        env:
+          BLOCKED_USERS: ${{ secrets.BLOCKED_USERS }}
+
+      - name: Check for changes and commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            echo "📝 Changes detected:"
+            git diff --name-only
+            git add -A
+            git commit -m "Auto-update: server remarks with flags and subscription updates [$(date '+%Y-%m-%d %H:%M')]"
+            # Fetch latest changes and use ours in case of conflict
+            git fetch
+            git config pull.rebase false
+            git pull --no-edit -X ours origin main || echo "Merge failed, pushing anyway"
+            git push
+            echo "✅ Changes committed and pushed"
+          fi
