@@ -1293,6 +1293,32 @@ def remove_duplicates(servers):
             unique_servers.append(server.strip())
     return unique_servers
 
+
+def parse_flags_from_line(line):
+    """Return a set of flags present in the server line.
+    Flags are expected after a '---' marker anywhere on the line.
+    Example: "vmess://...#Remark ---skip ---nw" -> {'skip','nw'}
+    Also supports direct '... ---skip' without '#'.
+    """
+    flags = set()
+    if not line:
+        return flags
+    try:
+        if '---' in line:
+            after = line.split('---', 1)[1]
+            # split by whitespace and strip leading dashes
+            for token in after.split():
+                tok = token.strip()
+                if not tok:
+                    continue
+                # remove any leading dashes if present
+                tok = tok.lstrip('-')
+                # lowercase for normalization
+                flags.add(tok.lower())
+    except Exception:
+        pass
+    return flags
+
 def parse_non_working_line(line):
     try:
         server, date_str = line.rsplit('|', 1)
@@ -1671,6 +1697,48 @@ def update_all_subscriptions():
         # Update remarks & remove duplicates (these are network-bound/CPU heavy)
         all_servers = update_server_remarks(valid_servers)
         unique_servers = remove_duplicates(all_servers)
+
+        # Respect per-line flags present in the active server file.
+        # If a server line in the active file contains '---skip' or '---nw'/'---nonworking'
+        # then exclude it from the final list. We map normalized configs to flags
+        # by reading the active server file directly.
+        try:
+            active_file = None
+            if os.path.exists(CONTROL_PANEL_FILE):
+                active_file = get_active_server_file_from_control() or ensure_single_active()
+            if not active_file:
+                active_file = MAIN_FILE
+            # resolve .txt suffix
+            if not os.path.exists(active_file) and os.path.exists(active_file + '.txt'):
+                active_file = active_file + '.txt'
+
+            flags_map = {}
+            if os.path.exists(active_file):
+                with open(active_file, 'r', encoding='utf-8') as f:
+                    for ln in f:
+                        ln = ln.strip()
+                        if not ln:
+                            continue
+                        key = extract_server_config(ln)
+                        flags_map[key] = parse_flags_from_line(ln)
+
+            filtered = []
+            for s in unique_servers:
+                key = extract_server_config(s)
+                flags = flags_map.get(key, set())
+                if 'skip' in flags or 'nw' in flags or 'nonworking' in flags:
+                    # move flagged non-working servers to quarantine
+                    if 'nw' in flags or 'nonworking' in flags:
+                        move_server_to_non_working(s)
+                    # skip inclusion
+                    continue
+                filtered.append(s)
+
+            unique_servers = filtered
+        except Exception:
+            # if anything goes wrong, fall back to unfiltered list
+            pass
+
         save_main_servers(unique_servers)
     else:
         # FAST_RUN → skip all heavy work, use current list as-is
