@@ -3,7 +3,8 @@ name: Update V2Ray Subscriptions
 on:
   push:
     paths:
-      - 'servers.txt'
+      - 'servers*.txt'
+      - 'control_panel.txt'
       - 'scripts/update_subscriptions.py'
   schedule:
     - cron: '0 * * * *'  # Every hour
