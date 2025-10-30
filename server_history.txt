@@ -1,3 +1,5 @@
+vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 188 | moved_to_non_working | 2025-10-30 12:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@194.4.49.19:8880?encryption=none&security=none&type=grpc#Server 101 | moved_to_non_working | 2025-10-30 12:57
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 189 | moved_to_non_working | 2025-10-30 10:54
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 188 | moved_to_non_working | 2025-10-30 10:54
 vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 185 | recovered_to_main | 2025-10-30 10:53
