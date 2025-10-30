@@ -1113,7 +1113,9 @@ def get_active_server_file_from_control():
     ON_FLAG = '---on'
     entries = load_control_panel()
     
-    # First check for active entry with ---on flag
+    print(f"Control panel entries: {entries}")
+    
+    # First check for any entry with ---on flag (prioritize this over active mark)
     for e in entries:
         stripped = e.lstrip()
         if ON_FLAG in stripped:
@@ -1122,6 +1124,7 @@ def get_active_server_file_from_control():
             # Remove the active mark if present
             if base.startswith(ACTIVE_MARK):
                 base = base[len(ACTIVE_MARK):].lstrip()
+            print(f"🔄 Using server file with ON flag: {base}")
             return base
     
     # If no ---on flag found, use the active entry
@@ -1130,9 +1133,10 @@ def get_active_server_file_from_control():
         if stripped.startswith(ACTIVE_MARK):
             # remove mark and any following space
             rest = stripped[len(ACTIVE_MARK):].lstrip()
-            # Remove the ---on flag if present
+            # Remove the ---on flag if present (should not happen in this branch but just in case)
             if ON_FLAG in rest:
                 rest = rest.replace(ON_FLAG, '').strip()
+            print(f"✅ Using active server file: {rest}")
             return rest
     
     return None
