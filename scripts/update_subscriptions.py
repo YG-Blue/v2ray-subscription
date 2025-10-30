@@ -1108,14 +1108,33 @@ def get_active_server_file_from_control():
     """Return the active filename from control_panel (or None).
     New format: active line starts with the tick emoji optionally followed by a space.
     e.g. "✅ servers.txt" or "✅servers.txt"
+    Also handles the ---on flag, e.g. "✅ servers.txt ---on" or "servers1.txt ---on"
     """
+    ON_FLAG = '---on'
     entries = load_control_panel()
+    
+    # First check for active entry with ---on flag
+    for e in entries:
+        stripped = e.lstrip()
+        if ON_FLAG in stripped:
+            # Get the base name without the flag
+            base = stripped.replace(ON_FLAG, '').strip()
+            # Remove the active mark if present
+            if base.startswith(ACTIVE_MARK):
+                base = base[len(ACTIVE_MARK):].lstrip()
+            return base
+    
+    # If no ---on flag found, use the active entry
     for e in entries:
         stripped = e.lstrip()
         if stripped.startswith(ACTIVE_MARK):
             # remove mark and any following space
             rest = stripped[len(ACTIVE_MARK):].lstrip()
+            # Remove the ---on flag if present
+            if ON_FLAG in rest:
+                rest = rest.replace(ON_FLAG, '').strip()
             return rest
+    
     return None
 
 
