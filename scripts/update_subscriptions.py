@@ -1763,4 +1763,14 @@ def update_all_subscriptions():
             f.write(encoded_content)
 
 if __name__ == "__main__":
+    # Enforce CI-only execution by default. This prevents accidental local runs
+    # when you want this system to operate only inside GitHub Actions.
+    # To explicitly allow local runs for troubleshooting, set the env var RUN_LOCALLY=1
+    gh_actions = os.getenv('GITHUB_ACTIONS', '').lower()
+    run_local = os.getenv('RUN_LOCALLY', '') == '1'
+    if gh_actions != 'true' and not run_local:
+        print("This script is intended to run inside GitHub Actions only.\n" \
+              "If you really need to run locally for debugging, set RUN_LOCALLY=1 in the environment.")
+        raise SystemExit(1)
+
     update_all_subscriptions()
