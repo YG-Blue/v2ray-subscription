@@ -1,3 +1,5 @@
+vless://a42343e4-c498-42b7-8361-c03a36e7a5fb@46.62.220.103:27802?encryption=none&type=grpc&mode=gun&serviceName=Smxhabwh&security=tls&fp=chrome&sni=offged.sahandconfig.ir&alpn=h2,http/1.1#Server 143 | moved_to_non_working | 2025-10-31 02:52
+vless://a42343e4-c498-42b7-8361-c03a36e7a5fb@46.62.220.103:27802?encryption=none&security=tls&sni=offged.sahandconfig.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&type=grpc&authority=&serviceName=Smxhabwh&mode=gun#Server 142 | moved_to_non_working | 2025-10-31 02:52
 vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 162 | recovered_to_main | 2025-10-31 01:53
 vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 162 | moved_to_main | 2025-10-31 01:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 139 | recovered_to_main | 2025-10-31 01:53
