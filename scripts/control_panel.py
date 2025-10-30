@@ -99,6 +99,17 @@ def activate(filename, switch_on=False):
         status += f" with {ON_FLAG} flag"
     print(status)
     
+    # Run update_subscriptions.py to update subscriptions with the new server file
+    try:
+        import subprocess
+        print("Updating subscriptions with the new server file...")
+        update_script = os.path.join(os.path.dirname(__file__), "update_subscriptions.py")
+        subprocess.run(["python", update_script], 
+                      check=True, env=dict(os.environ, RUN_LOCALLY="1"))
+        print("Subscriptions updated successfully!")
+    except Exception as e:
+        print(f"Error updating subscriptions: {e}")
+    
     # Show current state
     show_panel()
 
