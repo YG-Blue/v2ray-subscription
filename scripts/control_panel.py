@@ -53,6 +53,15 @@ def activate(filename):
 
 
 if __name__ == '__main__':
+    # This CLI is intended to be executed inside GitHub Actions only.
+    # It will exit when run locally unless RUN_LOCALLY=1 is set for debugging.
+    gh_actions = os.getenv('GITHUB_ACTIONS', '').lower()
+    run_local = os.getenv('RUN_LOCALLY', '') == '1'
+    if gh_actions != 'true' and not run_local:
+        print("This control-panel tool is intended to run inside GitHub Actions only.\n" \
+              "To enable local runs for debugging set RUN_LOCALLY=1 in your environment.")
+        raise SystemExit(1)
+
     parser = argparse.ArgumentParser(description='Control panel manager for v2ray subscription')
     sub = parser.add_subparsers(dest='cmd')
     sub.add_parser('show', help='Show control panel entries and active server')
