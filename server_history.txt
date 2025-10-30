@@ -1,3 +1,39 @@
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 188 | moved_to_non_working | 2025-10-30 13:57
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 188 | recovered_to_main | 2025-10-30 13:57
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 188 | moved_to_main | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@194.4.49.19:8880?encryption=none&security=none&type=grpc#Server 101 | recovered_to_main | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@194.4.49.19:8880?encryption=none&security=none&type=grpc#Server 101 | moved_to_main | 2025-10-30 13:57
+vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 188 | recovered_to_main | 2025-10-30 13:57
+vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 188 | moved_to_main | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@103.231.75.74:8880?mode=gun&security=&encryption=none&type=grpc#Server 3 🇹🇷 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638932756456106424.qazvin-drc-tusabw.info:8880?encryption=none&security=none&type=grpc#Server 30 🇫🇷 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638930133854419945.bandar-drc-tusabt.info:8880?encryption=none&security=none&type=grpc#Server 31 🇫🇷 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.105:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 33 🇫🇷 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638929320863717328.malayer-drc-tusabq.info:8880?encryption=none&security=none&type=grpc#Server 38 🇫🇷 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638930382260455538.ahvaz-drc-tusabt.info:8880?encryption=none&security=none&type=grpc#Server 52 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.242.87.98:8880?encryption=none&security=none&type=grpc#Server 78 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.135:8880?encryption=none&security=none&type=grpc#Server 83 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.139:8880?encryption=none&security=none&type=grpc#Server 85 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.105:8880?encryption=none&security=none&type=grpc#Server 86 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638959583053210036.rome-blkaft-aaak.info:8880?encryption=none&security=none&type=grpc#Server 89 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.242.87.69:8880?encryption=none&security=none&type=grpc#Server 92 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@94.131.118.98:8880?encryption=none&security=none&type=grpc#Server 96 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@86.104.74.155:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 101 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638943941066258806.belgrade-prx-dnraacp.info:8880?encryption=none&security=none&type=grpc#Server 103 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638950315458723899.kerman-prx-dnraacr.info:8880?encryption=none&security=none&type=grpc#Server 110 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638947302860438160.zagreb-prx-dnraacq.info:8880?encryption=none&security=none&type=grpc#Server 111 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.242.87.128:8880?encryption=none&security=none&type=grpc#Server 114 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.242.87.241:8880?encryption=none&security=none&type=grpc#Server 116 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@103.231.75.74:8880?encryption=none&security=none&type=grpc#Server 117 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@194.4.49.40:8880?encryption=none&security=none&type=grpc#Server 118 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638943929060330315.warsaw-prx-dnraacp.info:8880?encryption=none&security=none&type=grpc#Server 125 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.47:8880?encryption=none&security=none&type=grpc#Server 127 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.94:8880?encryption=none&security=none&type=grpc#Server 129 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.89.107.245:8880?encryption=none&security=none&type=grpc#Server 146 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638930381053025132.tabriz-drc-tusabt.info:8880?encryption=none&security=none&type=grpc#Server 147 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.234.64.94:8880?encryption=none&security=none&type=grpc#Server 152 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638941610438943596.copenhagen-prx-dnraacm.info:8880?encryption=none&security=none&type=grpc#Server 163 | removed_after_3_days | 2025-10-30 13:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@103.231.75.74:8880?mode=gun&security=none&encryption=none&type=grpc#Server 183 | removed_after_3_days | 2025-10-30 13:57
 vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 188 | moved_to_non_working | 2025-10-30 12:57
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@194.4.49.19:8880?encryption=none&security=none&type=grpc#Server 101 | moved_to_non_working | 2025-10-30 12:57
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 189 | moved_to_non_working | 2025-10-30 10:54
