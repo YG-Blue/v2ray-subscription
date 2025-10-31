@@ -1,2 +1,0 @@
-servers.txt ---on ✓
-servers1.txt
