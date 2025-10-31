@@ -5,7 +5,6 @@ on:
     paths:
       - 'user_list.txt'
       - 'blocked_users.txt'
-      - 'control_panel.txt'
 
 jobs:
   quick-update:
