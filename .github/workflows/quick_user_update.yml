@@ -5,9 +5,7 @@ on:
     paths:
       - 'user_list.txt'
       - 'blocked_users.txt'
-
-permissions:
-  contents: write
+      - 'control_panel.txt'
 
 jobs:
   quick-update:
@@ -23,8 +21,6 @@ jobs:
         with:
           # Fetch all history for all branches and tags
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -55,9 +51,5 @@ jobs:
             git fetch
             git config pull.rebase false
             git pull --no-edit -X ours origin main || echo "Merge failed, pushing anyway"
-            # If a PAT is provided as a secret, use it as push credential (fallback)
-            if [ -n "${{ secrets.PAT_FOR_PUSH }}" ]; then
-              git remote set-url origin https://x-access-token:${{ secrets.PAT_FOR_PUSH }}@github.com/${{ github.repository }}.git
-            fi
             git push
-          fi
+          fi 
