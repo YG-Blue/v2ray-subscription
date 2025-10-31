@@ -1195,15 +1195,17 @@ def log_user_history(username, action, details="", max_days=USER_HISTORY_DAYS):
 # === REMOVE DUPLICATES WITH LOGGING ===
 
 def remove_duplicates(servers):
+    """Remove duplicate servers and log which file it's happening in."""
     seen_configs = {}
     unique_servers = []
+    active_file = get_active_server_file()
     for server in servers:
         if not server.strip():
             continue
         config_key = extract_server_config(server)
         if config_key in seen_configs:
-            # Log duplicate removal
-            log_history(server, "removed_duplicate")
+            # Log duplicate removal with file info
+            log_history(server, f"removed_duplicate(from:{active_file})")
             continue
         else:
             seen_configs[config_key] = server.strip()
@@ -1211,14 +1213,27 @@ def remove_duplicates(servers):
     return unique_servers
 
 def parse_non_working_line(line):
+    """Parse non_working.txt line. Supports two formats:
+    Old format: server | date
+    New format: server | source_file | date
+    """
     try:
-        server, date_str = line.rsplit('|', 1)
-        server = server.strip()
-        date_str = date_str.strip()
+        parts = line.rsplit('|', 2)
+        if len(parts) == 2:
+            # Old format: server | date
+            server = parts[0].strip()
+            date_str = parts[1].strip()
+            source_file = None  # Unknown source
+        else:
+            # New format: server | source_file | date
+            server = parts[0].strip()
+            source_file = parts[1].strip()
+            date_str = parts[2].strip()
+        
         dt = datetime.datetime.strptime(date_str, "%Y-%m-%d %H:%M")
-        return server, dt
+        return server, dt, source_file
     except Exception:
-        return None, None
+        return None, None, None
 
 # === Control Panel Functions ===
 
@@ -1385,47 +1400,75 @@ def cleanup_non_working():
     non_working_lines = load_non_working()
     keep_non_working = []
     for line in non_working_lines:
-        server, dt = parse_non_working_line(line)
+        server, dt, source_file = parse_non_working_line(line)
         if not server or not dt:
+            keep_non_working.append(line)
             continue
         days_in_quarantine = (today.replace(tzinfo=None) - dt).days
         if days_in_quarantine >= QUARANTINE_DAYS:
-            log_history(server, "removed_after_3_days")
+            source_info = f"(from:{source_file})" if source_file else ""
+            log_history(server, f"removed_after_3_days{source_info}")
         else:
             keep_non_working.append(line)
     save_non_working(keep_non_working)
 
 def move_server_to_non_working(server_line):
+    """Move a server to non_working.txt and track which server file it came from."""
     iran_time = get_iran_time()
     now_str = iran_time.strftime("%Y-%m-%d %H:%M")
-    entry = f"{server_line} | {now_str}"
+    # Track source file: format: server | source_file | date
+    source_file = get_active_server_file()
+    entry = f"{server_line} | {source_file} | {now_str}"
     non_working = load_non_working()
-    if not any(server_line in line for line in non_working):
+    # Check if server already exists (comparing server part only)
+    server_part = entry.split(' | ')[0]
+    if not any(server_part in line.split(' | ')[0] for line in non_working):
         # Add new non-working servers to the top of the list
         non_working.insert(0, entry)
         save_non_working(non_working)
-        log_history(server_line, "moved_to_non_working")
+        log_history(server_line, f"moved_to_non_working(from:{source_file})")
 
-def move_server_to_main(server_line):
-    main_servers = load_main_servers()
+def move_server_to_main(server_line, target_file=None):
+    """Move a server back to a server file. If target_file is None, uses currently active file."""
+    if target_file is None:
+        target_file = get_active_server_file()
+    
+    # Load servers from target file
+    if not os.path.exists(target_file):
+        return
+    
+    with open(target_file, 'r', encoding='utf-8') as f:
+        main_servers = [line.strip() for line in f if line.strip()]
+    
+    # Check for duplicates
     normalized_new = extract_server_config(server_line)
     for existing in main_servers:
         if extract_server_config(existing) == normalized_new:
             return
+    
     main_servers.append(server_line)
-    save_main_servers(main_servers)
-    log_history(server_line, "moved_to_main")
+    with open(target_file, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(main_servers) + '\n')
+    log_history(server_line, f"moved_to_main({target_file})")
 
 def process_non_working_recovery():
+    """Recover servers from non_working.txt back to their original server files."""
     non_working_lines = load_non_working()
     keep_non_working = []
     for line in non_working_lines:
-        server, dt = parse_non_working_line(line)
+        server, dt, source_file = parse_non_working_line(line)
         if not server or not dt:
+            keep_non_working.append(line)
             continue
+        
+        # Test if server is working again
         if validate_server(server):
-            move_server_to_main(server)
-            log_history(server, "recovered_to_main")
+            # Recover to original source file - each server goes back to where it came from
+            # Example: server from servers1.txt goes back to servers1.txt, not servers.txt
+            target_file = source_file if source_file and os.path.exists(source_file) else None
+            move_server_to_main(server, target_file)
+            source_info = f"from:{source_file}," if source_file else ""
+            log_history(server, f"recovered_to_main({source_info}to:{target_file or 'active'})")
         else:
             keep_non_working.append(line)
     save_non_working(keep_non_working)
