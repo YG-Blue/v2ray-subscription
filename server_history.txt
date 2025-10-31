@@ -1,3 +1,8 @@
+vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 161 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-10-31 05:06
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 164 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-10-31 05:06
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 164 🇩🇪 | moved_to_main(servers.txt) | 2025-10-31 05:06
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 165 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-10-31 05:06
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 165 🇩🇪 | moved_to_main(servers.txt) | 2025-10-31 05:06
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 165 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-10-31 04:48
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 164 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-10-31 04:48
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPQ01TT2RNZ0I1M01JWUloaVF6ejFu@89.185.84.185:443#Server 200 🇬🇧 | removed_duplicate | 2025-10-31 04:17
