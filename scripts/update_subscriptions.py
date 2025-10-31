@@ -1263,10 +1263,32 @@ def process_control_panel():
     
     # Track seen server files to prevent duplicates
     seen_servers = set()
-    active_found = False
+    active_server = None  # Track which server should be active
     updated_lines = []
     any_changes = False
     
+    # First pass: identify which server should be active (prioritize ---on over existing ticks)
+    for line in lines:
+        clean_line = line.replace('✓', '').replace('---on', '').replace('---ON', '').strip()
+        if not clean_line:
+            continue
+        
+        # If this line has ---on marker, this is the server user wants to activate
+        if '---on' in line.lower():
+            active_server = clean_line
+            any_changes = True
+            break  # ---on takes priority, stop searching
+    
+    # If no ---on found, check for existing tick
+    if active_server is None:
+        for line in lines:
+            if line.startswith('✓'):
+                clean_line = line.replace('✓', '').strip()
+                if clean_line:
+                    active_server = clean_line
+                    break
+    
+    # Second pass: build the output lines
     for line in lines:
         # Remove tick emoji and ---on markers to get clean server name
         clean_line = line.replace('✓', '').replace('---on', '').replace('---ON', '').strip()
@@ -1282,37 +1304,30 @@ def process_control_panel():
         
         seen_servers.add(clean_line)
         
-        # Check if this line has ---on marker (user just added it) or starts with tick (already processed)
-        has_on_marker = '---on' in line.lower()
-        has_tick = line.startswith('✓')
-        
-        if has_on_marker or has_tick:
-            if not active_found:
-                # This is the first active server found - format: ✓ servers.txt (no ---on visible)
-                correct_line = f"✓ {clean_line}"
-                if line != correct_line:
-                    any_changes = True
-                updated_lines.append(correct_line)
-                active_found = True
-            else:
-                # Another active server found - deactivate it (remove ---on and tick)
-                if clean_line != line:
-                    any_changes = True
-                updated_lines.append(clean_line)
+        # Format the line: add tick if this is the active server
+        if clean_line == active_server:
+            formatted_line = f"✓ {clean_line}"
+            if line != formatted_line:
+                any_changes = True
+            updated_lines.append(formatted_line)
         else:
-            # No ---on marker or tick, keep as inactive
+            # Inactive server - no tick, no ---on
+            if clean_line != line:
+                any_changes = True
             updated_lines.append(clean_line)
     
     # If no active server was found, activate the first one
-    if not active_found and updated_lines:
+    if active_server is None and updated_lines:
         first_line = updated_lines[0].replace('✓', '').replace('---on', '').replace('---ON', '').strip()
         updated_lines[0] = f"✓ {first_line}"
         any_changes = True
+        active_server = first_line
     
     # If there are no lines, create default
     if not updated_lines:
         updated_lines.append(f"✓ {MAIN_FILE}")
         any_changes = True
+        active_server = MAIN_FILE
     
     # Always write back to ensure correct format
     with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
@@ -1320,11 +1335,10 @@ def process_control_panel():
             f.write(line + '\n')
     
     if any_changes:
-        active_file = get_active_server_file()
         try:
-            print(f"✓ Control panel updated: {active_file} is now active")
+            print(f"✓ Control panel updated: {active_server} is now active")
         except UnicodeEncodeError:
-            print(f"Control panel updated: {active_file} is now active")
+            print(f"Control panel updated: {active_server} is now active")
 
 def load_main_servers():
     """Load servers from the active server file specified in control_panel.txt."""
