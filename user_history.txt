@@ -1,3 +1,15 @@
+test | unblocked | [Note: 404 | blocked 2025-10-31] | 2025-10-31 05:39
+
+filanor | added |  | 2025-10-31 05:39
+
+customer2 | added |  | 2025-10-31 05:39
+
+customer2 | auto_renamed | Automatically renamed from customer2 due to duplicate | 2025-10-31 05:39
+
+customer2 | added |  | 2025-10-31 05:39
+
+test | manual_delete | User manually removed [Note: 404 | blocked 2025-10-31] | 2025-10-31 05:39
+
 customer | blocked | | blocked 2025-10-31 [Note: 406] | 2025-10-31 05:37
 
 test | blocked | | blocked 2025-10-31 [Note: 404] | 2025-10-31 05:37
