@@ -1,3 +1,5 @@
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 165 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-10-31 04:48
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 164 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-10-31 04:48
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPQ01TT2RNZ0I1M01JWUloaVF6ejFu@89.185.84.185:443#Server 200 🇬🇧 | removed_duplicate | 2025-10-31 04:17
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzdVNhZFJUT0E5YUNUT1M5TGpYdjc4@89.185.84.185:443#Server 193  | removed_duplicate | 2025-10-31 04:17
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxcjhEM0hKYnRHeGlzSThwcXNkTGlo@81.19.141.45:443#Server 191  | removed_duplicate | 2025-10-31 04:17
