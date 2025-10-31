@@ -1868,6 +1868,19 @@ def update_all_subscriptions():
     managed_users = load_user_list()
     managed_usernames = {extract_username_from_line(user) for user in managed_users}
     
+    # First, ensure subscription files exist for all managed users
+    for user_line in managed_users:
+        username = extract_username_from_line(user_line)
+        subscription_path = os.path.join(subscription_dir, f"{username}.txt")
+        if not os.path.exists(subscription_path):
+            # Create empty subscription file if it doesn't exist
+            with open(subscription_path, 'w', encoding='utf-8') as f:
+                f.write('')
+            try:
+                print(f"Created missing subscription file: {username}.txt")
+            except UnicodeEncodeError:
+                print(f"[OK] Created missing subscription file: {username}.txt")
+    
     subscription_files = [f for f in os.listdir(subscription_dir) if f.endswith('.txt')]
     for filename in subscription_files:
         username = filename[:-4]
