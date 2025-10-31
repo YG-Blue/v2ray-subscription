@@ -1,3 +1,11 @@
+customer | blocked | | blocked 2025-10-31 [Note: 406] | 2025-10-31 05:37
+
+test | blocked | | blocked 2025-10-31 [Note: 404] | 2025-10-31 05:37
+
+test | manual_delete | User manually removed [Note: 404] | 2025-10-31 05:37
+
+customer | manual_delete | User manually removed [Note: 406] | 2025-10-31 05:37
+
 test | unblocked | [Note: 404 ---ub | blocked 2025-10-31] | 2025-10-31 05:22
 
 test | manual_delete | User manually removed [Note: 404 ---ub | blocked 2025-10-31] | 2025-10-31 05:22
