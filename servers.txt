@@ -70,7 +70,7 @@ vless://a6667667-1bc2-41a5-a073-049fc160cb32@che-0001-xr.packet-drop-society.net
 vless://a6667667-1bc2-41a5-a073-049fc160cb32@usa-0001-xr.packet-drop-society.net:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=hls-svod.itunes.apple.com&fp=chrome&pbk=llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws&sid=48720c&type=tcp&headerType=none#Server 70 🇺🇸
 vless://b160cc4a-89f5-4279-9007-a4c84a13a175@deu-0001-xr.packet-drop-society.net:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=hls-svod.itunes.apple.com&fp=chrome&pbk=llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws&sid=48720c&type=tcp&headerType=none#Server 71 🇩🇪
 vless://739b7052-1e58-444d-b068-6cdbbe487663@188.114.97.3:443?encryption=none&security=tls&sni=dfb32af2.panlo-escobar0099269.pages.dev&fp=randomized&type=ws&host=dfb32af2.panlo-escobar0099269.pages.dev&path=%2Fd7uhd7igkjutf9hl%3Fed%3D2560#Server 72 🇺🇸
-vless://422af888-aaec-469e-8e4e-59a9429e7dd0@tgju.org:80?encryption=none&security=none&type=ws&host=MElODIc-eDuCAtiOn.ONEeaT.co&path=%2F%3Fed%3D2048#Server 73 🇺🇸
+vless://422af888-aaec-469e-8e4e-59a9429e7dd0@tgju.org:80?encryption=none&security=none&type=ws&host=MElODIc-eDuCAtiOn.ONEeaT.co&path=%2F%3Fed%3D2048#Server 73 🇨🇦
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.166:443#Server 74 🇳🇱
 trojan://bpb-trojan@172.67.180.227:443?security=tls&sni=mashdt.pages.dev&alpn=h3&fp=randomized&type=ws&host=mashdt.pages.dev&path=%2Ftr%3Fed%3D2560#Server 75 🇺🇸
 trojan://NISHIKUITAN111@172.64.156.42:443?security=tls&sni=172.64.156.42&allowInsecure=1&type=tcp&headerType=none#Server 76 🇺🇸
@@ -157,3 +157,7 @@ vless://2aff3c47-ccdc-4c17-b726-73539e2103b2@all75-vip.f-sub.com:3799?encryption
 vless://a42343e4-c498-42b7-8361-c03a36e7a5fb@46.62.220.103:27802?encryption=none&type=grpc&mode=gun&serviceName=Smxhabwh&security=tls&fp=chrome&sni=offged.sahandconfig.ir&alpn=h2,http/1.1#Server 157 🇫🇮
 vless://a42343e4-c498-42b7-8361-c03a36e7a5fb@46.62.220.103:27802?encryption=none&security=tls&sni=offged.sahandconfig.ir&alpn=h2%2Chttp%2F1.1&fp=chrome&type=grpc&authority=&serviceName=Smxhabwh&mode=gun#Server 158 🇫🇮
 vless://2aff3c47-ccdc-4c17-b726-73539e2103b2@all71-vip.f-sub.com:4928?encryption=none&security=none&type=tcp&headerType=http&host=varzesh3.com#Server 159 🇩🇪
+vless://2aff3c47-ccdc-4c17-b726-73539e2103b2@all72-vip.f-sub.com:3789?encryption=none&security=none&type=tcp&headerType=http&host=varzesh3.com#Server 160 🇩🇪
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 161 🇷🇺
+vless://2aff3c47-ccdc-4c17-b726-73539e2103b2@all73-vip.f-sub.com:3799?encryption=none&security=none&type=tcp&headerType=http&host=varzesh3.com#Server 162 🇩🇪
+vless://baf95082-c6b6-424a-a22a-9a2843915679@104.238.167.168:443?encryption=none&security=reality&sni=hdfyrplc1.freeairlians.com&fp=chrome&pbk=AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k&type=tcp&headerType=none#Server 163 🇩🇪
