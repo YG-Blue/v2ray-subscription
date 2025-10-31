@@ -1232,11 +1232,16 @@ def get_active_server_file():
         lines = [line.strip() for line in f if line.strip()]
     
     for line in lines:
-        if '---on' in line.lower():
+        # Check if line starts with tick emoji (active server)
+        if line.startswith('✓'):
+            # Extract server file name (remove tick and any whitespace)
+            server_file = line.replace('✓', '').strip()
+            if server_file:
+                return server_file
+        # Also check for ---on marker (backward compatibility)
+        elif '---on' in line.lower():
             # Extract server file name (remove ---on and any whitespace)
-            server_file = line.replace('---on', '').replace('---ON', '').strip()
-            # Remove tick emoji if present
-            server_file = server_file.replace('✓', '').strip()
+            server_file = line.replace('---on', '').replace('---ON', '').replace('✓', '').strip()
             if server_file:
                 return server_file
     
@@ -1244,55 +1249,72 @@ def get_active_server_file():
     return MAIN_FILE
 
 def process_control_panel():
-    """Process control_panel.txt to handle ---on commands and ensure only one server is active."""
+    """Process control_panel.txt to handle ---on commands and ensure only one server is active.
+    Format: ✓ servers.txt (tick at beginning, ---on command is hidden after processing)
+    """
     if not os.path.exists(CONTROL_PANEL_FILE):
         # Create default control_panel.txt with servers.txt active
         with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
-            f.write(f"{MAIN_FILE} ---on ✓\n")
+            f.write(f"✓ {MAIN_FILE}\n")
         return
     
     with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
         lines = [line.strip() for line in f if line.strip()]
     
+    # Track seen server files to prevent duplicates
+    seen_servers = set()
     active_found = False
     updated_lines = []
     any_changes = False
     
     for line in lines:
-        # Remove any existing tick emoji and ---on markers to get clean server name
+        # Remove tick emoji and ---on markers to get clean server name
         clean_line = line.replace('✓', '').replace('---on', '').replace('---ON', '').strip()
         
-        # Check if this line has ---on marker (case insensitive)
-        has_on_marker = '---on' in line.lower()
+        # Skip empty lines
+        if not clean_line:
+            continue
         
-        if has_on_marker:
+        # Check for duplicates
+        if clean_line in seen_servers:
+            any_changes = True
+            continue  # Skip duplicate entries
+        
+        seen_servers.add(clean_line)
+        
+        # Check if this line has ---on marker (user just added it) or starts with tick (already processed)
+        has_on_marker = '---on' in line.lower()
+        has_tick = line.startswith('✓')
+        
+        if has_on_marker or has_tick:
             if not active_found:
-                # This is the first active server found - keep it active
-                correct_line = f"{clean_line} ---on ✓"
+                # This is the first active server found - format: ✓ servers.txt (no ---on visible)
+                correct_line = f"✓ {clean_line}"
                 if line != correct_line:
                     any_changes = True
                 updated_lines.append(correct_line)
                 active_found = True
             else:
-                # Another active server found - deactivate it (remove ---on)
-                if clean_line != line.replace('✓', '').strip():
+                # Another active server found - deactivate it (remove ---on and tick)
+                if clean_line != line:
                     any_changes = True
                 updated_lines.append(clean_line)
         else:
-            # No ---on marker, keep as inactive
+            # No ---on marker or tick, keep as inactive
             updated_lines.append(clean_line)
     
     # If no active server was found, activate the first one
     if not active_found and updated_lines:
-        updated_lines[0] = f"{updated_lines[0]} ---on ✓"
+        first_line = updated_lines[0].replace('✓', '').replace('---on', '').replace('---ON', '').strip()
+        updated_lines[0] = f"✓ {first_line}"
         any_changes = True
     
     # If there are no lines, create default
     if not updated_lines:
-        updated_lines.append(f"{MAIN_FILE} ---on ✓")
+        updated_lines.append(f"✓ {MAIN_FILE}")
         any_changes = True
     
-    # Always write back to ensure tick emoji is displayed correctly
+    # Always write back to ensure correct format
     with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
         for line in updated_lines:
             f.write(line + '\n')
