@@ -712,13 +712,31 @@ def process_user_commands():
             log_user_history(username, "removed", "User deleted")
         elif '---m' in user_line:
             any_commands_processed = True
-            username = extract_username_from_line(user_line)
-            user_data = extract_user_data_from_line(user_line)
-            raw_notes = extract_notes_from_line(user_line)
-            # Remove command flags from notes
+            # Extract everything after ---m but before # (for notes)
+            command_part = user_line.split('---m')[1]
+            if '#' in command_part:
+                notes_part = command_part.split('#')[1]
+                data_part = command_part.split('#')[0].strip()
+            else:
+                notes_part = ''
+                data_part = command_part.strip()
+            
+            # If there's data after ---m, treat first word as username, rest as user_data
+            if data_part:
+                parts = data_part.split()
+                username = parts[0] if parts else ''
+                user_data = ' '.join(parts[1:]) if len(parts) > 1 else ''
+            else:
+                # No data after ---m, extract from before command (in case format is "username ---m")
+                username = extract_username_from_line(user_line)
+                user_data = extract_user_data_from_line(user_line)
+            
+            raw_notes = notes_part.strip()
+            # Remove command flags from notes if they somehow got there
             notes = raw_notes.replace('---m', '').replace('---b', '').replace('---ub', '').replace('---d', '').replace('---r', '').replace('---es', '').strip()
             # Clean up any double spaces
             notes = ' '.join(notes.split())
+            
             # Auto-generate a unique username if none was provided (i.e. the line is just "---m" + optional note)
             if not username:
                 username = generate_unique_username("customer")
@@ -732,12 +750,12 @@ def process_user_commands():
             # Exclude the current line from duplicate check to avoid false positives
             existing_usernames = [extract_username_from_line(u) for u in users if u is not user_line]
             existing_updated_usernames = [extract_username_from_line(u) for u in updated_users]
+            # Also check against any new usernames from renames that happened earlier in this batch
+            renamed_new_usernames = set(renamed_users.values())
+            # Also check against new_users that were already added in this batch
+            existing_new_usernames = new_users.copy()
             
-            # Debug print to help identify the issue
-            print(f"Adding user: {username}")
-            print(f"Existing usernames: {existing_usernames}")
-            
-            if username in existing_updated_usernames or username in existing_usernames:
+            if username in existing_updated_usernames or username in existing_usernames or username in renamed_new_usernames or username in existing_new_usernames:
                 username = generate_unique_username(username)
                 log_user_history(username, "auto_renamed", f"Automatically renamed from {original_username} due to duplicate")
                 try:
@@ -778,7 +796,28 @@ def process_user_commands():
             # Remove command from notes if it's there
             if notes and '---r' in notes:
                 notes = notes.split('---r')[0].strip()
+            # Clean up any double spaces in notes
+            notes = ' '.join(notes.split())
             if new_username and new_username != old_username:
+                # Check if target username already exists (in original list, updated list, renamed in this batch, or new users in this batch)
+                existing_usernames = [extract_username_from_line(u) for u in users]
+                existing_updated_usernames = [extract_username_from_line(u) for u in updated_users]
+                renamed_new_usernames = set(renamed_users.values())
+                # Also check if this user was already renamed in this batch (old_username might be a new name from earlier rename)
+                if old_username in renamed_users.values():
+                    # This user was already renamed, skip this rename
+                    updated_users.append(user_line)
+                    continue
+                
+                # If target username conflicts, generate a unique one
+                if new_username in existing_usernames or new_username in existing_updated_usernames or new_username in renamed_new_usernames or new_username in new_users:
+                    original_new_username = new_username
+                    new_username = generate_unique_username(new_username)
+                    log_user_history(old_username, "rename_target_conflict", f"Target username {original_new_username} already exists, using {new_username} instead")
+                    try:
+                        print(f"⚠️ Rename target {original_new_username} already exists, using {new_username} instead")
+                    except UnicodeEncodeError:
+                        print(f"[WARN] Rename target {original_new_username} already exists, using {new_username} instead")
                 renamed_users[old_username] = new_username
                 modified_users.add(old_username)
                 users_to_top.add(new_username)  # Move to top when renamed
