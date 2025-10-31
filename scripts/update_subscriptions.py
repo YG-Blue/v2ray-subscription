@@ -1203,9 +1203,9 @@ CONTROL_PANEL_FILE = 'control_panel.txt'
 HISTORY_FILE = 'server_history.txt'
 USER_HISTORY_FILE = 'user_history.txt'
 QUARANTINE_DAYS = 3
-USER_HISTORY_DAYS = 7  # Keep user history for 7 days
-BACKUP_DAYS = 7  # Keep backups for 7 days
-SERVER_HISTORY_DAYS = 7  # Keep server history for 7 days
+USER_HISTORY_DAYS = 10  # Keep user history for 10 days
+BACKUP_DAYS = 10  # Keep backups for 10 days
+SERVER_HISTORY_DAYS = 10  # Keep server history for 10 days
 # Timeout (seconds) for TCP health-check
 VALIDATION_TIMEOUT = 3
 
@@ -1787,11 +1787,28 @@ def backup_user(username):
         with open(backup_filename, 'w', encoding='utf-8') as f:
             f.write(user_entry)
         
-        # Cleanup old backups (keep latest 10 per user)
-        backups = sorted(list(user_dir.glob(f"{username}_*.txt")), key=lambda x: x.stat().st_mtime)
-        if len(backups) > 10:  # Keep last 10 backups per user
-            for old_file in backups[:-10]:
-                old_file.unlink()
+        # Cleanup old backups (keep those from last BACKUP_DAYS days)
+        backups = list(user_dir.glob(f"{username}_*.txt"))
+        cutoff_date = iran_time - datetime.timedelta(days=BACKUP_DAYS)
+        
+        for backup_file in backups:
+            # Extract date from filename (format: username_TIMESTAMP_DISPLAYTIMESTAMP.txt)
+            # Example: username_7980-12-31_23-59_2024-01-01_12-30.txt
+            # display_timestamp is the last two parts: YYYY-MM-DD_HH-MM
+            try:
+                filename = backup_file.stem  # Get filename without extension
+                parts = filename.split('_')
+                if len(parts) >= 5:
+                    # Display timestamp is the last two parts: YYYY-MM-DD_HH-MM
+                    # Extract date part (second to last): YYYY-MM-DD
+                    date_str = parts[-2]  # YYYY-MM-DD
+                    file_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=IRAN_TZ)
+                    if file_date < cutoff_date:
+                        # File is older than BACKUP_DAYS days
+                        backup_file.unlink()
+            except (ValueError, IndexError):
+                # Skip files with invalid naming format
+                continue
                 
         return True
     except Exception as e:
