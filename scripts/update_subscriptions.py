@@ -1810,10 +1810,12 @@ def update_all_subscriptions():
         # Detect any manual changes since last run
         detect_manual_changes()
 
-    # Always process user commands & expiry first – they are lightweight
-    process_user_commands()
-    # Process any commands written directly inside blocked_users.txt
+    # Process any commands written directly inside blocked_users.txt FIRST
+    # This must run before process_user_commands() because process_user_commands()
+    # rebuilds blocked_users.txt, which would remove the ---ub/---d commands
     process_blocked_users_commands()
+    # Then process user commands & expiry – they are lightweight
+    process_user_commands()
     check_expired_users()
 
     if not FAST_RUN:
