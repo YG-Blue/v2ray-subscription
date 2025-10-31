@@ -336,8 +336,13 @@ def extract_user_data_from_line(user_line):
     clean_line = user_line.replace(BLOCKED_SYMBOL, '').strip()
 
     # Handle notes by removing everything after #
+    # Also remove pipe-separated block dates (they're notes, not user_data)
     if '#' in clean_line:
         clean_line = clean_line.split('#')[0].strip()
+    
+    # Remove pipe-separated block dates (e.g., "| blocked 2025-10-31")
+    if '|' in clean_line:
+        clean_line = clean_line.split('|')[0].strip()
 
     if '---' in clean_line:
         before_command = clean_line.split('---')[0].strip()
@@ -535,10 +540,16 @@ def create_subscription_file(username):
     if not os.path.exists(sub_file):
         with open(sub_file, 'w', encoding='utf-8') as f:
             f.write('')
-        print(f"📄 Created subscription file: {username}.txt")
+        try:
+            print(f"📄 Created subscription file: {username}.txt")
+        except UnicodeEncodeError:
+            print(f"[OK] Created subscription file: {username}.txt")
         return True
     else:
-        print(f"⚠️  Subscription file already exists: {username}.txt")
+        try:
+            print(f"⚠️  Subscription file already exists: {username}.txt")
+        except UnicodeEncodeError:
+            print(f"[WARN] Subscription file already exists: {username}.txt")
         return False
 
 def rename_subscription_file(old_username, new_username):
@@ -552,14 +563,23 @@ def rename_subscription_file(old_username, new_username):
             original_new_username = new_username
             new_username = generate_unique_username(new_username)
             new_file = os.path.join(subscription_dir, f"{new_username}.txt")
-            print(f"⚠️ Subscription file {original_new_username}.txt already exists, using {new_username}.txt instead")
+            try:
+                print(f"⚠️ Subscription file {original_new_username}.txt already exists, using {new_username}.txt instead")
+            except UnicodeEncodeError:
+                print(f"[WARN] Subscription file {original_new_username}.txt already exists, using {new_username}.txt instead")
             log_user_history(new_username, "auto_renamed", f"Automatically renamed from {original_new_username} due to duplicate subscription file")
             
         os.rename(old_file, new_file)
-        print(f"📄 Renamed subscription file: {old_username}.txt → {new_username}.txt")
+        try:
+            print(f"📄 Renamed subscription file: {old_username}.txt → {new_username}.txt")
+        except UnicodeEncodeError:
+            print(f"[OK] Renamed subscription file: {old_username}.txt -> {new_username}.txt")
         return new_username  # Return the potentially modified username
     else:
-        print(f"⚠️ Subscription file not found: {old_username}.txt")
+        try:
+            print(f"⚠️ Subscription file not found: {old_username}.txt")
+        except UnicodeEncodeError:
+            print(f"[WARN] Subscription file not found: {old_username}.txt")
         return new_username  # Return the original username
 
 def move_user_to_top(users, username):
@@ -626,7 +646,11 @@ def process_user_commands():
             # Remove any existing command tokens and pipe-notes before extracting user_data
             cleaned_line = user_line.split('---')[0].split('|')[0].strip()
             user_data = extract_user_data_from_line(cleaned_line)
-            notes = extract_notes_from_line(user_line)
+            raw_notes = extract_notes_from_line(user_line)
+            # Remove command flags from notes
+            notes = raw_notes.replace('---b', '').replace('---ub', '').replace('---d', '').replace('---r', '').replace('---m', '').replace('---es', '').strip()
+            # Clean up any double spaces
+            notes = ' '.join(notes.split())
             blocked_users.add(username)
             modified_users.add(username)
             users_to_top.add(username)  # Move to top when blocked
@@ -662,6 +686,10 @@ def process_user_commands():
             # Clean any old block-date tags from the note when unblocking
             raw_notes = extract_notes_from_line(user_line)
             notes = strip_block_dates(raw_notes)
+            # Remove command flags from notes if they're there
+            notes = notes.replace('---ub', '').replace('---ub', '').strip()
+            # Clean up any double spaces
+            notes = ' '.join(notes.split())
             unblocked_users.add(username)
             modified_users.add(username)
             users_to_top.add(username)  # Move to top when unblocked
@@ -686,11 +714,18 @@ def process_user_commands():
             any_commands_processed = True
             username = extract_username_from_line(user_line)
             user_data = extract_user_data_from_line(user_line)
-            notes = extract_notes_from_line(user_line)
+            raw_notes = extract_notes_from_line(user_line)
+            # Remove command flags from notes
+            notes = raw_notes.replace('---m', '').replace('---b', '').replace('---ub', '').replace('---d', '').replace('---r', '').replace('---es', '').strip()
+            # Clean up any double spaces
+            notes = ' '.join(notes.split())
             # Auto-generate a unique username if none was provided (i.e. the line is just "---m" + optional note)
             if not username:
                 username = generate_unique_username("customer")
-                print(f"\u2699\ufe0f Auto-generated username: {username}")
+                try:
+                    print(f"\u2699\ufe0f Auto-generated username: {username}")
+                except UnicodeEncodeError:
+                    print(f"[OK] Auto-generated username: {username}")
             
             # Check if username already exists and generate a unique one if needed
             original_username = username
@@ -705,7 +740,10 @@ def process_user_commands():
             if username in existing_updated_usernames or username in existing_usernames:
                 username = generate_unique_username(username)
                 log_user_history(username, "auto_renamed", f"Automatically renamed from {original_username} due to duplicate")
-                print(f"⚠️ Username {original_username} already exists, using {username} instead")
+                try:
+                    print(f"⚠️ Username {original_username} already exists, using {username} instead")
+                except UnicodeEncodeError:
+                    print(f"[WARN] Username {original_username} already exists, using {username} instead")
             
             new_users.add(username)
             details = user_data if user_data else ""
@@ -737,6 +775,9 @@ def process_user_commands():
             if '#' in command_part:
                 command_part = command_part.split('#')[0]
             new_username = command_part.strip().split()[0] if command_part.strip() else ''
+            # Remove command from notes if it's there
+            if notes and '---r' in notes:
+                notes = notes.split('---r')[0].strip()
             if new_username and new_username != old_username:
                 renamed_users[old_username] = new_username
                 modified_users.add(old_username)
@@ -1822,9 +1863,24 @@ def update_all_subscriptions():
     subscription_dir = 'subscriptions'
     if not os.path.exists(subscription_dir):
         os.makedirs(subscription_dir)
+    
+    # Load user list to identify which subscriptions are managed by automation
+    managed_users = load_user_list()
+    managed_usernames = {extract_username_from_line(user) for user in managed_users}
+    
     subscription_files = [f for f in os.listdir(subscription_dir) if f.endswith('.txt')]
     for filename in subscription_files:
         username = filename[:-4]
+        
+        # Only update subscriptions for users in user_list.txt (managed users)
+        # Manual subscriptions (users not in user_list.txt) will be preserved
+        if username not in managed_usernames:
+            try:
+                print(f"Preserving manual subscription: {username}.txt (user not in user_list.txt)")
+            except UnicodeEncodeError:
+                print(f"Preserving manual subscription: {username}.txt (user not in user_list.txt)")
+            continue
+        
         if should_block_user(username, blocked_users):
             servers_for_user = get_fake_servers()
         else:
