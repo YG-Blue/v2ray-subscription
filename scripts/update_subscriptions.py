@@ -957,9 +957,12 @@ def process_user_commands():
 # === BLOCKED USERS FILE COMMANDS ===
 
 def process_blocked_users_commands():
-    """Allow admin to put command flags (---ub / ---b) inside blocked_users.txt.
+    """Allow admin to put command flags (---ub / ---d) inside blocked_users.txt.
     The function will read blocked_users.txt, process any directives, sync changes
     back to user_list.txt, and rewrite blocked_users.txt without the flags.
+    
+    Note: ---b (block) command is NOT supported here. Use user_list.txt with ---b instead.
+    This file is a shortcut for finding blocked users and unblocking/deleting easily.
     """
     blocked_file = 'blocked_users.txt'
     if not os.path.exists(blocked_file):
@@ -990,7 +993,6 @@ def process_blocked_users_commands():
     if not raw_lines:
         return
 
-    to_block = {}
     to_unblock = {}
     to_delete = set()
     keep_plain = []  # lines to keep as-is (no command flags, already cleaned)
@@ -1002,12 +1004,6 @@ def process_blocked_users_commands():
             note = extract_notes_from_line(line)
             if username:
                 to_unblock[username] = note
-                commands_found = True
-        elif '---b' in line:
-            username = extract_username_from_line(line)
-            note = extract_notes_from_line(line)
-            if username:
-                to_block[username] = note
                 commands_found = True
         elif '---d' in line:
             # Delete user entirely
@@ -1055,44 +1051,8 @@ def process_blocked_users_commands():
             modified_users.add(uname)
             log_user_history(uname, "removed", "via blocked_users.txt")
             continue  # do not append to updated_users (removes from list)
-        elif uname in to_block:
-            # Ensure blocked symbol present and update/add note
-            # Remove existing note to replace
-            base_without_note = remove_notes_from_line(user_line.lstrip(BLOCKED_SYMBOL).lstrip())
-            # Compose note with block date
-            iran_date = get_iran_time().strftime("%Y-%m-%d")
-            date_note = f"| blocked {iran_date}"
-            note_input = to_block.get(uname, '')
-            # Build note ensuring we don't duplicate date
-            if date_note in note_input:
-                note = note_input.strip()
-            else:
-                note = f"{note_input} {date_note}".strip()
-
-            # Prepend '#' symbol to note (if any) (no space after '#')
-            note_with_hash = f"#{note}" if note else ""
-            blocked_line = f"{BLOCKED_SYMBOL}{base_without_note}"
-            if note_with_hash:
-                blocked_line += f" {note_with_hash}"
-            elif '#' in user_line:
-                # Reattach existing note if no new note specified
-                old_note = extract_notes_from_line(user_line)
-                blocked_line += f" #{old_note}"
-            updated_users.append(blocked_line)
-            modified_users.add(uname)
-            log_user_history(uname, "blocked", "via blocked_users.txt")
         else:
             updated_users.append(user_line)
-
-    # Add new blocked entries which were not in user_list
-    for uname, note in to_block.items():
-        if uname not in existing_usernames:
-            line = f"{BLOCKED_SYMBOL}{uname}"
-            if note:
-                line += f" {note}"
-            updated_users.append(line)
-            modified_users.add(uname)
-            log_user_history(uname, "blocked", "via blocked_users.txt (new user)")
 
     # Move modified users to top for visibility
     final_users = updated_users.copy()
@@ -1106,28 +1066,26 @@ def process_blocked_users_commands():
         backup_user(uname)
     save_user_list(final_users)
 
-    # Re-write blocked_users.txt putting freshly blocked usernames at the top
-    # Build final blocked list preserving notes, newest blocks first
+    # Re-write blocked_users.txt based on CURRENT state of user_list.txt
+    # Only include users that are actually blocked (have 🚫 symbol)
+    # Exclude users that were unblocked or deleted
     new_block_list = []
-    for uname, note_in in to_block.items():
-        iran_date = get_iran_time().strftime("%Y-%m-%d")
-        date_note = f"| blocked {iran_date}"
-        if date_note in note_in:
-            note = note_in.strip()
-        else:
-            note = f"{note_in} {date_note}".strip()
-        entry = uname
-        if note:
-            entry += f" #{note}"
-        new_block_list.append(entry)
-    # Add remaining lines (plain keeps) that are still blocked
-    for ln in keep_plain:
-        u = extract_username_from_line(ln)
-        if u not in to_unblock and u not in to_delete and u not in to_block:  # still blocked and not deleted or reblocked this run
-            new_block_list.append(ln)
+    
+    # Rebuild blocked_users.txt from final user_list.txt state
+    # (after processing unblocks/deletes and moving users to top)
+    for user_line in final_users:
+        if user_line.startswith(BLOCKED_SYMBOL):
+            # This user is still blocked, add to blocked_users.txt
+            entry = user_line.lstrip(BLOCKED_SYMBOL).lstrip()
+            uname = extract_username_from_line(entry)
+            # Only add if not in to_delete (shouldn't happen, but safety check)
+            if uname not in to_delete:
+                new_block_list.append(entry)
+    
+    # Write the updated blocked_users.txt
     with open(blocked_file, 'w', encoding='utf-8') as f:
-        for uname in new_block_list:
-            f.write(f"{uname}\n")
+        for entry in new_block_list:
+            f.write(f"{entry}\n")
 
     # Remove subscription files for deleted users
     if to_delete:
