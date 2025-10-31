@@ -32,18 +32,68 @@ def extract_ip_from_server(server_line):
     except Exception:
         return None
 
-def get_country_code(ip):
-    if not ip:
+def get_country_code(ip_or_domain):
+    """Get country code for an IP address or domain name using multiple free APIs with fallback.
+    Tries providers in order: ipinfo.io (best limits), ip-api.com (backup).
+    Returns empty string on failure."""
+    if not ip_or_domain:
         return ''
-    try:
-        response = requests.get(f"http://ip-api.com/json/{ip}?fields=countryCode", timeout=5)
-        if response.status_code == 200:
-            data = response.json()
-            cc = data.get('countryCode', '')
-            if cc and len(cc) == 2:
-                return cc.upper()
-    except Exception:
-        pass
+    
+    # Provider list with their API endpoints and response parsing
+    providers = [
+        {
+            'name': 'ipinfo.io',
+            'url': f'https://ipinfo.io/{ip_or_domain}/country',
+            'parse': lambda r: r.text.strip() if r.status_code == 200 else None,
+            'needs_key': False
+        },
+        {
+            'name': 'ip-api.com',
+            'url': f'http://ip-api.com/json/{ip_or_domain}?fields=countryCode',
+            'parse': lambda r: r.json().get('countryCode', '') if r.status_code == 200 else None,
+            'needs_key': False
+        }
+    ]
+    
+    # Try each provider
+    for provider in providers:
+        for attempt in range(2):  # 2 attempts per provider
+            try:
+                response = requests.get(provider['url'], timeout=10)
+                
+                # Check for rate limiting
+                if response.status_code == 429:
+                    if attempt < 1:
+                        time.sleep(2)
+                        continue
+                    # Try next provider
+                    break
+                
+                # Parse response
+                cc = provider['parse'](response)
+                if cc and len(cc) == 2:
+                    return cc.upper()
+                
+                # If successful response but no country code, don't retry
+                if response.status_code == 200:
+                    break
+                    
+            except requests.exceptions.Timeout:
+                if attempt < 1:
+                    time.sleep(1)
+                    continue
+                # Try next provider
+                break
+            except requests.exceptions.RequestException:
+                if attempt < 1:
+                    time.sleep(1)
+                    continue
+                # Try next provider
+                break
+            except Exception:
+                # Try next provider
+                break
+    
     return ''
 
 def country_code_to_flag(country_code):
@@ -56,20 +106,47 @@ def country_code_to_flag(country_code):
         return ''
 
 def update_server_remarks(servers):
+    """Update server remarks with flags. Flags may be missing if IP lookup fails.
+    Uses multiple free APIs with fallback: ipinfo.io (40k/month) -> ip-api.com (45/min).
+    Note: ipinfo.io has much better rate limits!"""
     updated_servers = []
+    failed_flags = 0
+    failed_ips = []
+    
     for idx, server in enumerate(servers, 1):
         base_url = server.split('#')[0]
         remark = server.split('#', 1)[1].strip() if '#' in server else ""
-        ip = extract_ip_from_server(server)
-        cc = get_country_code(ip)
+        ip_or_domain = extract_ip_from_server(server)
+        
+        # Try to get country code and flag
+        cc = get_country_code(ip_or_domain)
         flag = country_code_to_flag(cc)
+        
+        # Track failures for reporting
+        if not flag and ip_or_domain:
+            failed_flags += 1
+            if len(failed_ips) < 5:  # Keep track of first 5 failures for debugging
+                failed_ips.append(ip_or_domain)
+        
         if "---" in remark:
             _, custom = remark.split("---", 1)
             new_remark = f"Server {idx} {flag}--- {custom.strip()}"
         else:
             new_remark = f"Server {idx} {flag}"
         updated_servers.append(f"{base_url}#{new_remark}")
-        time.sleep(0.1)
+        
+        # Rate limiting: ipinfo.io allows 40k/month, so we can be faster
+        # But still be safe to avoid hitting limits
+        time.sleep(0.5)  # Reduced delay since ipinfo.io has better limits
+    
+    if failed_flags > 0:
+        try:
+            failed_info = f" (examples: {', '.join(failed_ips[:3])})" if failed_ips else ""
+            print(f"⚠️ Could not add flags to {failed_flags} servers (IP lookup failed){failed_info}")
+            print(f"   Possible reasons: API rate limit, network timeout, or invalid domain/IP")
+        except UnicodeEncodeError:
+            print(f"Warning: Could not add flags to {failed_flags} servers (IP lookup failed)")
+    
     return updated_servers
 
 # === Enhanced User Management Functions ===
