@@ -16,8 +16,10 @@ from difflib import Differ
 # === Server Remark and Flag Functions ===
 
 def extract_ip_from_server(server_line):
+    """Extract IP address or hostname from server URL.
+    Supports: vless, vmess, trojan, ss, hysteria, hysteria2"""
     try:
-        if server_line.startswith(('vless://', 'trojan://')):
+        if server_line.startswith(('vless://', 'trojan://', 'hysteria://', 'hysteria2://')):
             parsed = urlparse(server_line.split('#')[0])
             return parsed.hostname
         elif server_line.startswith('vmess://'):
@@ -1133,11 +1135,13 @@ def normalize_vmess_url(server_line):
         return server_line
 
 def extract_server_config(server_line):
+    """Extract normalized server config for duplicate detection.
+    Supports: vless, vmess, trojan, ss, hysteria, hysteria2"""
     try:
         server_line = server_line.strip()
         if server_line.startswith('vmess://'):
             return normalize_vmess_url(server_line)
-        elif server_line.startswith(('vless://', 'trojan://', 'ss://')):
+        elif server_line.startswith(('vless://', 'trojan://', 'ss://', 'hysteria://', 'hysteria2://')):
             url_part = server_line.split('#')[0]
             parsed = urlparse(url_part)
             scheme = parsed.scheme.lower()
@@ -1567,6 +1571,8 @@ def is_fake_server(server_line):
     return False
 
 def validate_server(server_line):
+    """Validate server connectivity by testing TCP connection.
+    Supports: vless, vmess, trojan, ss, hysteria, hysteria2"""
     try:
         hostname = None
         port = None
@@ -1586,6 +1592,11 @@ def validate_server(server_line):
             hostname = parsed.hostname
             port = parsed.port or 8388
         elif server_line.startswith('trojan://'):
+            url_part = server_line.split('#')[0]
+            parsed = urlparse(url_part)
+            hostname = parsed.hostname
+            port = parsed.port or 443
+        elif server_line.startswith(('hysteria://', 'hysteria2://')):
             url_part = server_line.split('#')[0]
             parsed = urlparse(url_part)
             hostname = parsed.hostname
