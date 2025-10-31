@@ -1,17 +1,17 @@
 {
   "usernames": [
+    "customer",
     "customer2",
     "filanor",
     "test",
-    "customer",
     "customer1"
   ],
   "lines": {
+    "customer": "customer #406",
     "customer2": "customer2 #404.8.9",
     "filanor": "filanor",
     "test": "test #404",
-    "customer": "🚫customer #406 | blocked 2025-10-31",
     "customer1": "customer1 #587guuj"
   },
-  "timestamp": "2025-10-31 06:06"
+  "timestamp": "2025-10-31 06:09"
 }
