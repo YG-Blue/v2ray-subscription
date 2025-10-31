@@ -1080,6 +1080,7 @@ def extract_server_config(server_line):
 
 NON_WORKING_FILE = 'non_working.txt'
 MAIN_FILE = 'servers.txt'
+CONTROL_PANEL_FILE = 'control_panel.txt'
 HISTORY_FILE = 'server_history.txt'
 USER_HISTORY_FILE = 'user_history.txt'
 QUARANTINE_DAYS = 3
@@ -1088,113 +1089,6 @@ BACKUP_DAYS = 7  # Keep backups for 7 days
 SERVER_HISTORY_DAYS = 7  # Keep server history for 7 days
 # Timeout (seconds) for TCP health-check
 VALIDATION_TIMEOUT = 3
-
-# Control panel file allows selecting which server file to use for subscriptions.
-CONTROL_PANEL_FILE = 'control_panel.txt'
-
-# Use a leading tick emoji to mark active entry in control_panel.txt
-ACTIVE_MARK = '✅'
-
-
-def load_control_panel():
-    """Return list of control panel lines (each entry as the raw line)."""
-    if not os.path.exists(CONTROL_PANEL_FILE):
-        return []
-    with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
-        return [ln.rstrip() for ln in f if ln.strip()]
-
-
-def get_active_server_file_from_control():
-    """Return the active filename from control_panel (or None).
-    New format: active line starts with the tick emoji optionally followed by a space.
-    e.g. "✅ servers.txt" or "✅servers.txt"
-    Also handles the ---on flag, e.g. "✅ servers.txt ---on" or "servers1.txt ---on"
-    """
-    ON_FLAG = '---on'
-    entries = load_control_panel()
-    
-    print(f"Control panel entries: {entries}")
-    
-    # First check for any entry with ---on flag (prioritize this over active mark)
-    for e in entries:
-        stripped = e.lstrip()
-        if ON_FLAG in stripped:
-            # Get the base name without the flag
-            base = stripped.replace(ON_FLAG, '').strip()
-            # Remove the active mark if present
-            if base.startswith(ACTIVE_MARK):
-                base = base[len(ACTIVE_MARK):].lstrip()
-            print(f"🔄 Using server file with ON flag: {base}")
-            return base
-    
-    # If no ---on flag found, use the active entry
-    for e in entries:
-        stripped = e.lstrip()
-        if stripped.startswith(ACTIVE_MARK):
-            # remove mark and any following space
-            rest = stripped[len(ACTIVE_MARK):].lstrip()
-            # Remove the ---on flag if present (should not happen in this branch but just in case)
-            if ON_FLAG in rest:
-                rest = rest.replace(ON_FLAG, '').strip()
-            print(f"✅ Using active server file: {rest}")
-            return rest
-    
-    return None
-
-
-def ensure_single_active():
-    """Ensure only one entry has the active mark. Keep the first found active and
-    remove the mark from any others. Returns the active filename or None.
-    """
-    entries = load_control_panel()
-    if not entries:
-        return None
-    active_found = None
-    cleaned = []
-    changed = False
-    for e in entries:
-        stripped = e.lstrip()
-        if stripped.startswith(ACTIVE_MARK):
-            rest = stripped[len(ACTIVE_MARK):].lstrip()
-            if active_found is None:
-                active_found = rest
-                cleaned.append(f"{ACTIVE_MARK} {rest}")
-            else:
-                cleaned.append(rest)
-                changed = True
-        else:
-            cleaned.append(stripped)
-
-    if changed:
-        with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
-            for line in cleaned:
-                f.write(line + '\n')
-
-    return active_found
-
-
-def set_active_control_file(filename):
-    """Set the given filename as the single active entry in control_panel.txt.
-    Writes the active entry with a leading tick and leaves other entries plain.
-    If filename isn't present it is appended.
-    Returns the filename set as active.
-    """
-    if not filename:
-        return None
-    fname = filename.strip()
-    entries = load_control_panel()
-    names = [e.lstrip().lstrip(ACTIVE_MARK).strip() for e in entries]
-    if fname not in names:
-        names.append(fname)
-
-    with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
-        for n in names:
-            if n == fname:
-                f.write(f"{ACTIVE_MARK} {n}\n")
-            else:
-                f.write(f"{n}\n")
-    return fname
-
 
 # Fast-run flag: when set, the script skips heavy maintenance (health-checks, flag decoration, etc.)
 FAST_RUN = os.getenv("FAST_RUN", "0") == "1"
@@ -1316,32 +1210,6 @@ def remove_duplicates(servers):
             unique_servers.append(server.strip())
     return unique_servers
 
-
-def parse_flags_from_line(line):
-    """Return a set of flags present in the server line.
-    Flags are expected after a '---' marker anywhere on the line.
-    Example: "vmess://...#Remark ---skip ---nw" -> {'skip','nw'}
-    Also supports direct '... ---skip' without '#'.
-    """
-    flags = set()
-    if not line:
-        return flags
-    try:
-        if '---' in line:
-            after = line.split('---', 1)[1]
-            # split by whitespace and strip leading dashes
-            for token in after.split():
-                tok = token.strip()
-                if not tok:
-                    continue
-                # remove any leading dashes if present
-                tok = tok.lstrip('-')
-                # lowercase for normalization
-                flags.add(tok.lower())
-    except Exception:
-        pass
-    return flags
-
 def parse_non_working_line(line):
     try:
         server, date_str = line.rsplit('|', 1)
@@ -1352,47 +1220,115 @@ def parse_non_working_line(line):
     except Exception:
         return None, None
 
-def load_main_servers():
-    # If a control panel exists, prefer the active file specified there.
-    active = None
-    if os.path.exists(CONTROL_PANEL_FILE):
-        # Ensure only one active marker exists and get the active filename
-        active = ensure_single_active() or get_active_server_file_from_control()
+# === Control Panel Functions ===
 
-    # Resolve path to use
-    if active:
-        # try exact path first
-        candidate = active
-        if not os.path.exists(candidate):
-            # try with .txt suffix
-            if not candidate.endswith('.txt') and os.path.exists(candidate + '.txt'):
-                candidate = candidate + '.txt'
+def get_active_server_file():
+    """Read control_panel.txt and return the active server file name."""
+    if not os.path.exists(CONTROL_PANEL_FILE):
+        # Default to servers.txt if control_panel.txt doesn't exist
+        return MAIN_FILE
+    
+    with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
+        lines = [line.strip() for line in f if line.strip()]
+    
+    for line in lines:
+        if '---on' in line.lower():
+            # Extract server file name (remove ---on and any whitespace)
+            server_file = line.replace('---on', '').replace('---ON', '').strip()
+            # Remove tick emoji if present
+            server_file = server_file.replace('✓', '').strip()
+            if server_file:
+                return server_file
+    
+    # If no active server found, default to servers.txt
+    return MAIN_FILE
+
+def process_control_panel():
+    """Process control_panel.txt to handle ---on commands and ensure only one server is active."""
+    if not os.path.exists(CONTROL_PANEL_FILE):
+        # Create default control_panel.txt with servers.txt active
+        with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
+            f.write(f"{MAIN_FILE} ---on ✓\n")
+        return
+    
+    with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
+        lines = [line.strip() for line in f if line.strip()]
+    
+    active_found = False
+    updated_lines = []
+    any_changes = False
+    
+    for line in lines:
+        # Remove any existing tick emoji and ---on markers to get clean server name
+        clean_line = line.replace('✓', '').replace('---on', '').replace('---ON', '').strip()
+        
+        # Check if this line has ---on marker (case insensitive)
+        has_on_marker = '---on' in line.lower()
+        
+        if has_on_marker:
+            if not active_found:
+                # This is the first active server found - keep it active
+                correct_line = f"{clean_line} ---on ✓"
+                if line != correct_line:
+                    any_changes = True
+                updated_lines.append(correct_line)
+                active_found = True
             else:
-                candidate = MAIN_FILE
-    else:
-        candidate = MAIN_FILE
+                # Another active server found - deactivate it (remove ---on)
+                if clean_line != line.replace('✓', '').strip():
+                    any_changes = True
+                updated_lines.append(clean_line)
+        else:
+            # No ---on marker, keep as inactive
+            updated_lines.append(clean_line)
+    
+    # If no active server was found, activate the first one
+    if not active_found and updated_lines:
+        updated_lines[0] = f"{updated_lines[0]} ---on ✓"
+        any_changes = True
+    
+    # If there are no lines, create default
+    if not updated_lines:
+        updated_lines.append(f"{MAIN_FILE} ---on ✓")
+        any_changes = True
+    
+    # Always write back to ensure tick emoji is displayed correctly
+    with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
+        for line in updated_lines:
+            f.write(line + '\n')
+    
+    if any_changes:
+        active_file = get_active_server_file()
+        try:
+            print(f"✓ Control panel updated: {active_file} is now active")
+        except UnicodeEncodeError:
+            print(f"Control panel updated: {active_file} is now active")
 
-    if not os.path.exists(candidate):
+def load_main_servers():
+    """Load servers from the active server file specified in control_panel.txt."""
+    # Get the active server file
+    active_file = get_active_server_file()
+    
+    if not os.path.exists(active_file):
+        print(f"⚠️ Active server file {active_file} not found, using default {MAIN_FILE}")
+        active_file = MAIN_FILE
+    
+    if not os.path.exists(active_file):
         return []
-    with open(candidate, 'r', encoding='utf-8') as f:
-        return [line.strip() for line in f if line.strip()]
+    
+    with open(active_file, 'r', encoding='utf-8') as f:
+        servers = [line.strip() for line in f if line.strip()]
+    
+    try:
+        print(f"📡 Loading servers from: {active_file} ({len(servers)} servers)")
+    except UnicodeEncodeError:
+        print(f"Loading servers from: {active_file} ({len(servers)} servers)")
+    return servers
 
 def save_main_servers(servers):
-    """Save servers to the currently active server file (from control_panel) if present,
-    otherwise fall back to MAIN_FILE.
-    """
-    target = MAIN_FILE
-    try:
-        # prefer control panel active file if available
-        if os.path.exists(CONTROL_PANEL_FILE):
-            active = get_active_server_file_from_control() or ensure_single_active()
-            if active:
-                # if user provided a filename without .txt, respect it as-is
-                target = active
-    except Exception:
-        target = MAIN_FILE
-
-    with open(target, 'w', encoding='utf-8') as f:
+    """Save servers to the active server file specified in control_panel.txt."""
+    active_file = get_active_server_file()
+    with open(active_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(servers) + '\n')
 
 def load_non_working():
@@ -1435,14 +1371,12 @@ def move_server_to_non_working(server_line):
         log_history(server_line, "moved_to_non_working")
 
 def move_server_to_main(server_line):
-    # Load the current active/main servers, avoid duplicates by normalized config
     main_servers = load_main_servers()
     normalized_new = extract_server_config(server_line)
     for existing in main_servers:
         if extract_server_config(existing) == normalized_new:
             return
     main_servers.append(server_line)
-    # Persist back to the active server file (save_main_servers chooses active file)
     save_main_servers(main_servers)
     log_history(server_line, "moved_to_main")
 
@@ -1662,6 +1596,9 @@ def backup_user(username):
 def update_all_subscriptions():
     """Main entry-point. Behaviour depends on FAST_RUN flag."""
 
+    # Process control panel first to determine which server file is active
+    process_control_panel()
+
     # Always make a backup of user_list before starting
     if os.path.exists(USER_LIST_FILE):
         backup_user_list()
@@ -1673,18 +1610,6 @@ def update_all_subscriptions():
     # Process any commands written directly inside blocked_users.txt
     process_blocked_users_commands()
     check_expired_users()
-
-    # Inform about which server file is currently active (from control panel)
-    try:
-        active_cp = None
-        if os.path.exists(CONTROL_PANEL_FILE):
-            active_cp = get_active_server_file_from_control() or ensure_single_active()
-        if active_cp:
-            print(f"Active server file: ✅ {active_cp}")
-        else:
-            print(f"Active server file: ✅ {MAIN_FILE} (default)")
-    except Exception:
-        pass
 
     if not FAST_RUN:
         # Heavy maintenance tasks (hourly / scheduled)
@@ -1720,48 +1645,6 @@ def update_all_subscriptions():
         # Update remarks & remove duplicates (these are network-bound/CPU heavy)
         all_servers = update_server_remarks(valid_servers)
         unique_servers = remove_duplicates(all_servers)
-
-        # Respect per-line flags present in the active server file.
-        # If a server line in the active file contains '---skip' or '---nw'/'---nonworking'
-        # then exclude it from the final list. We map normalized configs to flags
-        # by reading the active server file directly.
-        try:
-            active_file = None
-            if os.path.exists(CONTROL_PANEL_FILE):
-                active_file = get_active_server_file_from_control() or ensure_single_active()
-            if not active_file:
-                active_file = MAIN_FILE
-            # resolve .txt suffix
-            if not os.path.exists(active_file) and os.path.exists(active_file + '.txt'):
-                active_file = active_file + '.txt'
-
-            flags_map = {}
-            if os.path.exists(active_file):
-                with open(active_file, 'r', encoding='utf-8') as f:
-                    for ln in f:
-                        ln = ln.strip()
-                        if not ln:
-                            continue
-                        key = extract_server_config(ln)
-                        flags_map[key] = parse_flags_from_line(ln)
-
-            filtered = []
-            for s in unique_servers:
-                key = extract_server_config(s)
-                flags = flags_map.get(key, set())
-                if 'skip' in flags or 'nw' in flags or 'nonworking' in flags:
-                    # move flagged non-working servers to quarantine
-                    if 'nw' in flags or 'nonworking' in flags:
-                        move_server_to_non_working(s)
-                    # skip inclusion
-                    continue
-                filtered.append(s)
-
-            unique_servers = filtered
-        except Exception:
-            # if anything goes wrong, fall back to unfiltered list
-            pass
-
         save_main_servers(unique_servers)
     else:
         # FAST_RUN → skip all heavy work, use current list as-is
@@ -1786,14 +1669,4 @@ def update_all_subscriptions():
             f.write(encoded_content)
 
 if __name__ == "__main__":
-    # Enforce CI-only execution by default. This prevents accidental local runs
-    # when you want this system to operate only inside GitHub Actions.
-    # To explicitly allow local runs for troubleshooting, set the env var RUN_LOCALLY=1
-    gh_actions = os.getenv('GITHUB_ACTIONS', '').lower()
-    run_local = os.getenv('RUN_LOCALLY', '') == '1'
-    if gh_actions != 'true' and not run_local:
-        print("This script is intended to run inside GitHub Actions only.\n" \
-              "If you really need to run locally for debugging, set RUN_LOCALLY=1 in the environment.")
-        raise SystemExit(1)
-
     update_all_subscriptions()
