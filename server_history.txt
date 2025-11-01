@@ -1,3 +1,6 @@
+vless://cd79807f-bcef-46b8-93b6-229676a0c1a0@64.188.70.0:443?security=tls&sni=google.com#Server 149 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-02 00:49
+vless://cd79807f-bcef-46b8-93b6-229676a0c1a0@64.188.70.0:443?security=tls&sni=google.com#Server 149 🇩🇪 | moved_to_main(servers.txt) | 2025-11-02 00:49
+vless://32e1310b-e0a6-4333-a69e-86b0e815c6ba@www.rexo.online:49796?type=grpc&encryption=none&serviceName=rexo.rexo.online&authority=rexo.rexo.online&security=none#Server 39 🇵🇱 | removed_after_3_days | 2025-11-02 00:49
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 162 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-01 23:53
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 157 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-01 23:53
 vless://cd79807f-bcef-46b8-93b6-229676a0c1a0@64.188.70.0:443?security=tls&sni=google.com#Server 149 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-01 23:53

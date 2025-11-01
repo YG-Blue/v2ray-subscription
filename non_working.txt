@@ -1,6 +1,5 @@
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 162 🇩🇪 | servers.txt | 2025-11-01 23:53
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 157 🇩🇪 | servers.txt | 2025-11-01 23:53
-vless://cd79807f-bcef-46b8-93b6-229676a0c1a0@64.188.70.0:443?security=tls&sni=google.com#Server 149 🇩🇪 | servers.txt | 2025-11-01 23:53
 vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 163 🇩🇪 | servers.txt | 2025-10-31 20:53
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638927678654211750.rasht-drc-tusabn.info:8880?encryption=none&security=none&type=grpc#Server 183 | 2025-10-31 04:10
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.242.87.213:8880?type=grpc#Server 182 | 2025-10-31 04:10
@@ -41,4 +40,3 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@195.42.233.146:8880?mode=gun&securi
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@85.208.110.183:8880?type=grpc#Server 25 🇳🇱 | 2025-10-30 14:51
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.242.87.195:8880?type=grpc#Server 14 🇫🇷 | 2025-10-30 14:51
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@194.4.49.16:8880?type=grpc#Server 10 🇫🇷 | 2025-10-30 14:51
-vless://32e1310b-e0a6-4333-a69e-86b0e815c6ba@www.rexo.online:49796?type=grpc&encryption=none&serviceName=rexo.rexo.online&authority=rexo.rexo.online&security=none#Server 39 🇵🇱 | 2025-10-29 23:54
