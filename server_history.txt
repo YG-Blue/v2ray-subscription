@@ -1,3 +1,9 @@
+vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 159 🇺🇸 | moved_to_non_working(from:servers.txt) | 2025-11-02 22:00
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 154 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-02 22:00
+vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 156 🇱🇻 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-02 22:00
+vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 156 🇱🇻 | moved_to_main(servers.txt) | 2025-11-02 22:00
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 149 🇷🇺 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-02 22:00
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 149 🇷🇺 | moved_to_main(servers.txt) | 2025-11-02 22:00
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 149 🇷🇺 | moved_to_non_working(from:servers.txt) | 2025-11-02 20:49
 vless://fe7d9497-c04b-4462-900d-333abc79a90f@46.250.237.164:55076?encryption=none&security=none&type=tcp&headerType=none#Server 109 🇸🇬 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-02 20:49
 vless://fe7d9497-c04b-4462-900d-333abc79a90f@46.250.237.164:55076?encryption=none&security=none&type=tcp&headerType=none#Server 109 🇸🇬 | moved_to_main(servers.txt) | 2025-11-02 20:49
