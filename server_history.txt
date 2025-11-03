@@ -1,3 +1,7 @@
+vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 157 🇺🇸 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-03 08:56
+vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 157 🇺🇸 | moved_to_main(servers.txt) | 2025-11-03 08:56
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&type=grpc#Server 159 🇫🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-03 08:56
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&type=grpc#Server 159 🇫🇷 | moved_to_main(servers.txt) | 2025-11-03 08:56
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 164 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-03 08:03
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 163 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-03 08:03
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&type=grpc#Server 159 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-03 08:03

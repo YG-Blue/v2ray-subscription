@@ -1,6 +1,4 @@
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 164 🇩🇪 | servers.txt | 2025-11-03 08:03
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 163 🇩🇪 | servers.txt | 2025-11-03 08:03
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&type=grpc#Server 159 🇫🇷 | servers.txt | 2025-11-03 08:03
-vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 157 🇺🇸 | servers.txt | 2025-11-03 08:03
 vless://c2ec47f4-873f-573f-7d8d-d79d7ad452e6@85.90.197.100:9956?encryption=none&flow=xtls-rprx-vision&security=reality&sni=store.steampowered.com&fp=chrome&pbk=YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E&type=tcp&headerType=none#Server 94 🇬🇷 | servers.txt | 2025-11-03 05:33
 vless://81e9e522-2efd-4709-996d-74e46f4edaf8@213.176.94.129:443?encryption=none&security=reality&sni=www.amazon.com&fp=chrome&pbk=flIlSQ8NWZl0ofim794-EaQhz2OnH1hN7imrQAPheRY&sid=53ba1e37&type=tcp&headerType=none#Server 163 🇩🇪 | servers.txt | 2025-10-31 20:53
