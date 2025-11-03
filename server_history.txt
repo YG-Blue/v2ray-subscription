@@ -1,3 +1,11 @@
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 163 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-03 10:09
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 164 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-03 10:09
+vless://baf95082-c6b6-424a-a22a-9a2843915679@104.238.167.168:443?encryption=none&security=reality&sni=hdfyrplc1.freeairlians.com&fp=chrome&pbk=AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k&type=tcp&headerType=none#Server 159 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-03 10:09
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 157 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-03 10:09
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 163 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-03 10:08
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 163 🇩🇪 | moved_to_main(servers.txt) | 2025-11-03 10:08
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 164 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-03 10:08
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 164 🇩🇪 | moved_to_main(servers.txt) | 2025-11-03 10:08
 vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 157 🇺🇸 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-03 08:56
 vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 157 🇺🇸 | moved_to_main(servers.txt) | 2025-11-03 08:56
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&type=grpc#Server 159 🇫🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-03 08:56
