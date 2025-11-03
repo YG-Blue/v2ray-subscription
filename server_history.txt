@@ -1,3 +1,9 @@
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 154 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-04 01:54
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 155 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-04 01:54
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 154 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-04 01:54
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 154 🇩🇪 | moved_to_main(servers.txt) | 2025-11-04 01:54
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 155 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-04 01:54
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 155 🇩🇪 | moved_to_main(servers.txt) | 2025-11-04 01:54
 vless://cb6e6e21-7bc1-4de6-b961-a78893935436@193.233.19.242:6060?encryption=none&security=tls&sni=book.smnsoft.com&alpn=h2%2Chttp%2F1.1&fp=chrome&type=tcp&headerType=none#Server 87 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-11-04 00:52
 vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 150 🇺🇸 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-03 23:58
 vless://f31f5fe0-0a42-436a-be94-437330801388@us.nitroo-tech.ru:443?security=tls&flow=xtls-rprx-vision&sni=mirror.yandex.ru#Server 150 🇺🇸 | moved_to_main(servers.txt) | 2025-11-03 23:58
