@@ -1403,7 +1403,7 @@ def fetch_subscription_url(url):
 def load_subscription_urls():
     """Extract subscription URLs from control_panel.txt.
     Looks for lines starting with #SUBSCRIPTION: or plain https:// URLs.
-    Returns list of tuples: (url, use_only_external) where use_only_external is True if ---on or ---only flag is present."""
+    Returns list of tuples: (url, use_only_external) where use_only_external is True if tick (✓), ---on, or ---only flag is present."""
     if not os.path.exists(CONTROL_PANEL_FILE):
         return []
     
@@ -1419,27 +1419,31 @@ def load_subscription_urls():
                 continue
             
             # Check for #SUBSCRIPTION marker (case-insensitive, with or without colon)
-            line_lower = line.lower()
+            # Also check if line has tick (✓) which indicates emergency mode
+            has_tick = line.startswith('✓')
+            clean_line = line.replace('✓', '').strip() if has_tick else line
+            line_lower = clean_line.lower()
+            
             if line_lower.startswith('#subscription'):
                 # Handle both #subscription: and #subscription (with or without colon)
-                if ':' in line:
+                if ':' in clean_line:
                     # Has colon: split at colon
-                    url_part = line.split(':', 1)[1].strip()
+                    url_part = clean_line.split(':', 1)[1].strip()
                 else:
                     # No colon: remove #subscription prefix (case-insensitive)
-                    url_part = re.sub(r'^#subscription\s+', '', line, flags=re.IGNORECASE).strip()
+                    url_part = re.sub(r'^#subscription\s+', '', clean_line, flags=re.IGNORECASE).strip()
                 
-                # Check for ---on or ---only flag (emergency mode: use only external)
-                use_only_external = '---on' in url_part.lower() or '---only' in url_part.lower()
+                # Check for ---on or ---only flag OR tick (emergency mode: use only external)
+                use_only_external = has_tick or '---on' in url_part.lower() or '---only' in url_part.lower()
                 # Remove flags from URL
                 url = url_part.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
                 if url.startswith('http'):
                     urls.append((url, use_only_external))
             # Check for plain https:// URLs (comments or standalone)
-            elif line.startswith('https://'):
-                # Check for ---on or ---only flag
-                use_only_external = '---on' in line.lower() or '---only' in line.lower()
-                url = line.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
+            elif clean_line.startswith('https://'):
+                # Check for ---on or ---only flag OR tick
+                use_only_external = has_tick or '---on' in clean_line.lower() or '---only' in clean_line.lower()
+                url = clean_line.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
                 urls.append((url, use_only_external))
     
     return urls
@@ -1557,8 +1561,26 @@ def process_control_panel():
     
     # Second pass: build the output lines
     for line in lines:
-        # Preserve subscription URLs and comments as-is
-        if line.startswith('#') or line.startswith('https://'):
+        # Process subscription URLs (add tick if ---on/---only, remove flag)
+        line_lower = line.lower()
+        is_subscription = line_lower.startswith('#subscription') or (line.startswith('https://') and ('---on' in line_lower or '---only' in line_lower))
+        
+        if is_subscription:
+            # Check if subscription has ---on or ---only flag
+            if '---on' in line_lower or '---only' in line_lower:
+                # Remove flag and add tick
+                clean_line = line.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
+                formatted_subscription = f"✓ {clean_line}"
+                subscription_lines.append(formatted_subscription)
+                any_changes = True
+            else:
+                # No flag, preserve as-is (but remove tick if present to avoid duplicates)
+                clean_line = line.replace('✓', '').strip()
+                subscription_lines.append(clean_line)
+            continue
+        
+        # Skip other comments (non-subscription)
+        if line.startswith('#'):
             subscription_lines.append(line)
             continue
         
