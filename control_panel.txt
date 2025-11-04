@@ -1,2 +1,2 @@
-✓ servers.txt
-servers1.txt ---on
+servers.txt
+✓ servers1.txt
