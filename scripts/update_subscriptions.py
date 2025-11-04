@@ -1415,7 +1415,8 @@ def load_subscription_urls():
                 continue
             
             # Skip server file lines (they might have ---l or ---on)
-            if not line.startswith('#') and not line.startswith('https://'):
+            # Also allow lines starting with tick (✓) which might be subscriptions
+            if not line.startswith('#') and not line.startswith('https://') and not line.startswith('✓'):
                 continue
             
             # Check for #SUBSCRIPTION marker (case-insensitive, with or without colon)
