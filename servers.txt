@@ -66,7 +66,7 @@ vless://a6667667-1bc2-41a5-a073-049fc160cb32@che-0001-xr.packet-drop-society.net
 vless://a6667667-1bc2-41a5-a073-049fc160cb32@usa-0001-xr.packet-drop-society.net:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=hls-svod.itunes.apple.com&fp=chrome&pbk=llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws&sid=48720c&type=tcp&headerType=none#Server 66 🇺🇸
 vless://b160cc4a-89f5-4279-9007-a4c84a13a175@deu-0001-xr.packet-drop-society.net:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=hls-svod.itunes.apple.com&fp=chrome&pbk=llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws&sid=48720c&type=tcp&headerType=none#Server 67 🇩🇪
 vless://739b7052-1e58-444d-b068-6cdbbe487663@188.114.97.3:443?encryption=none&security=tls&sni=dfb32af2.panlo-escobar0099269.pages.dev&fp=randomized&type=ws&host=dfb32af2.panlo-escobar0099269.pages.dev&path=%2Fd7uhd7igkjutf9hl%3Fed%3D2560#Server 68 🇺🇸
-vless://422af888-aaec-469e-8e4e-59a9429e7dd0@tgju.org:80?encryption=none&security=none&type=ws&host=MElODIc-eDuCAtiOn.ONEeaT.co&path=%2F%3Fed%3D2048#Server 69 🇺🇸
+vless://422af888-aaec-469e-8e4e-59a9429e7dd0@tgju.org:80?encryption=none&security=none&type=ws&host=MElODIc-eDuCAtiOn.ONEeaT.co&path=%2F%3Fed%3D2048#Server 69 🇨🇦
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.166:443#Server 70 🇳🇱
 trojan://bpb-trojan@172.67.180.227:443?security=tls&sni=mashdt.pages.dev&alpn=h3&fp=randomized&type=ws&host=mashdt.pages.dev&path=%2Ftr%3Fed%3D2560#Server 71 🇺🇸
 trojan://NISHIKUITAN111@172.64.156.42:443?security=tls&sni=172.64.156.42&allowInsecure=1&type=tcp&headerType=none#Server 72 🇺🇸
