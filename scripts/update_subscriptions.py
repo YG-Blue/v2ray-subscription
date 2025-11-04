@@ -1418,9 +1418,17 @@ def load_subscription_urls():
             if not line.startswith('#') and not line.startswith('https://'):
                 continue
             
-            # Check for #SUBSCRIPTION: marker (case-insensitive)
-            if line.lower().startswith('#subscription:'):
-                url_part = line.split(':', 1)[1].strip() if ':' in line else line.replace('#SUBSCRIPTION:', '').replace('#subscription:', '').strip()
+            # Check for #SUBSCRIPTION marker (case-insensitive, with or without colon)
+            line_lower = line.lower()
+            if line_lower.startswith('#subscription'):
+                # Handle both #subscription: and #subscription (with or without colon)
+                if ':' in line:
+                    # Has colon: split at colon
+                    url_part = line.split(':', 1)[1].strip()
+                else:
+                    # No colon: remove #subscription prefix (case-insensitive)
+                    url_part = re.sub(r'^#subscription\s+', '', line, flags=re.IGNORECASE).strip()
+                
                 # Check for ---on or ---only flag (emergency mode: use only external)
                 use_only_external = '---on' in url_part.lower() or '---only' in url_part.lower()
                 # Remove flags from URL
