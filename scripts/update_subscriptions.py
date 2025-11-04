@@ -1356,6 +1356,116 @@ def parse_non_working_line(line):
 
 # === Control Panel Functions ===
 
+def fetch_subscription_url(url):
+    """Fetch and decode Base64 V2Ray subscription content from a URL.
+    Returns list of server URLs, empty list on failure."""
+    try:
+        response = requests.get(url, timeout=30)
+        if response.status_code != 200:
+            try:
+                print(f"Failed to fetch subscription: {url} (HTTP {response.status_code})")
+            except UnicodeEncodeError:
+                print(f"Failed to fetch subscription: {url} (HTTP {response.status_code})")
+            return []
+        
+        # Decode Base64 content
+        try:
+            decoded = base64.b64decode(response.text.strip()).decode('utf-8')
+        except Exception:
+            # Try direct content if not Base64
+            decoded = response.text.strip()
+        
+        # Split by lines and filter out comments/empty lines
+        servers = []
+        for line in decoded.split('\n'):
+            line = line.strip()
+            if not line:
+                continue
+            # Skip comment lines
+            if line.startswith('#'):
+                continue
+            # Only include valid server URLs
+            if line.startswith(('vless://', 'vmess://', 'trojan://', 'ss://', 'hysteria://', 'hysteria2://')):
+                servers.append(line)
+        
+        try:
+            print(f"Fetched {len(servers)} servers from external subscription: {url}")
+        except UnicodeEncodeError:
+            print(f"Fetched {len(servers)} servers from external subscription: {url}")
+        return servers
+    except Exception as e:
+        try:
+            print(f"Error fetching subscription {url}: {str(e)}")
+        except UnicodeEncodeError:
+            print(f"Error fetching subscription {url}: {str(e)}")
+        return []
+
+def load_subscription_urls():
+    """Extract subscription URLs from control_panel.txt.
+    Looks for lines starting with #SUBSCRIPTION: or plain https:// URLs.
+    Returns list of URLs."""
+    if not os.path.exists(CONTROL_PANEL_FILE):
+        return []
+    
+    urls = []
+    with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            
+            # Skip server file lines (they might have ---l or ---on)
+            if not line.startswith('#') and not line.startswith('https://'):
+                continue
+            
+            # Check for #SUBSCRIPTION: marker
+            if line.startswith('#SUBSCRIPTION:'):
+                url = line.replace('#SUBSCRIPTION:', '').strip()
+                if url.startswith('http'):
+                    urls.append(url)
+            # Check for plain https:// URLs (comments or standalone)
+            elif line.startswith('https://'):
+                urls.append(line)
+    
+    return urls
+
+def extract_server_file_from_line(line):
+    """Extract server file name from a control_panel.txt line.
+    Handles formats: '✓ servers.txt', 'servers.txt ---l 200', 'servers.txt ---on', etc.
+    Returns (server_file, limit) where limit is None if not specified or invalid.
+    Note: ---l uses lowercase letter L, not uppercase L or number 1."""
+    # Remove tick and ---on markers
+    clean_line = line.replace('✓', '').replace('---on', '').replace('---ON', '').strip()
+    
+    # Check for ---l limit (lowercase letter L only, NOT uppercase L or number 1)
+    limit_match = re.search(r'---l\s+(\d+)', clean_line)
+    if limit_match:
+        # Extract server file name (everything before ---l)
+        server_file = clean_line[:limit_match.start()].strip()
+        limit = int(limit_match.group(1))
+        if limit > 0:
+            return server_file, limit
+    
+    return clean_line, None
+
+def get_server_limit(server_file):
+    """Get the server limit for a specific server file from control_panel.txt.
+    Returns limit (int) if set and valid, None otherwise."""
+    if not os.path.exists(CONTROL_PANEL_FILE):
+        return None
+    
+    with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            
+            extracted_file, limit = extract_server_file_from_line(line)
+            if extracted_file == server_file and limit is not None:
+                return limit
+    
+    return None
+
 def get_active_server_file():
     """Read control_panel.txt and return the active server file name."""
     if not os.path.exists(CONTROL_PANEL_FILE):
@@ -1366,16 +1476,18 @@ def get_active_server_file():
         lines = [line.strip() for line in f if line.strip()]
     
     for line in lines:
+        # Skip subscription URLs and comments
+        if line.startswith('#') or line.startswith('https://'):
+            continue
+        
         # Check if line starts with tick emoji (active server)
         if line.startswith('✓'):
-            # Extract server file name (remove tick and any whitespace)
-            server_file = line.replace('✓', '').strip()
+            server_file, _ = extract_server_file_from_line(line)
             if server_file:
                 return server_file
         # Also check for ---on marker (backward compatibility)
         elif '---on' in line.lower():
-            # Extract server file name (remove ---on and any whitespace)
-            server_file = line.replace('---on', '').replace('---ON', '').replace('✓', '').strip()
+            server_file, _ = extract_server_file_from_line(line)
             if server_file:
                 return server_file
     
@@ -1385,6 +1497,7 @@ def get_active_server_file():
 def process_control_panel():
     """Process control_panel.txt to handle ---on commands and ensure only one server is active.
     Format: ✓ servers.txt (tick at beginning, ---on command is hidden after processing)
+    Preserves subscription URLs (#SUBSCRIPTION: or https://) and ---l limits.
     """
     if not os.path.exists(CONTROL_PANEL_FILE):
         # Create default control_panel.txt with servers.txt active
@@ -1395,21 +1508,26 @@ def process_control_panel():
     with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
         lines = [line.strip() for line in f if line.strip()]
     
-    # Track seen server files to prevent duplicates
+    # Track seen server files (without limits) to prevent duplicates
     seen_servers = set()
-    active_server = None  # Track which server should be active
+    active_server = None  # Track which server should be active (file name only, no limit)
     updated_lines = []
+    subscription_lines = []  # Preserve subscription URLs
     any_changes = False
     
     # First pass: identify which server should be active (prioritize ---on over existing ticks)
     for line in lines:
-        clean_line = line.replace('✓', '').replace('---on', '').replace('---ON', '').strip()
-        if not clean_line:
+        # Skip subscription URLs and comments - preserve them
+        if line.startswith('#') or line.startswith('https://'):
+            continue
+        
+        server_file, _ = extract_server_file_from_line(line)
+        if not server_file:
             continue
         
         # If this line has ---on marker, this is the server user wants to activate
         if '---on' in line.lower():
-            active_server = clean_line
+            active_server = server_file
             any_changes = True
             break  # ---on takes priority, stop searching
     
@@ -1417,55 +1535,79 @@ def process_control_panel():
     if active_server is None:
         for line in lines:
             if line.startswith('✓'):
-                clean_line = line.replace('✓', '').strip()
-                if clean_line:
-                    active_server = clean_line
+                server_file, _ = extract_server_file_from_line(line)
+                if server_file:
+                    active_server = server_file
                     break
     
     # Second pass: build the output lines
     for line in lines:
-        # Remove tick emoji and ---on markers to get clean server name
-        clean_line = line.replace('✓', '').replace('---on', '').replace('---ON', '').strip()
-        
-        # Skip empty lines
-        if not clean_line:
+        # Preserve subscription URLs and comments as-is
+        if line.startswith('#') or line.startswith('https://'):
+            subscription_lines.append(line)
             continue
         
-        # Check for duplicates
-        if clean_line in seen_servers:
+        # Extract server file and limit
+        server_file, limit = extract_server_file_from_line(line)
+        
+        # Skip empty lines
+        if not server_file:
+            continue
+        
+        # Check for duplicates (by server file name, ignoring limits)
+        if server_file in seen_servers:
             any_changes = True
             continue  # Skip duplicate entries
         
-        seen_servers.add(clean_line)
+        seen_servers.add(server_file)
         
-        # Format the line: add tick if this is the active server
-        if clean_line == active_server:
-            formatted_line = f"✓ {clean_line}"
+        # Build the formatted line
+        if server_file == active_server:
+            # Active server: add tick, preserve limit if present
+            if limit is not None:
+                formatted_line = f"✓ {server_file} ---l {limit}"
+            else:
+                formatted_line = f"✓ {server_file}"
             if line != formatted_line:
                 any_changes = True
             updated_lines.append(formatted_line)
         else:
-            # Inactive server - no tick, no ---on
-            if clean_line != line:
+            # Inactive server: no tick, preserve limit if present, remove ---on
+            if limit is not None:
+                formatted_line = f"{server_file} ---l {limit}"
+            else:
+                formatted_line = server_file
+            if formatted_line != line and '---on' not in line.lower():
                 any_changes = True
-            updated_lines.append(clean_line)
+            updated_lines.append(formatted_line)
     
     # If no active server was found, activate the first one
     if active_server is None and updated_lines:
-        first_line = updated_lines[0].replace('✓', '').replace('---on', '').replace('---ON', '').strip()
-        updated_lines[0] = f"✓ {first_line}"
-        any_changes = True
-        active_server = first_line
+        first_line_parts = updated_lines[0].split()
+        if first_line_parts:
+            first_server = first_line_parts[0].replace('✓', '').strip()
+            if first_server:
+                limit_part = ''
+                # Check for ---l (lowercase letter L only, not uppercase L or number 1)
+                limit_match = re.search(r'---l\s+(\d+)', updated_lines[0])
+                if limit_match:
+                    limit_part = f" ---l {limit_match.group(1)}"
+                updated_lines[0] = f"✓ {first_server}{limit_part}"
+                any_changes = True
+                active_server = first_server
     
-    # If there are no lines, create default
+    # If there are no server lines, create default
     if not updated_lines:
         updated_lines.append(f"✓ {MAIN_FILE}")
         any_changes = True
         active_server = MAIN_FILE
     
+    # Combine server lines and subscription lines
+    final_lines = updated_lines + subscription_lines
+    
     # Always write back to ensure correct format
     with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
-        for line in updated_lines:
+        for line in final_lines:
             f.write(line + '\n')
     
     if any_changes:
@@ -1474,32 +1616,139 @@ def process_control_panel():
         except UnicodeEncodeError:
             print(f"Control panel updated: {active_server} is now active")
 
-def load_main_servers():
-    """Load servers from the active server file specified in control_panel.txt."""
+def load_local_servers():
+    """Load only local servers from the active server file specified in control_panel.txt.
+    Does NOT fetch external subscriptions."""
     # Get the active server file
     active_file = get_active_server_file()
     
-    if not os.path.exists(active_file):
-        print(f"⚠️ Active server file {active_file} not found, using default {MAIN_FILE}")
-        active_file = MAIN_FILE
+    # Load local servers
+    local_servers = []
+    if os.path.exists(active_file):
+        with open(active_file, 'r', encoding='utf-8') as f:
+            local_servers = [line.strip() for line in f if line.strip()]
+        try:
+            print(f"📡 Loading local servers from: {active_file} ({len(local_servers)} servers)")
+        except UnicodeEncodeError:
+            print(f"Loading local servers from: {active_file} ({len(local_servers)} servers)")
+    else:
+        if active_file != MAIN_FILE:
+            try:
+                print(f"⚠️ Active server file {active_file} not found, using default {MAIN_FILE}")
+            except UnicodeEncodeError:
+                print(f"Warning: Active server file {active_file} not found, using default {MAIN_FILE}")
+            active_file = MAIN_FILE
+        
+        if os.path.exists(MAIN_FILE):
+            with open(MAIN_FILE, 'r', encoding='utf-8') as f:
+                local_servers = [line.strip() for line in f if line.strip()]
     
-    if not os.path.exists(active_file):
-        return []
+    return local_servers
+
+def load_main_servers():
+    """Load servers from the active server file specified in control_panel.txt.
+    Also fetches and merges external subscription URLs from control_panel.txt.
+    Returns merged list (local + external) with duplicates removed for use in subscriptions."""
+    # Load local servers
+    local_servers = load_local_servers()
     
-    with open(active_file, 'r', encoding='utf-8') as f:
-        servers = [line.strip() for line in f if line.strip()]
+    # Fetch external subscriptions
+    subscription_urls = load_subscription_urls()
+    external_servers = []
     
-    try:
-        print(f"📡 Loading servers from: {active_file} ({len(servers)} servers)")
-    except UnicodeEncodeError:
-        print(f"Loading servers from: {active_file} ({len(servers)} servers)")
-    return servers
+    if subscription_urls:
+        try:
+            print(f"🌐 Fetching {len(subscription_urls)} external subscription(s)...")
+        except UnicodeEncodeError:
+            print(f"Fetching {len(subscription_urls)} external subscription(s)...")
+        
+        for url in subscription_urls:
+            fetched = fetch_subscription_url(url)
+            external_servers.extend(fetched)
+    
+    # Merge local and external servers
+    all_servers = local_servers + external_servers
+    
+    if external_servers:
+        try:
+            print(f"✅ Merged {len(local_servers)} local + {len(external_servers)} external = {len(all_servers)} total servers")
+        except UnicodeEncodeError:
+            print(f"[OK] Merged {len(local_servers)} local + {len(external_servers)} external = {len(all_servers)} total servers")
+    
+    # Remove duplicates to avoid having the same server from both local and external sources
+    unique_servers = remove_duplicates(all_servers)
+    
+    if len(unique_servers) < len(all_servers):
+        try:
+            print(f"🔍 Removed {len(all_servers) - len(unique_servers)} duplicate(s), {len(unique_servers)} unique servers")
+        except UnicodeEncodeError:
+            print(f"Removed {len(all_servers) - len(unique_servers)} duplicate(s), {len(unique_servers)} unique servers")
+    
+    return unique_servers
 
 def save_main_servers(servers):
-    """Save servers to the active server file specified in control_panel.txt."""
+    """Save servers to the active server file specified in control_panel.txt.
+    Applies ---l limit if specified and valid (limit <= server count).
+    If limit > server count, removes limit from control_panel.txt."""
     active_file = get_active_server_file()
+    
+    # Get limit for this server file
+    limit = get_server_limit(active_file)
+    
+    # Apply limit if valid
+    servers_to_save = servers
+    if limit is not None:
+        if limit <= len(servers):
+            servers_to_save = servers[:limit]
+            try:
+                print(f"📊 Applied limit: saving {limit} of {len(servers)} servers")
+            except UnicodeEncodeError:
+                print(f"Applied limit: saving {limit} of {len(servers)} servers")
+        else:
+            # Limit is higher than actual servers - remove limit from control panel
+            try:
+                print(f"⚠️ Limit {limit} > server count {len(servers)}, removing limit")
+            except UnicodeEncodeError:
+                print(f"Warning: Limit {limit} > server count {len(servers)}, removing limit")
+            remove_limit_from_control_panel(active_file)
+    
+    # Save servers
     with open(active_file, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(servers) + '\n')
+        f.write('\n'.join(servers_to_save) + '\n')
+
+def remove_limit_from_control_panel(server_file):
+    """Remove ---l limit from a server file entry in control_panel.txt."""
+    if not os.path.exists(CONTROL_PANEL_FILE):
+        return
+    
+    with open(CONTROL_PANEL_FILE, 'r', encoding='utf-8') as f:
+        lines = [line.strip() for line in f]
+    
+    updated_lines = []
+    for line in lines:
+        if not line.strip():
+            updated_lines.append(line)
+            continue
+        
+        # Skip subscription URLs
+        if line.startswith('#') or line.startswith('https://'):
+            updated_lines.append(line)
+            continue
+        
+        extracted_file, limit = extract_server_file_from_line(line)
+        
+        if extracted_file == server_file and limit is not None:
+            # Remove limit from this line
+            if line.startswith('✓'):
+                updated_lines.append(f"✓ {server_file}")
+            else:
+                updated_lines.append(server_file)
+        else:
+            updated_lines.append(line)
+    
+    with open(CONTROL_PANEL_FILE, 'w', encoding='utf-8') as f:
+        for line in updated_lines:
+            f.write(line + '\n')
 
 def load_non_working():
     if not os.path.exists(NON_WORKING_FILE):
@@ -1841,13 +2090,14 @@ def update_all_subscriptions():
         cleanup_non_working()
         process_non_working_recovery()
 
-        # --- Validate main server list and quarantine non-working entries ---
-        current_servers = load_main_servers()
+        # --- Validate LOCAL server list and quarantine non-working entries ---
+        # Only process local servers for validation/saving (external servers are fetched fresh each time)
+        current_local_servers = load_local_servers()
         valid_servers = []
 
         # Remove obvious fake servers immediately
         servers_to_check = []
-        for srv in current_servers:
+        for srv in current_local_servers:
             if is_fake_server(srv):
                 move_server_to_non_working(srv)
             else:
@@ -1863,15 +2113,18 @@ def update_all_subscriptions():
                     else:
                         move_server_to_non_working(srv)
 
-        # Persist the cleaned list
+        # Persist the cleaned LOCAL list (external servers are not saved)
         save_main_servers(valid_servers)
 
         # Update remarks & remove duplicates (these are network-bound/CPU heavy)
-        all_servers = update_server_remarks(valid_servers)
-        unique_servers = remove_duplicates(all_servers)
-        save_main_servers(unique_servers)
+        all_local_servers = update_server_remarks(valid_servers)
+        unique_local_servers = remove_duplicates(all_local_servers)
+        save_main_servers(unique_local_servers)
+        
+        # For subscriptions, merge local + external servers
+        unique_servers = load_main_servers()  # This fetches external and merges
     else:
-        # FAST_RUN → skip all heavy work, use current list as-is
+        # FAST_RUN → skip all heavy work, use current list as-is (with external merged)
         unique_servers = load_main_servers()
 
     # Build / update subscription files for every user
