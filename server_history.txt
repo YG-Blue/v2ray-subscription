@@ -1,3 +1,8 @@
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 161 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-04 17:08
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 160 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-04 17:08
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@638970161971646527.prague-blkaft-aaay.info:8880?type=grpc#Server 9 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-04 17:08
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 152 🇷🇺 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-04 17:08
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 152 🇷🇺 | moved_to_main(servers.txt) | 2025-11-04 17:08
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 152 🇷🇺 | moved_to_non_working(from:servers.txt) | 2025-11-04 16:26
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 162 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-04 16:26
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?security=none&type=ws&path=/http&packetEncoding=xudp&encryption=none#Server 162 🇩🇪 | moved_to_main(servers.txt) | 2025-11-04 16:26
