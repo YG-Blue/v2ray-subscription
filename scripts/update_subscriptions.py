@@ -1426,11 +1426,13 @@ def load_subscription_urls():
             
             if line_lower.startswith('#subscription'):
                 # Handle both #subscription: and #subscription (with or without colon)
-                if ':' in clean_line:
-                    # Has colon: split at colon
+                # Check if colon is RIGHT AFTER #subscription (like #subscription:)
+                colon_pos = clean_line.find(':')
+                if colon_pos > 0 and colon_pos < 15:  # Colon is right after #subscription
+                    # Has colon after #subscription: split at that colon
                     url_part = clean_line.split(':', 1)[1].strip()
                 else:
-                    # No colon: remove #subscription prefix (case-insensitive)
+                    # No colon after #subscription: remove #subscription prefix (case-insensitive)
                     url_part = re.sub(r'^#subscription\s+', '', clean_line, flags=re.IGNORECASE).strip()
                 
                 # Check for ---on or ---only flag OR tick (emergency mode: use only external)
