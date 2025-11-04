@@ -1403,7 +1403,7 @@ def fetch_subscription_url(url):
 def load_subscription_urls():
     """Extract subscription URLs from control_panel.txt.
     Looks for lines starting with #SUBSCRIPTION: or plain https:// URLs.
-    Returns list of URLs."""
+    Returns list of tuples: (url, use_only_external) where use_only_external is True if ---on or ---only flag is present."""
     if not os.path.exists(CONTROL_PANEL_FILE):
         return []
     
@@ -1418,14 +1418,21 @@ def load_subscription_urls():
             if not line.startswith('#') and not line.startswith('https://'):
                 continue
             
-            # Check for #SUBSCRIPTION: marker
-            if line.startswith('#SUBSCRIPTION:'):
-                url = line.replace('#SUBSCRIPTION:', '').strip()
+            # Check for #SUBSCRIPTION: marker (case-insensitive)
+            if line.lower().startswith('#subscription:'):
+                url_part = line.split(':', 1)[1].strip() if ':' in line else line.replace('#SUBSCRIPTION:', '').replace('#subscription:', '').strip()
+                # Check for ---on or ---only flag (emergency mode: use only external)
+                use_only_external = '---on' in url_part.lower() or '---only' in url_part.lower()
+                # Remove flags from URL
+                url = url_part.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
                 if url.startswith('http'):
-                    urls.append(url)
+                    urls.append((url, use_only_external))
             # Check for plain https:// URLs (comments or standalone)
             elif line.startswith('https://'):
-                urls.append(line)
+                # Check for ---on or ---only flag
+                use_only_external = '---on' in line.lower() or '---only' in line.lower()
+                url = line.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
+                urls.append((url, use_only_external))
     
     return urls
 
@@ -1648,23 +1655,51 @@ def load_local_servers():
 def load_main_servers():
     """Load servers from the active server file specified in control_panel.txt.
     Also fetches and merges external subscription URLs from control_panel.txt.
-    Returns merged list (local + external) with duplicates removed for use in subscriptions."""
-    # Load local servers
-    local_servers = load_local_servers()
-    
-    # Fetch external subscriptions
-    subscription_urls = load_subscription_urls()
+    Returns merged list (local + external) with duplicates removed for use in subscriptions.
+    If any subscription has ---on flag, uses ONLY external servers (emergency mode)."""
+    # Fetch external subscriptions first to check for emergency mode
+    subscription_data = load_subscription_urls()
     external_servers = []
+    use_only_external = False
     
-    if subscription_urls:
-        try:
-            print(f"🌐 Fetching {len(subscription_urls)} external subscription(s)...")
-        except UnicodeEncodeError:
-            print(f"Fetching {len(subscription_urls)} external subscription(s)...")
+    if subscription_data:
+        # Check if any subscription has ---on flag (emergency mode)
+        use_only_external = any(use_only for _, use_only in subscription_data)
         
-        for url in subscription_urls:
+        try:
+            if use_only_external:
+                print(f"🚨 EMERGENCY MODE: Using ONLY external subscriptions (local servers disabled)")
+            else:
+                print(f"🌐 Fetching {len(subscription_data)} external subscription(s)...")
+        except UnicodeEncodeError:
+            if use_only_external:
+                print(f"EMERGENCY MODE: Using ONLY external subscriptions (local servers disabled)")
+            else:
+                print(f"Fetching {len(subscription_data)} external subscription(s)...")
+        
+        for url, _ in subscription_data:
             fetched = fetch_subscription_url(url)
             external_servers.extend(fetched)
+    
+    # In emergency mode, skip local servers
+    if use_only_external:
+        if external_servers:
+            try:
+                print(f"✅ Using {len(external_servers)} external servers only (emergency mode)")
+            except UnicodeEncodeError:
+                print(f"[OK] Using {len(external_servers)} external servers only (emergency mode)")
+            # Remove duplicates
+            unique_servers = remove_duplicates(external_servers)
+            return unique_servers
+        else:
+            try:
+                print(f"⚠️ Emergency mode enabled but no external servers fetched!")
+            except UnicodeEncodeError:
+                print(f"Warning: Emergency mode enabled but no external servers fetched!")
+            return []
+    
+    # Normal mode: Load local servers
+    local_servers = load_local_servers()
     
     # Merge local and external servers
     all_servers = local_servers + external_servers
