@@ -1,3 +1,2 @@
-servers.txt
+servers.txt ---on
 ✓ servers1.txt
-✓ #subscription https://raw.githubusercontent.com/ssrsub/ssr/refs/heads/master/ss.txt
