@@ -66,11 +66,11 @@ vless://a6667667-1bc2-41a5-a073-049fc160cb32@che-0001-xr.packet-drop-society.net
 vless://a6667667-1bc2-41a5-a073-049fc160cb32@usa-0001-xr.packet-drop-society.net:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=hls-svod.itunes.apple.com&fp=chrome&pbk=llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws&sid=48720c&type=tcp&headerType=none#Server 66 🇺🇸
 vless://b160cc4a-89f5-4279-9007-a4c84a13a175@deu-0001-xr.packet-drop-society.net:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=hls-svod.itunes.apple.com&fp=chrome&pbk=llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws&sid=48720c&type=tcp&headerType=none#Server 67 🇩🇪
 vless://739b7052-1e58-444d-b068-6cdbbe487663@188.114.97.3:443?encryption=none&security=tls&sni=dfb32af2.panlo-escobar0099269.pages.dev&fp=randomized&type=ws&host=dfb32af2.panlo-escobar0099269.pages.dev&path=%2Fd7uhd7igkjutf9hl%3Fed%3D2560#Server 68 🇺🇸
-vless://422af888-aaec-469e-8e4e-59a9429e7dd0@tgju.org:80?encryption=none&security=none&type=ws&host=MElODIc-eDuCAtiOn.ONEeaT.co&path=%2F%3Fed%3D2048#Server 69 🇺🇸
+vless://422af888-aaec-469e-8e4e-59a9429e7dd0@tgju.org:80?encryption=none&security=none&type=ws&host=MElODIc-eDuCAtiOn.ONEeaT.co&path=%2F%3Fed%3D2048#Server 69 🇨🇦
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUld3WGh3ZkFCNWdBRW96VTRHMlBn@45.87.175.166:443#Server 70 🇳🇱
 trojan://bpb-trojan@172.67.180.227:443?security=tls&sni=mashdt.pages.dev&alpn=h3&fp=randomized&type=ws&host=mashdt.pages.dev&path=%2Ftr%3Fed%3D2560#Server 71 🇺🇸
 trojan://NISHIKUITAN111@172.64.156.42:443?security=tls&sni=172.64.156.42&allowInsecure=1&type=tcp&headerType=none#Server 72 🇺🇸
-trojan://YwuvGJk36B@creativecommons.org:2053?security=tls&sni=kotlet.arshiacomplus.dpdns.org&alpn=http%2F1.1&fp=firefox&type=ws&host=kotlet.arshiacomplus.dpdns.org&path=%2Fyamtekodasayahhh#Server 73 🇨🇦
+trojan://YwuvGJk36B@creativecommons.org:2053?security=tls&sni=kotlet.arshiacomplus.dpdns.org&alpn=http%2F1.1&fp=firefox&type=ws&host=kotlet.arshiacomplus.dpdns.org&path=%2Fyamtekodasayahhh#Server 73 🇺🇸
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@85.209.195.133:8880?encryption=none&security=none&type=grpc#Server 74 🇩🇪
 vless://4cd1fcf0-ab22-4f0d-ba12-09c78fcd0569@172.66.156.81:80?encryption=none&security=none&type=ws&host=websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.&path=%2F%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy----%40Shh_Proxy#Server 75 🇺🇸
 vless://2456f90c-5183-476d-b069-16ae74ce120f@198.71.191.253:2096?encryption=none&security=tls&sni=fast01.0860852.xyz&fp=chrome&type=ws&host=fast01.0860852.xyz&path=%2F#Server 76 🇺🇸
@@ -85,7 +85,7 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@638937381606720769.brussels-drc-tus
 vless://c226ac5d-65e9-4379-95c3-fb542bc242d8@172.67.130.204:443?encryption=none&security=tls&sni=HHhhhHhhhhH.777198.xYz&type=ws&host=hhhhhhhhhhh.777198.xyz&path=%2FOjdW89Bpg4ykd4O#Server 85 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5UUVwZ2gwQUpXVHM1OE5tUmZzVmFR@102.130.49.69:8443#Server 86 🇿🇦
 vless://d7d6745c-7264-44a4-a62f-97b4ce83a951@www.speedtest.net:443?encryption=none&security=tls&sni=totoo.pages.dev&fp=chrome&type=ws&host=totoo.pages.dev&path=%2F#Server 87 🇺🇸
-vless://57ba2ab1-a283-42eb-82ee-dc3561a805b8@ovhwuxian.pai50288.uk:8443?encryption=none&security=tls&sni=ovhwuxian.pai50288.uk&fp=chrome&type=ws&host=ovhwuxian.pai50288.uk&path=%2F57ba2ab1#Server 88 🇨🇦
+vless://57ba2ab1-a283-42eb-82ee-dc3561a805b8@ovhwuxian.pai50288.uk:8443?encryption=none&security=tls&sni=ovhwuxian.pai50288.uk&fp=chrome&type=ws&host=ovhwuxian.pai50288.uk&path=%2F57ba2ab1#Server 88 🇺🇸
 vless://16d7a04d-e6f4-479f-8914-80d3817317f9@172.67.175.106:443?encryption=none&security=tls&sni=ed19-dc7.pages.dev&type=ws&host=ed19-dc7.pages.dev&path=%2F#Server 89 🇺🇸
 vless://dbb3c682-8564-4c02-aec9-23ecf7981820@172.66.132.196:443?encryption=none&security=tls&sni=ARC-448.Pages.DEV&type=ws&host=arc-448.pages.dev&path=%2FTel-%40V2ray_Alpha#Server 90 🇺🇸
 vless://c98a16e4-0dc5-42f0-b3db-30f04525c123@104.16.246.132:443?encryption=none&security=tls&sni=vless10-9sc.pages.dev&alpn=h3&fp=chrome&type=ws&host=vless10-9sc.pages.dev&path=%2F#Server 91 🇺🇸
