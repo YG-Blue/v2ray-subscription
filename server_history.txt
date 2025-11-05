@@ -1,3 +1,8 @@
+vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 159 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-05 14:52
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 150 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-05 14:52
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 150 🇩🇪 | moved_to_main(servers.txt) | 2025-11-05 14:52
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 154 🇷🇺 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-05 14:52
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 154 🇷🇺 | moved_to_main(servers.txt) | 2025-11-05 14:52
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5QUx0eUF0SGZidzFWdTRwcWg2d1Vj@5.129.201.43:23256#Server 154 🇷🇺 | moved_to_non_working(from:servers.txt) | 2025-11-05 13:58
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 150 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-05 13:58
 vless://dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51@de.vpnbase.net:80?path=%2Fhttp&security=&encryption=none&type=ws#Server 162 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-05 13:58
