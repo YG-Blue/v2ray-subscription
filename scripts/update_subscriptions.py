@@ -1403,7 +1403,9 @@ def fetch_subscription_url(url):
 def load_subscription_urls():
     """Extract subscription URLs from control_panel.txt.
     Looks for lines starting with #SUBSCRIPTION: or plain https:// URLs.
-    Returns list of tuples: (url, use_only_external) where use_only_external is True if tick (✓), ---on, or ---only flag is present."""
+    Returns list of tuples: (url, use_only_external, limit) where:
+    - use_only_external is True if tick (✓), ---on, or ---only flag is present
+    - limit is int or None if ---l is specified"""
     if not os.path.exists(CONTROL_PANEL_FILE):
         return []
     
@@ -1425,6 +1427,15 @@ def load_subscription_urls():
             clean_line = line.replace('✓', '').strip() if has_tick else line
             line_lower = clean_line.lower()
             
+            # Extract ---l limit (lowercase letter L only)
+            limit = None
+            limit_match = re.search(r'---l\s+(\d+)', clean_line)
+            if limit_match:
+                limit = int(limit_match.group(1))
+                # Remove limit from line for further processing
+                clean_line = clean_line[:limit_match.start()].strip() + ' ' + clean_line[limit_match.end():].strip()
+                clean_line = clean_line.strip()
+            
             if line_lower.startswith('#subscription'):
                 # Handle both #subscription: and #subscription (with or without colon)
                 # Check if colon is RIGHT AFTER #subscription (like #subscription:)
@@ -1441,13 +1452,13 @@ def load_subscription_urls():
                 # Remove flags from URL
                 url = url_part.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
                 if url.startswith('http'):
-                    urls.append((url, use_only_external))
+                    urls.append((url, use_only_external, limit))
             # Check for plain https:// URLs (comments or standalone)
             elif clean_line.startswith('https://'):
                 # Check for ---on or ---only flag OR tick
                 use_only_external = has_tick or '---on' in clean_line.lower() or '---only' in clean_line.lower()
                 url = clean_line.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
-                urls.append((url, use_only_external))
+                urls.append((url, use_only_external, limit))
     
     return urls
 
@@ -1566,18 +1577,29 @@ def process_control_panel():
     for line in lines:
         # Process subscription URLs (add tick if ---on/---only, remove flag)
         line_lower = line.lower()
-        is_subscription = line_lower.startswith('#subscription') or (line.startswith('https://') and ('---on' in line_lower or '---only' in line_lower))
+        has_tick_at_start = line.startswith('✓')
+        clean_line_for_check = line.replace('✓', '').strip() if has_tick_at_start else line
+        clean_line_lower = clean_line_for_check.lower()
+        is_subscription = clean_line_lower.startswith('#subscription') or clean_line_for_check.startswith('https://')
         
         if is_subscription:
             # Check if subscription has ---on or ---only flag
+            # Extract and preserve ---l limit if present
+            limit_match = re.search(r'---l\s+(\d+)', line)
+            limit_part = f" ---l {limit_match.group(1)}" if limit_match else ""
+            
             if '---on' in line_lower or '---only' in line_lower:
-                # Remove flag and add tick
+                # Remove flag and add tick, preserve limit
                 clean_line = line.replace('---on', '').replace('---ON', '').replace('---only', '').replace('---ONLY', '').strip()
-                formatted_subscription = f"✓ {clean_line}"
+                # Remove limit from clean_line temporarily, then add it back
+                if limit_match:
+                    clean_line = clean_line[:limit_match.start()].strip() + ' ' + clean_line[limit_match.end():].strip()
+                    clean_line = clean_line.strip()
+                formatted_subscription = f"✓ {clean_line}{limit_part}"
                 subscription_lines.append(formatted_subscription)
                 any_changes = True
             else:
-                # No flag, preserve as-is (but remove tick if present to avoid duplicates)
+                # No flag, preserve as-is (but remove tick if present to avoid duplicates, preserve limit)
                 clean_line = line.replace('✓', '').strip()
                 subscription_lines.append(clean_line)
             continue
@@ -1697,7 +1719,7 @@ def load_main_servers():
     
     if subscription_data:
         # Check if any subscription has ---on flag (emergency mode)
-        use_only_external = any(use_only for _, use_only in subscription_data)
+        use_only_external = any(use_only for _, use_only, _ in subscription_data)
         
         try:
             if use_only_external:
@@ -1710,9 +1732,33 @@ def load_main_servers():
             else:
                 print(f"Fetching {len(subscription_data)} external subscription(s)...")
         
-        for url, _ in subscription_data:
+        for url, _, limit in subscription_data:
             fetched = fetch_subscription_url(url)
+            
+            # Apply limit if specified
+            original_count = len(fetched)
+            if limit is not None and limit > 0:
+                if limit <= len(fetched):
+                    fetched = fetched[:limit]
+                    try:
+                        print(f"📊 Applied limit {limit} to {url} ({original_count} -> {len(fetched)} servers)")
+                    except UnicodeEncodeError:
+                        print(f"Applied limit {limit} to {url} ({original_count} -> {len(fetched)} servers)")
+                else:
+                    try:
+                        print(f"⚠️ Limit {limit} > fetched servers {original_count} for {url}, using all {original_count} servers")
+                    except UnicodeEncodeError:
+                        print(f"Warning: Limit {limit} > fetched servers {original_count} for {url}, using all {original_count} servers")
+            
             external_servers.extend(fetched)
+            # Log external server fetch in history
+            if fetched:
+                try:
+                    mode_label = "EMERGENCY" if use_only_external else "MERGED"
+                    limit_info = f"_limit_{limit}" if limit and limit <= original_count else ""
+                    log_history(f"[EXTERNAL] {url}", f"{mode_label}_mode_fetched_{len(fetched)}_servers{limit_info}")
+                except:
+                    pass  # Silently fail if logging causes issues
     
     # In emergency mode, skip local servers
     if use_only_external:
