@@ -1,3 +1,7 @@
+test | blocked | | blocked 2025-11-06 [Note: 404] | 2025-11-06 03:07
+
+test | manual_delete | User manually removed [Note: 404] | 2025-11-06 03:07
+
 customer | unblocked | via blocked_users.txt [Note: 406 | blocked 2025-10-31] | 2025-10-31 06:09
 
 test | unblocked | [Note: 404 | blocked 2025-10-31] | 2025-10-31 05:39
@@ -506,85 +510,21 @@ yusefi1 | blocked | | blocked 2025-10-27 [Note: 404.7.30] | 2025-10-27 04:37
 
 yusefi1 | manual_delete | User manually removed [Note: 404.7.30] | 2025-10-27 04:37
 
-tamarzade | added | [Note: 404.8.4] | 2025-10-26 19:55
-
-mehdizade | added | [Note: 404.8.4] | 2025-10-26 19:09
-
 ahmadi | unblocked | [Note: 404.8.4 | blocked 2025-10-24] | 2025-10-26 13:12
 
 ahmadi | manual_delete | User manually removed [Note: 404.8.4 | blocked 2025-10-24] | 2025-10-26 13:12
-
-customer5 | added |  | 2025-10-26 11:21
-
-mirhossein.mohammadi | added | [Note: 404.7.5] | 2025-10-25 20:13
-
-shadi | added | [Note: 404.8.3] | 2025-10-25 20:05
 
 sabri | unblocked | [Note: 404.8.3 | blocked 2025-10-24] | 2025-10-25 18:38
 
 sabri | manual_delete | User manually removed [Note: 404.8.3 | blocked 2025-10-24] | 2025-10-25 18:38
 
-soodabeh.aghayi | added | [Note: 404.8.3] | 2025-10-25 17:40
-
 family | unblocked | [Note: | blocked 2025-10-24] | 2025-10-25 14:31
 
 family | manual_delete | User manually removed [Note: | blocked 2025-10-24] | 2025-10-25 14:31
 
-gorbanpur | added | [Note: 404.8.3] | 2025-10-25 12:21
-
-ehsan | added | [Note: 404.8.3] | 2025-10-25 11:41
-
 salamzade | unblocked | [Note: 404.8.3 | blocked 2025-10-24] | 2025-10-25 11:01
 
 salamzade | manual_delete | User manually removed [Note: 404.8.3 | blocked 2025-10-24] | 2025-10-25 11:01
-
-sabri | blocked | | blocked 2025-10-24 [Note: 404.6.21] | 2025-10-24 19:54
-
-sabri | manual_delete | User manually removed [Note: 404.6.21] | 2025-10-24 19:54
-
-h.karkon | blocked | | blocked 2025-10-24 [Note: 404.6.20] | 2025-10-24 19:50
-
-h.karkon | manual_delete | User manually removed [Note: 404.6.20] | 2025-10-24 19:50
-
-s.asgarzade | blocked | | blocked 2025-10-24 [Note: 404.6.19] | 2025-10-24 19:49
-
-s.asgarzade | manual_delete | User manually removed [Note: 404.6.19] | 2025-10-24 19:49
-
-yunesi | blocked | | blocked 2025-10-24 [Note: 404.6.19] | 2025-10-24 19:46
-
-yunesi | manual_delete | User manually removed [Note: 404.6.19] | 2025-10-24 19:46
-
-s.kalashani | blocked | | blocked 2025-10-24 [Note: 404.6.19] | 2025-10-24 19:45
-
-s.kalashani | manual_delete | User manually removed [Note: 404.6.19] | 2025-10-24 19:45
-
-molayi | blocked | | blocked 2025-10-24 [Note: 404.6.18] | 2025-10-24 19:44
-
-molayi | manual_delete | User manually removed [Note: 404.6.18] | 2025-10-24 19:44
-
-golizade1 | blocked | | blocked 2025-10-24 [Note: 404.6.18] | 2025-10-24 19:43
-
-golizade1 | manual_delete | User manually removed [Note: 404.6.18] | 2025-10-24 19:43
-
-ahmadi | blocked | | blocked 2025-10-24 [Note: 404.6.18] | 2025-10-24 19:43
-
-ahmadi | manual_delete | User manually removed [Note: 404.6.18] | 2025-10-24 19:43
-
-gorbannezhad | blocked | | blocked 2025-10-24 [Note: 404.6.18] | 2025-10-24 19:41
-
-gorbannezhad | manual_delete | User manually removed [Note: 404.6.18] | 2025-10-24 19:41
-
-khosrotamar | blocked | | blocked 2025-10-24 [Note: 404.6.17] | 2025-10-24 19:40
-
-khosrotamar | manual_delete | User manually removed [Note: 404.6.17] | 2025-10-24 19:40
-
-salamzade | blocked | | blocked 2025-10-24 [Note: 404.6.10] | 2025-10-24 19:39
-
-salamzade | manual_delete | User manually removed [Note: 404.6.10] | 2025-10-24 19:39
-
-family | blocked | | blocked 2025-10-24 | 2025-10-24 19:38
-
-family | manual_delete | User manually removed | 2025-10-24 19:38
 
 g.kazemi | unblocked | [Note: 404.8.1 | blocked 2025-09-13] | 2025-10-23 13:04
 
