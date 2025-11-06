@@ -1,3 +1,5 @@
+test | unblocked | via blocked_users.txt [Note: 404 | blocked 2025-11-06] | 2025-11-07 02:59
+
 test | blocked | | blocked 2025-11-06 [Note: 404] | 2025-11-06 23:39
 
 test | manual_delete | User manually removed [Note: 404] | 2025-11-06 23:39
@@ -499,28 +501,6 @@ a.valilou | unblocked | [Note: 404.8.6 | blocked 2025-10-18] | 2025-10-28 12:57
 a.valilou | manual_delete | User manually removed [Note: 404.8.6 | blocked 2025-10-18] | 2025-10-28 12:57
 
 agheli | added | [Note: 404.8.6] | 2025-10-28 10:49
-
-m.bazlju | added | [Note: 404.8.5] | 2025-10-27 19:49
-
-m.bazlju | manual_delete | User manually removed [Note: 404.8.5] | 2025-10-27 19:49
-
-m.bazlju | manual_add | Line: m.bazlju | 2025-10-27 19:47
-
-sha.zeynali | added | [Note: 404.8.51] | 2025-10-27 18:13
-
-eyvari1 | added | [Note: 404.8.5] | 2025-10-27 12:21
-
-eyvari | added | [Note: 404.8.5] | 2025-10-27 12:10
-
-daryush.tamarzade | added | [Note: 404.8.5] | 2025-10-27 11:54
-
-sabri | blocked | | blocked 2025-10-27 [Note: 404.8.3] | 2025-10-27 04:38
-
-sabri | manual_delete | User manually removed [Note: 404.8.3] | 2025-10-27 04:38
-
-yusefi1 | blocked | | blocked 2025-10-27 [Note: 404.7.30] | 2025-10-27 04:37
-
-yusefi1 | manual_delete | User manually removed [Note: 404.7.30] | 2025-10-27 04:37
 
 ahmadi | unblocked | [Note: 404.8.4 | blocked 2025-10-24] | 2025-10-26 13:12
 
