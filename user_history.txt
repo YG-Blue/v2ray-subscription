@@ -1,3 +1,7 @@
+test | unblocked | [Note: 404 | blocked 2025-11-07] | 2025-11-07 03:39
+
+test | manual_delete | User manually removed [Note: 404 | blocked 2025-11-07] | 2025-11-07 03:39
+
 test | blocked | | blocked 2025-11-07 [Note: 404] | 2025-11-07 03:03
 
 test | manual_delete | User manually removed [Note: 404] | 2025-11-07 03:03
