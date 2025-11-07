@@ -1,3 +1,7 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@196.240.57.34:57456#Server 54 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-07 19:58
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@196.240.57.34:57456#Server 54 🇩🇪 | moved_to_main(servers.txt) | 2025-11-07 19:58
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 193 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-07 19:58
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 193 🇩🇪 | moved_to_main(servers.txt) | 2025-11-07 19:58
 ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 193 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-07 18:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@196.240.57.34:57456#Server 54 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-07 18:56
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.244:8880?encryption=none&security=none&type=grpc#Server 143 🇫🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-07 18:56
