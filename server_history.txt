@@ -1,3 +1,5 @@
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 200 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-08 16:16
+vless://56b0deb1-3fbf-7ec0-a9cc-09fc058a6862@russia.marzxo.biz:8086?security=reality&sni=refersion.com&fp=firefox&pbk=Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU&sid=828348fc6d8e49cf&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 18 🇷🇺 | moved_to_non_working(from:servers.txt) | 2025-11-08 16:16
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 201 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-08 14:49
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 200 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-08 13:54
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 200 🇩🇪 | moved_to_main(servers.txt) | 2025-11-08 13:54
