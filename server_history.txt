@@ -1,3 +1,6 @@
+vless://baf95082-c6b6-424a-a22a-9a2843915679@104.238.167.168:443?encryption=none&security=reality&sni=hdfyrplc1.freeairlians.com&fp=chrome&pbk=AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k&type=tcp&headerType=none#Server 195 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-09 23:55
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.59.107:990#Server 138 🇪🇬 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-09 23:55
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.59.107:990#Server 138 🇪🇬 | moved_to_main(servers.txt) | 2025-11-09 23:55
 ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 188 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-09 22:47
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.59.107:990#Server 138 🇪🇬 | moved_to_non_working(from:servers.txt) | 2025-11-09 22:47
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 159 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-09 22:47
