@@ -1,5 +1,5 @@
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 188 🇩🇪 | servers.txt | 2025-11-09 22:47
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.59.107:990#Server 138 🇪🇬 | servers.txt | 2025-11-09 22:47
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 194 🇩🇪 | servers.txt | 2025-11-09 22:01
-ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 188 🇩🇪 | servers.txt | 2025-11-09 22:01
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 159 🇳🇱 | servers.txt | 2025-11-09 22:01
 vless://8f12c417-7d85-49a8-9143-ef3194ca03d7@5vzkzrjv497f.zozodogg.com:2053?security=reality&sni=tgju.org&fp=chrome&pbk=U0M7XkmwyHE0O9v9jZil-qKokoeHVcKOAvXHjZoMvT4&sid=083f940c6997&type=grpc&serviceName=Tel:@VPN_KING_V2RAY@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY%20@VPN_KING_V2RAY&packetEncoding=xudp&encryption=none#Server 174 🇫🇮 | servers.txt | 2025-11-08 17:50
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkMWMwYjQzZi04ZjM3LTQ4NWEtOWUyOS1jYjI1YzhiNGZkZDY%3D@107.175.87.207:10011#Server 135 🇺🇸 | servers.txt | 2025-11-08 17:50

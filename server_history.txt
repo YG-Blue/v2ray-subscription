@@ -1,3 +1,9 @@
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 188 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-09 22:47
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.59.107:990#Server 138 🇪🇬 | moved_to_non_working(from:servers.txt) | 2025-11-09 22:47
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 159 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-09 22:47
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 159 🇳🇱 | moved_to_main(servers.txt) | 2025-11-09 22:47
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 188 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-09 22:47
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 188 🇩🇪 | moved_to_main(servers.txt) | 2025-11-09 22:47
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 194 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-09 22:01
 ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 188 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-09 22:01
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 159 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-11-09 22:01
