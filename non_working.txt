@@ -1,2 +1,2 @@
-ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 194 🇩🇪 | servers.txt | 2025-11-11 20:03
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpqWjAzYU9GRE1VUWxpUUlSa2ZpQUhx@193.23.221.9:14178#Server 166 🇩🇪 | servers.txt | 2025-11-11 17:56
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 194 🇩🇪 | servers.txt | 2025-11-11 20:53
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 192 🇩🇪 | servers.txt | 2025-11-11 20:53
