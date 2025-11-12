@@ -1,2 +1,1 @@
-vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 194 🇱🇻 | servers.txt | 2025-11-12 20:04
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 184 🇰🇷 | servers.txt | 2025-11-12 20:04
+vless://40730d97-ffa7-1108-2c53-761516eb5fda@155.212.110.2:993?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 192 🇪🇪 | servers.txt | 2025-11-12 20:54
