@@ -1,2 +1,2 @@
-vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 195 🇱🇻 | servers.txt | 2025-11-12 13:59
-ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 199 🇩🇪 | servers.txt | 2025-11-12 12:58
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 199 🇩🇪 | servers.txt | 2025-11-12 14:52
+ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 187 🇨🇳 | servers.txt | 2025-11-12 14:52
