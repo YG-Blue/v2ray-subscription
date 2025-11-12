@@ -1,3 +1,6 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 198 🇰🇷 | moved_to_non_working(from:servers.txt) | 2025-11-12 23:59
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 198 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-12 23:58
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 198 🇰🇷 | moved_to_main(servers.txt) | 2025-11-12 23:58
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 198 🇰🇷 | moved_to_non_working(from:servers.txt) | 2025-11-12 22:51
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 193 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-12 22:51
 vless://c2ec47f4-873f-573f-7d8d-d79d7ad452e6@85.90.197.100:9956?encryption=none&flow=xtls-rprx-vision&security=reality&sni=store.steampowered.com&fp=chrome&pbk=YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E&type=tcp&headerType=none#Server 184 🇬🇷 | moved_to_non_working(from:servers.txt) | 2025-11-12 22:51
