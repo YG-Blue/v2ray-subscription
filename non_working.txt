@@ -1,3 +1,4 @@
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 194 🇩🇪 | servers.txt | 2025-11-13 20:54
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.171:80?encryption=none&security=none&type=grpc#Server 122 🇺🇸 | servers.txt | 2025-11-13 17:06
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.98:80?encryption=none&security=none&fp=chrome&type=grpc#Server 103 🇺🇸 | servers.txt | 2025-11-13 17:06
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.175:80?encryption=none&security=none&type=grpc#Server 91 🇺🇸 | servers.txt | 2025-11-13 17:06
