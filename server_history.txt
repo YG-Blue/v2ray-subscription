@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 196 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-13 12:04
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 189 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-13 10:54
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 189 🇳🇱 | moved_to_main(servers.txt) | 2025-11-13 10:54
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 192 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-13 10:54
