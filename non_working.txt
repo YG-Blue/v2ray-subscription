@@ -1,6 +1,4 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 173 🇩🇪 | servers.txt | 2025-11-14 20:03
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.138.164.2:8880?encryption=none&security=none&type=grpc#Server 114 🇬🇧 | servers.txt | 2025-11-14 20:03
-vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 193 🇱🇻 | servers.txt | 2025-11-14 18:53
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@94.232.247.208:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 161 🇫🇷 | servers.txt | 2025-11-14 18:53
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638970060570328775.rome-blkaft-aaay.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 160 🇫🇷 | servers.txt | 2025-11-14 18:53
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.27:8880?type=grpc#Server 159 🇫🇷 | servers.txt | 2025-11-14 18:53
