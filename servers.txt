@@ -36,9 +36,9 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.193:8880?security=none&
 vless://9daf8f3e-089b-4989-9502-dd3d727edb6c@usa32.clearorbitllc.com:443?security=reality&sni=usa32.clearorbitllc.com&fp=chrome&pbk=9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns&sid=c7f3cc&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 36 🇺🇸
 trojan://trojan@104.26.12.31:8443?security=tls&sni=fofang.pages.dev&type=tcp#Server 37 🇺🇸
 vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 38 🇨🇦
-trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 39 🇨🇦
+trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 39 🇺🇸
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp#Server 40 🇺🇸
-vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 41 🇨🇷
+vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 41 🇨🇦
 vless://b4bd0613-ff7c-4f2f-954d-185915e6ddad@www.speedtest.net:443?security=tls&sni=jnir-cdn.javidnaman.com&type=ws&path=/@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/?ed%3D2560&host=jnir-cdn.javidnaman.com&packetEncoding=xudp&encryption=none#Server 42 🇺🇸
 vless://8c0b0995-5a37-4144-893e-cceb6a9a3e36@172.66.156.81:80?security=none&type=ws&path=/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy&host=websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.store.&packetEncoding=xudp&encryption=none#Server 43 🇺🇸
 vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2ngfast.heloisfood.ir:2718?security=none&type=grpc&serviceName=@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast&packetEncoding=xudp&encryption=none#Server 44 🇩🇪
@@ -111,7 +111,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvait
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.31.230:990#Server 111 🇻🇳
 vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2rayngselllbot.m.heloisfood.ir:6673?encryption=none&security=none&type=grpc&authority=&serviceName=%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT&mode=gun#Server 112 🇩🇪
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.60.171.254:990#Server 113 🇮🇩
-trojan://trojan@tm-azarbayjab1.1.workers.dev:443?security=tls&type=tcp&headerType=none#Server 114 🇨🇦
+trojan://trojan@tm-azarbayjab1.1.workers.dev:443?security=tls&type=tcp&headerType=none#Server 114 🇺🇸
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.25:8880?encryption=none&security=none&type=grpc#Server 115 🇫🇷
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.138.164.2:8880?encryption=none&security=none&type=grpc#Server 116 🇬🇧
 ss://YWVzLTI1Ni1nY206YmQwODA4OTgtYjQxYS00OGFlLWIxNjQtMWJhYWU0MTI0NjI3@15.235.186.140:8443#Server 117 🇸🇬
@@ -192,7 +192,7 @@ vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.175:80?encryption=none&
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.159:80?encryption=none&security=none&type=grpc#Server 192 🇺🇸
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.217:80?encryption=none&security=none&type=grpc#Server 193 🇺🇸
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.171:80?type=grpc#Server 194 🇺🇸
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 195 🇩🇪
-ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 196 🇩🇪
-vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 197 🇱🇻
-vless://c30ec165-fcb4-47af-8e68-70d88a3b2910@vpn-srv-2.circlevpn.net:37096?security=tls&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#Server 198 🇫🇷
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 195 🇩🇪
+vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 196 🇱🇻
+vless://c30ec165-fcb4-47af-8e68-70d88a3b2910@vpn-srv-2.circlevpn.net:37096?security=tls&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#Server 197 🇫🇷
+vless://baf95082-c6b6-424a-a22a-9a2843915679@104.238.167.168:443?encryption=none&security=reality&sni=hdfyrplc1.freeairlians.com&fp=chrome&pbk=AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k&type=tcp&headerType=none#Server 198 🇩🇪
