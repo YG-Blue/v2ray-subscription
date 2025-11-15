@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 170 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-15 16:58
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 170 🇩🇪 | moved_to_main(servers.txt) | 2025-11-15 16:58
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 170 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-15 16:17
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.159:80?encryption=none&security=none&type=grpc#Server 164 🇺🇸 | moved_to_non_working(from:servers.txt) | 2025-11-15 16:17
 vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.175:80?encryption=none&security=none&type=grpc#Server 163 🇺🇸 | moved_to_non_working(from:servers.txt) | 2025-11-15 16:17
