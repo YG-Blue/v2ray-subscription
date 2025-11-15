@@ -1,3 +1,8 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 170 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-15 16:17
+vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.159:80?encryption=none&security=none&type=grpc#Server 164 🇺🇸 | moved_to_non_working(from:servers.txt) | 2025-11-15 16:17
+vless://401374e6-df77-41fb-f638-dad8184f175b@185.236.232.175:80?encryption=none&security=none&type=grpc#Server 163 🇺🇸 | moved_to_non_working(from:servers.txt) | 2025-11-15 16:17
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 171 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-15 16:17
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 171 🇩🇪 | moved_to_main(servers.txt) | 2025-11-15 16:17
 ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 171 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-15 14:48
 vless://f0758892-f40c-412d-9fab-88103bad1fd8@51.38.232.101:80?security=none&type=ws&path=/vless/&host=Join---PLANB-PROXY&packetEncoding=xudp&encryption=none#Server 145 🇫🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-15 13:53
 vless://f0758892-f40c-412d-9fab-88103bad1fd8@51.38.232.101:80?security=none&type=ws&path=/vless/&host=Join---PLANB-PROXY&packetEncoding=xudp&encryption=none#Server 145 🇫🇷 | moved_to_main(servers.txt) | 2025-11-15 13:53
