@@ -32,8 +32,8 @@ vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2ngnet.heloisfood.ir:4488?security
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.193:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 32 🇫🇷
 vless://9daf8f3e-089b-4989-9502-dd3d727edb6c@usa32.clearorbitllc.com:443?security=reality&sni=usa32.clearorbitllc.com&fp=chrome&pbk=9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns&sid=c7f3cc&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 33 🇺🇸
 trojan://trojan@104.26.12.31:8443?security=tls&sni=fofang.pages.dev&type=tcp#Server 34 🇺🇸
-vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 35 🇺🇸
-trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 36 🇺🇸
+vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 35 🇨🇦
+trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 36 🇨🇦
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp#Server 37 🇺🇸
 vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 38 🇨🇦
 vless://b4bd0613-ff7c-4f2f-954d-185915e6ddad@www.speedtest.net:443?security=tls&sni=jnir-cdn.javidnaman.com&type=ws&path=/@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/?ed%3D2560&host=jnir-cdn.javidnaman.com&packetEncoding=xudp&encryption=none#Server 39 🇺🇸
@@ -167,5 +167,4 @@ vless://56b0deb1-3fbf-7ec0-a9cc-09fc058a6862@russia.marzxo.biz:8086?security=rea
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 167 🇨🇳
 vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 168 🇱🇻
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 169 🇰🇷
-vless://baf95082-c6b6-424a-a22a-9a2843915679@104.238.167.168:443?encryption=none&security=reality&sni=hdfyrplc1.freeairlians.com&fp=chrome&pbk=AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k&type=tcp&headerType=none#Server 170 🇩🇪
-ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 171 🇩🇪
+ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 170 🇩🇪
