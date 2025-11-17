@@ -1,5 +1,3 @@
-vless://c30ec165-fcb4-47af-8e68-70d88a3b2910@vpn-srv-2.circlevpn.net:37096?security=tls&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#Server 151 🇫🇷 | servers.txt | 2025-11-17 13:01
-ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 149 🇨🇳 | servers.txt | 2025-11-17 13:01
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.88.186:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 67 🇬🇧 | servers.txt | 2025-11-17 13:01
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638974021050125184.kish-blkaft-aaba.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 11 🇫🇷 | servers.txt | 2025-11-17 13:01
 ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 154 🇩🇪 | servers.txt | 2025-11-17 05:31
