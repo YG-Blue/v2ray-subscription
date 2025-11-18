@@ -1,4 +1,5 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 148 🇰🇷 | servers.txt | 2025-11-18 18:59
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 148 🇰🇷 | servers.txt | 2025-11-18 20:54
+vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.6:993?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=_KiM4lu8Em0mJFmY8t2XRYGL-H2jbCtfKaFB0Io6JCE&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 20 🇫🇮 | servers.txt | 2025-11-18 20:54
 vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 152 🇱🇻 | servers.txt | 2025-11-18 05:29
 vless://56b0deb1-3fbf-7ec0-a9cc-09fc058a6862@russia.marzxo.biz:8086?security=reality&sni=refersion.com&fp=firefox&pbk=Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU&sid=828348fc6d8e49cf&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 136 🇷🇺 | servers.txt | 2025-11-18 05:29
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.88.186:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 67 🇬🇧 | servers.txt | 2025-11-17 13:01
