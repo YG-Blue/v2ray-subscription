@@ -1,3 +1,7 @@
+vless://c30ec165-fcb4-47af-8e68-70d88a3b2910@vpn-srv-2.circlevpn.net:37096?security=tls&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#Server 99 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-19 17:57
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.138.164.67:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 7 🇬🇧 | moved_to_non_working(from:servers.txt) | 2025-11-19 17:57
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 98 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-19 17:56
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 98 🇩🇪 | moved_to_main(servers.txt) | 2025-11-19 17:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 98 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-19 17:07
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 93 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-19 17:06
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 93 🇳🇱 | moved_to_main(servers.txt) | 2025-11-19 17:06
