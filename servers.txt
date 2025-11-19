@@ -19,7 +19,7 @@ trojan://trojan@104.26.12.31:8443?security=tls&sni=fofang.pages.dev&type=tcp#Ser
 vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 19 🇨🇦
 trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 20 🇨🇦
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp#Server 21 🇺🇸
-vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 22 🇨🇷
+vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 22 🇺🇸
 vless://b4bd0613-ff7c-4f2f-954d-185915e6ddad@www.speedtest.net:443?security=tls&sni=jnir-cdn.javidnaman.com&type=ws&path=/@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/?ed%3D2560&host=jnir-cdn.javidnaman.com&packetEncoding=xudp&encryption=none#Server 23 🇺🇸
 vless://8c0b0995-5a37-4144-893e-cceb6a9a3e36@172.66.156.81:80?security=none&type=ws&path=/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy&host=websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.store.&packetEncoding=xudp&encryption=none#Server 24 🇺🇸
 vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2ngfast.heloisfood.ir:2718?security=none&type=grpc&serviceName=@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast-@V2ngFast&packetEncoding=xudp&encryption=none#Server 25 🇩🇪
@@ -39,7 +39,7 @@ vless://500f3d46-1cef-4ddd-ac91-60e5cbcabf39@axe.soyet2j.ir:2087?encryption=none
 vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@masterserver1.heloisfood.ir:6423?encryption=none&security=none&type=grpc&authority=&serviceName=%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1--%40MaSTeRSeRVeR1&mode=gun#Server 39 🇩🇪
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@103.97.203.227:990#Server 40 🇮🇳
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.12.133.224:8880?encryption=none&security=none&type=grpc#Server 41 🇫🇷
-trojan://YwuvGJk36B@creativecommons.org:2053?security=tls&sni=kotlet.arshiacomplus.dpdns.org&alpn=http%2F1.1&fp=firefox&type=ws&host=kotlet.arshiacomplus.dpdns.org&path=%2Fyamtekodasayahhh#Server 42 🇺🇸
+trojan://YwuvGJk36B@creativecommons.org:2053?security=tls&sni=kotlet.arshiacomplus.dpdns.org&alpn=http%2F1.1&fp=firefox&type=ws&host=kotlet.arshiacomplus.dpdns.org&path=%2Fyamtekodasayahhh#Server 42 🇨🇦
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@103.111.114.92:57456#Server 43 🇮🇳
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@104.192.226.106:990#Server 44 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplMEF1U1NFOWtxclpucEsxUmdjdVB0@78.40.116.11:50589#Server 45 🇸🇪
@@ -57,7 +57,7 @@ vless://8250d638-45df-41fa-b06f-160d1cb1de0c@172.67.229.214:443?encryption=none&
 vless://e188a23f-f17a-4a61-8a48-aa83b3653f5d@104.26.6.89:2053?encryption=none&security=tls&sni=om4.omidsuccess.uk&fp=chrome&type=ws&host=om4.omidsuccess.uk&path=%2Fcontainers%2Fde#Server 57 🇺🇸
 vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2rayngselllbot.m.heloisfood.ir:6673?encryption=none&security=none&type=grpc&authority=&serviceName=%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT&mode=gun#Server 58 🇩🇪
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.60.171.254:990#Server 59 🇮🇩
-trojan://trojan@tm-azarbayjab1.1.workers.dev:443?security=tls&type=tcp&headerType=none#Server 60 🇨🇦
+trojan://trojan@tm-azarbayjab1.1.workers.dev:443?security=tls&type=tcp&headerType=none#Server 60 🇺🇸
 ss://YWVzLTI1Ni1nY206YmQwODA4OTgtYjQxYS00OGFlLWIxNjQtMWJhYWU0MTI0NjI3@15.235.186.140:8443#Server 61 🇸🇬
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@23.95.76.147:990#Server 62 🇨🇦
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp&headerType=none#Server 63 🇺🇸
@@ -100,4 +100,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTppdlFZVGlTeVVHeVJpVmhxY2JhRXRNalhDOGRqcnNjUGJ
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyQUpvZ0t1RnNpVmE1U3JoRDd2UG44UDI4c2U5REJBVDU2NFhUR0RuRTloNUhaUGg1OTNiekpSeFlhdld6cnlhY3I2Q0FONW5IRm04UnBzSGZxUm5hc3loYnNSelk0TnA%3D@imap.roomyinmita.name:40565#Server 100 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UGJad3k0Q3NObVNtaEdZam9VVzQ3aVJnbks3VVMzY1o5ZzdvNVllZm5uVEFNems3NHVwWVY4azI5WGRRYWVmUHdHTTdIQW1odnFMWFNvdlZBMUhIOEw4cG9kU0FaM1g%3D@imap.roomyinmita.name:40565#Server 101 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpha3ZKUXpaQ2FUZGlzU3l1U3kzYVJteXZLQzUzWDFkM1BhQXNiOXhVOG41VFk5aFNCMURLNWU2U1BtOTIxaWdIY1JzQ1RDdmYxcFd1ZlRKNUxpOFBpaVFHNHZZZHl5TTc%3D@imap.roomyinmita.name:40565#Server 102 🇺🇸
-vless://baf95082-c6b6-424a-a22a-9a2843915679@104.238.167.168:443?encryption=none&security=reality&sni=hdfyrplc1.freeairlians.com&fp=chrome&pbk=AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k&type=tcp&headerType=none#Server 103 🇩🇪
