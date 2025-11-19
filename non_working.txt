@@ -52,4 +52,3 @@ vless://56b0deb1-3fbf-7ec0-a9cc-09fc058a6862@russia.marzxo.biz:8086?security=rea
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.88.186:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 67 🇬🇧 | servers.txt | 2025-11-17 13:01
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638974021050125184.kish-blkaft-aaba.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 11 🇫🇷 | servers.txt | 2025-11-17 13:01
 ss://chacha20-ietf-poly1305%3AJNK7CvuvWTpF2ZY3d9ygt1@109.122.197.192:443#Server 154 🇩🇪 | servers.txt | 2025-11-17 05:31
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@638953873686412975.lahijan-drc-tusaas.info:8880?encryption=none&security=none&type=grpc#Server 76 🇬🇧 | servers.txt | 2025-11-17 02:52
