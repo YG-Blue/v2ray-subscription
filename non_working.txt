@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 92 🇩🇪 | servers.txt | 2025-11-21 22:51
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 110 🇫🇷 | servers.txt | 2025-11-21 16:22
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 105 🇫🇷 | servers.txt | 2025-11-21 16:22
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&type=grpc#Server 100 🇫🇷 | servers.txt | 2025-11-21 16:22
