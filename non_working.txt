@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 106 🇩🇪 | servers.txt | 2025-11-22 14:49
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@103.111.114.92:57456#Server 40 🇮🇳 | servers.txt | 2025-11-22 13:54
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 110 🇫🇷 | servers.txt | 2025-11-21 16:22
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 105 🇫🇷 | servers.txt | 2025-11-21 16:22
@@ -33,9 +34,3 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.25:8880?security=none&typ
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@146.19.230.247:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 8 🇬🇧 | servers.txt | 2025-11-19 14:53
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638950280342842933.esfahan-drc-tusaas.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 7 🇬🇧 | servers.txt | 2025-11-19 14:53
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638950280342832628.esfahan-drc-tusaas.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 6 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@89.221.224.238:8880?encryption=none&security=none&type=grpc#Server 102 🇮🇸 | servers.txt | 2025-11-19 14:00
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@171.22.114.244:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 101 🇫🇮 | servers.txt | 2025-11-19 14:00
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@171.22.114.244:8880?encryption=none&security=none&type=grpc#Server 100 🇫🇮 | servers.txt | 2025-11-19 14:00
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@171.22.114.194:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 91 🇫🇮 | servers.txt | 2025-11-19 14:00
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@638968239153205239.london-blkaft-aaaw.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 90 🇫🇮 | servers.txt | 2025-11-19 14:00
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.232:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 86 🇫🇷 | servers.txt | 2025-11-19 14:00
