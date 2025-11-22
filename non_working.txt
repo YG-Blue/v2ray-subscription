@@ -1,4 +1,4 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 106 🇩🇪 | servers.txt | 2025-11-22 14:49
+ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 89 🇨🇳 | servers.txt | 2025-11-22 16:16
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@103.111.114.92:57456#Server 40 🇮🇳 | servers.txt | 2025-11-22 13:54
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 110 🇫🇷 | servers.txt | 2025-11-21 16:22
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 105 🇫🇷 | servers.txt | 2025-11-21 16:22
@@ -17,20 +17,3 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.167:8880?encryption=non
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.193:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 20 🇫🇷 | servers.txt | 2025-11-19 16:25
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.153.183.210:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 8 🇫🇷 | servers.txt | 2025-11-19 16:25
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.153.183.184:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 4 🇫🇷 | servers.txt | 2025-11-19 16:25
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.244:8880?encryption=none&security=none&type=grpc#Server 98 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.244:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 97 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.231.205.239:8880?encryption=none&security=none&type=grpc#Server 89 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.7:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 88 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.22:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 85 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.22:8880?encryption=none&security=none&type=grpc#Server 84 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.25:8880?encryption=none&security=none&type=grpc#Server 80 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@638955452903725333.malayer-drc-tusaas.info:8880?encryption=none&security=none&type=grpc#Server 72 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.18.181:8880?encryption=none&security=none&type=grpc#Server 51 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@146.19.230.247:8880?encryption=none&security=none&type=grpc#Server 47 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@146.19.230.249:8880?encryption=none&security=none&type=grpc#Server 41 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.89.111.80:8880?encryption=none&security=none&type=grpc#Server 40 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@146.19.230.248:8880?encryption=none&security=none&type=grpc#Server 36 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.45.25:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 33 🇫🇷 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@146.19.230.247:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 8 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@638950280342842933.esfahan-drc-tusaas.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 7 🇬🇧 | servers.txt | 2025-11-19 14:53
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@638950280342832628.esfahan-drc-tusaas.info:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 6 🇬🇧 | servers.txt | 2025-11-19 14:53
