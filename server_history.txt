@@ -1,3 +1,6 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@103.111.114.92:57456#Server 40 🇮🇳 | moved_to_non_working(from:servers.txt) | 2025-11-22 13:54
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Server 80 🇧🇭 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-22 13:54
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Server 80 🇧🇭 | moved_to_main(servers.txt) | 2025-11-22 13:54
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Server 80 🇧🇭 | moved_to_non_working(from:servers.txt) | 2025-11-22 12:54
 vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.3:993?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=LthJBtl69pQPsGvMQNNe100a9YyqaTXdaIY8gzOF2HU&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 90 🇪🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-22 12:53
 vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.3:993?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=LthJBtl69pQPsGvMQNNe100a9YyqaTXdaIY8gzOF2HU&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 90 🇪🇪 | moved_to_main(servers.txt) | 2025-11-22 12:53
