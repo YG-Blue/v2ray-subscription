@@ -1,3 +1,6 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 108 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-22 18:53
+vless://df0680ca-e43c-498d-ed86-8e196eedd012@185.138.164.67:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 7 🇬🇧 | removed_after_3_days(from:servers.txt) | 2025-11-22 18:53
+vless://c30ec165-fcb4-47af-8e68-70d88a3b2910@vpn-srv-2.circlevpn.net:37096?security=tls&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#Server 99 🇫🇷 | removed_after_3_days(from:servers.txt) | 2025-11-22 18:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 71 🇲🇹 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-22 17:51
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 71 🇲🇹 | moved_to_main(servers.txt) | 2025-11-22 17:51
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 71 🇲🇹 | moved_to_non_working(from:servers.txt) | 2025-11-22 16:58
