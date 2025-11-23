@@ -1,3 +1,5 @@
+vless://f0758892-f40c-412d-9fab-88103bad1fd8@51.38.232.101:80?security=none&type=ws&path=/vless/&host=Join---PLANB-PROXY&packetEncoding=xudp&encryption=none#Server 74 🇫🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-23 22:03
+vless://f0758892-f40c-412d-9fab-88103bad1fd8@51.38.232.101:80?security=none&type=ws&path=/vless/&host=Join---PLANB-PROXY&packetEncoding=xudp&encryption=none#Server 74 🇫🇷 | moved_to_main(servers.txt) | 2025-11-23 22:03
 vless://f0758892-f40c-412d-9fab-88103bad1fd8@51.38.232.101:80?security=none&type=ws&path=/vless/&host=Join---PLANB-PROXY&packetEncoding=xudp&encryption=none#Server 74 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-23 20:51
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.140.167.209:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 8 🇬🇧 | removed_after_3_days(from:servers.txt) | 2025-11-23 20:50
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.140.167.209:8880?encryption=none&security=none&type=grpc#Server 27 🇬🇧 | removed_after_3_days(from:servers.txt) | 2025-11-23 20:50
