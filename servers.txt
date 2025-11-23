@@ -15,8 +15,8 @@ vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2rayngselllbot.m.heloisfood.ir:667
 vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2ngnet.heloisfood.ir:4488?security=none&type=grpc&serviceName=@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet-@V2ngnet&packetEncoding=xudp&encryption=none#Server 15 🇩🇪
 vless://9daf8f3e-089b-4989-9502-dd3d727edb6c@usa32.clearorbitllc.com:443?security=reality&sni=usa32.clearorbitllc.com&fp=chrome&pbk=9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns&sid=c7f3cc&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 16 🇺🇸
 trojan://trojan@104.26.12.31:8443?security=tls&sni=fofang.pages.dev&type=tcp#Server 17 🇺🇸
-vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 18 🇨🇦
-trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 19 🇨🇦
+vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 18 🇺🇸
+trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 19 🇺🇸
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp#Server 20 🇺🇸
 vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 21 🇨🇦
 vless://b4bd0613-ff7c-4f2f-954d-185915e6ddad@www.speedtest.net:443?security=tls&sni=jnir-cdn.javidnaman.com&type=ws&path=/@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/?ed%3D2560&host=jnir-cdn.javidnaman.com&packetEncoding=xudp&encryption=none#Server 22 🇺🇸
@@ -49,7 +49,7 @@ vless://8250d638-45df-41fa-b06f-160d1cb1de0c@172.67.229.214:443?encryption=none&
 vless://e188a23f-f17a-4a61-8a48-aa83b3653f5d@104.26.6.89:2053?encryption=none&security=tls&sni=om4.omidsuccess.uk&fp=chrome&type=ws&host=om4.omidsuccess.uk&path=%2Fcontainers%2Fde#Server 49 🇺🇸
 vless://8df2b423-d068-4ebd-aff0-e0d14e2423ce@v2rayngselllbot.m.heloisfood.ir:6673?encryption=none&security=none&type=grpc&authority=&serviceName=%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT---%40V2rayNGSelllBoT&mode=gun#Server 50 🇩🇪
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.60.171.254:990#Server 51 🇮🇩
-trojan://trojan@tm-azarbayjab1.1.workers.dev:443?security=tls&type=tcp&headerType=none#Server 52 🇨🇦
+trojan://trojan@tm-azarbayjab1.1.workers.dev:443?security=tls&type=tcp&headerType=none#Server 52 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@23.95.76.147:990#Server 53 🇨🇦
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp&headerType=none#Server 54 🇺🇸
 vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 55 🇩🇪
@@ -96,3 +96,4 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Server
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 96 🇩🇪
 vless://f0758892-f40c-412d-9fab-88103bad1fd8@51.38.232.101:80?security=none&type=ws&path=/vless/&host=Join---PLANB-PROXY&packetEncoding=xudp&encryption=none#Server 97 🇫🇷
 vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.6:443?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=_KiM4lu8Em0mJFmY8t2XRYGL-H2jbCtfKaFB0Io6JCE&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 98 🇪🇪
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 99 🇳🇱
