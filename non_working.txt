@@ -1,5 +1,3 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 107 🇩🇪 | servers.txt | 2025-11-23 12:54
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Server 104 🇧🇭 | servers.txt | 2025-11-23 12:54
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.12.133.224:8880?encryption=none&security=none&type=grpc#Server 38 🇫🇷 | servers.txt | 2025-11-22 19:59
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozNjBlMjFkMjE5NzdkYzEx@103.111.114.92:57456#Server 40 🇮🇳 | servers.txt | 2025-11-22 13:54
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 110 🇫🇷 | servers.txt | 2025-11-21 16:22
@@ -8,4 +6,3 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&s
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplMEF1U1NFOWtxclpucEsxUmdjdVB0@78.40.116.11:50589#Server 43 🇸🇪 | servers.txt | 2025-11-21 13:57
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.140.167.209:8880?encryption=none&security=none&type=grpc#Server 27 🇬🇧 | servers.txt | 2025-11-20 20:50
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@45.140.167.209:8880?security=none&type=grpc&packetEncoding=xudp&encryption=none#Server 8 🇬🇧 | servers.txt | 2025-11-20 20:50
-vless://baf95082-c6b6-424a-a22a-9a2843915679@104.238.167.168:443?encryption=none&security=reality&sni=hdfyrplc1.freeairlians.com&fp=chrome&pbk=AVHOkHx9tzD5YCnrDQVtE9XAt7_I-VPskA2M0W0eP1k&type=tcp&headerType=none#Server 102 🇩🇪 | servers.txt | 2025-11-20 12:58
