@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 81 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-11-24 14:00
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplMEF1U1NFOWtxclpucEsxUmdjdVB0@78.40.116.11:50589#Server 43 🇸🇪 | removed_after_3_days(from:servers.txt) | 2025-11-24 14:00
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 103 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-24 01:54
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 103 🇳🇱 | moved_to_main(servers.txt) | 2025-11-24 01:54
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 103 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-11-24 00:52
