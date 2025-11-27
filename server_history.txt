@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 82 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-27 14:53
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638959700852258728.esfahan-blkaft-aaao.info:8880?encryption=none&security=none&type=grpc#Server 74 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-27 14:00
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 83 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-27 10:09
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 83 🇳🇱 | moved_to_main(servers.txt) | 2025-11-27 10:09
