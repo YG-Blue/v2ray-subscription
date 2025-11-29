@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 83 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-30 02:53
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 83 🇩🇪 | moved_to_main(servers.txt) | 2025-11-30 02:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 83 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-30 01:54
 vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 47 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-30 01:54
 vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 47 🇩🇪 | moved_to_main(servers.txt) | 2025-11-30 01:54
