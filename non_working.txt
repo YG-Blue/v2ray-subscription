@@ -1,2 +1,1 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 83 🇩🇪 | servers.txt | 2025-11-29 20:00
 vless://df0680ca-e43c-498d-ed86-8e196eedd012@638959700852258728.esfahan-blkaft-aaao.info:8880?encryption=none&security=none&type=grpc#Server 74 🇫🇷 | servers.txt | 2025-11-27 14:00
