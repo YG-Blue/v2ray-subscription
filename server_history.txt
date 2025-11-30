@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsS2xrRng5b1BCaWNBcWVidVU1TVBF@h110vpnde.outlinekeys.net:7048#Server 22 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-30 23:57
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsS2xrRng5b1BCaWNBcWVidVU1TVBF@h110vpnde.outlinekeys.net:7048#Server 22 🇩🇪 | moved_to_main(servers.txt) | 2025-11-30 23:57
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsS2xrRng5b1BCaWNBcWVidVU1TVBF@h110vpnde.outlinekeys.net:7048#Server 22 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-30 22:50
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 85 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-30 18:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 85 🇩🇪 | moved_to_main(servers.txt) | 2025-11-30 18:53

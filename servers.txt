@@ -14,7 +14,7 @@ trojan://trojan@104.26.12.31:8443?security=tls&sni=fofang.pages.dev&type=tcp#Ser
 vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 14 🇨🇦
 trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 15 🇨🇦
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp#Server 16 🇨🇦
-vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 17 🇨🇦
+vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 17 🇬🇧
 vless://b4bd0613-ff7c-4f2f-954d-185915e6ddad@www.speedtest.net:443?security=tls&sni=jnir-cdn.javidnaman.com&type=ws&path=/@JavidnamanIran/Javid-SHAH-KingRezaPahlavi/?ed%3D2560&host=jnir-cdn.javidnaman.com&packetEncoding=xudp&encryption=none#Server 18 🇨🇦
 vless://8c0b0995-5a37-4144-893e-cceb6a9a3e36@172.66.156.81:80?security=none&type=ws&path=/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy&host=websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.store.&packetEncoding=xudp&encryption=none#Server 19 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Server 20 🇱🇻
@@ -83,3 +83,4 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyQUpvZ0t1RnNpVmE1U3JoRDd2UG44UDI4c2U5REJBVDU
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTppdlFZVGlTeVVHeVJpVmhxY2JhRXRNalhDOGRqcnNjUGJuaGpuVTlvVEV1VndoNkxoSlNrUU5Zanh0S3g1WDJpUlJDSkh1N2UzVUZ3VzlTOWlBeWhQMnJYNm90NkxjN3g%3D@imap.roomyinmita.name:40565#Server 83 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRTFhrRXE1OTdpM29HQUd6akU0cVM2NHVQR2hqeFdwUGlxd3dCQXJLYnNxWVBVTnBRQndkZ0hMNktvRFNSR0U5YmpTZG4zcDRVYURZTVZtNnMxd01vaWZhdm5pclI1Tjg%3D@imap.roomyinmita.name:40565#Server 84 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 85 🇩🇪
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsS2xrRng5b1BCaWNBcWVidVU1TVBF@h110vpnde.outlinekeys.net:7048#Server 86 🇩🇪
