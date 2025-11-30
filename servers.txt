@@ -82,5 +82,4 @@ vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.6:993?security=reality&sn
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 82 🇳🇱
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 83 🇲🇹
 vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 84 🇩🇪
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 85 🇩🇪
-vless://7fe7aca2-124e-4d0b-9911-8a5312f0be34@us1.projecthope.ir:2053?security=tls&sni=us1.projecthope.ir&alpn=h2,http/1.1&fp=chrome&type=grpc&serviceName=@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven&packetEncoding=xudp&encryption=none#Server 86 🇺🇸
+vless://7fe7aca2-124e-4d0b-9911-8a5312f0be34@us1.projecthope.ir:2053?security=tls&sni=us1.projecthope.ir&alpn=h2,http/1.1&fp=chrome&type=grpc&serviceName=@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven&packetEncoding=xudp&encryption=none#Server 85 🇺🇸
