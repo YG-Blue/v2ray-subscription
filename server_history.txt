@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWblNMNVltWXVzRG1Nc1VWMlk5ZGg3@45.12.150.199:39447#Server 66 🇪🇸 | moved_to_non_working(from:servers.txt) | 2025-12-02 05:32
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 83 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-01 23:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 83 🇳🇱 | moved_to_main(servers.txt) | 2025-12-01 23:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 72 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-01 22:56
@@ -329,21 +330,3 @@ vless://df0680ca-e43c-498d-ed86-8e196eedd012@638946986851076125.hamedan-drc-tusa
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 110 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-22 02:52
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 110 🇰🇷 | moved_to_main(servers.txt) | 2025-11-22 02:52
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 110 🇰🇷 | moved_to_non_working(from:servers.txt) | 2025-11-22 01:55
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 92 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-21 23:58
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 92 🇩🇪 | moved_to_main(servers.txt) | 2025-11-21 23:58
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 92 🇩🇪 | moved_to_non_working(from:servers.txt) | 2025-11-21 22:51
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 86 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-21 20:01
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 86 🇰🇷 | moved_to_main(servers.txt) | 2025-11-21 20:01
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?security=none&fp=chrome&type=grpc&packetEncoding=xudp&encryption=none#Server 110 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-21 16:22
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&fp=chrome&type=grpc#Server 105 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-21 16:22
-vless://df0680ca-e43c-498d-ed86-8e196eedd012@95.164.6.149:8880?encryption=none&security=none&type=grpc#Server 100 🇫🇷 | moved_to_non_working(from:servers.txt) | 2025-11-21 16:22
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 86 🇰🇷 | moved_to_non_working(from:servers.txt) | 2025-11-21 14:51
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplMEF1U1NFOWtxclpucEsxUmdjdVB0@78.40.116.11:50589#Server 43 🇸🇪 | moved_to_non_working(from:servers.txt) | 2025-11-21 13:57
-vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.6:993?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=_KiM4lu8Em0mJFmY8t2XRYGL-H2jbCtfKaFB0Io6JCE&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 86 🇪🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-21 12:05
-vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.6:993?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=_KiM4lu8Em0mJFmY8t2XRYGL-H2jbCtfKaFB0Io6JCE&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 86 🇪🇪 | moved_to_main(servers.txt) | 2025-11-21 12:05
-vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.6:993?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=_KiM4lu8Em0mJFmY8t2XRYGL-H2jbCtfKaFB0Io6JCE&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 86 🇪🇪 | moved_to_non_working(from:servers.txt) | 2025-11-21 10:55
-vless://56b0deb1-3fbf-7ec0-a9cc-09fc058a6862@russia.marzxo.biz:8086?security=reality&sni=refersion.com&fp=firefox&pbk=Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU&sid=828348fc6d8e49cf&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 136 🇷🇺 | removed_after_3_days(from:servers.txt) | 2025-11-21 06:46
-vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=latvia6.clearorbitllc.com&fp=firefox&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&headerType=none#Server 152 🇱🇻 | removed_after_3_days(from:servers.txt) | 2025-11-21 06:46
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 95 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-11-21 05:28
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 95 🇳🇱 | moved_to_main(servers.txt) | 2025-11-21 05:28
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 95 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-11-21 02:53
