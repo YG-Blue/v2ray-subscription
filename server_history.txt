@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 72 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-12-03 22:10
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Server 20 🇱🇻 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-03 20:07
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Server 20 🇱🇻 | moved_to_main(servers.txt) | 2025-12-03 20:07
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Server 20 🇱🇻 | moved_to_non_working(from:servers.txt) | 2025-12-03 19:01
