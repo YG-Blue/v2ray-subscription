@@ -1,3 +1,4 @@
+ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 83 🇨🇳 | moved_to_non_working(from:servers.txt) | 2025-12-07 17:52
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 82 🇩🇪 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-07 14:49
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 82 🇩🇪 | moved_to_main(servers.txt) | 2025-12-07 14:49
 vless://f0758892-f40c-412d-9fab-88103bad1fd8@51.38.232.101:80?security=none&type=ws&path=/vless/&host=Join---PLANB-PROXY&packetEncoding=xudp&encryption=none#Server 65 🇫🇷 | removed_after_3_days(from:servers.txt) | 2025-12-07 14:49
