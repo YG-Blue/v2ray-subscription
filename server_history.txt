@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 79 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-18 08:59
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 79 🇳🇱 | moved_to_main(servers.txt) | 2025-12-18 08:59
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 79 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-12-18 08:10
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.54.31.230:990#Server 74 🇻🇳 | moved_to_non_working(from:servers.txt) | 2025-12-17 14:56
 vless://4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2@uk29.clearorbitllc.com:443?security=reality&sni=uk29.clearorbitllc.com&fp=chrome&pbk=ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw&sid=7286&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 40 🇬🇧 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-17 13:03
