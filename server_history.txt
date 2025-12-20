@@ -1,3 +1,5 @@
+ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-20 05:29
+ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_main(servers.txt) | 2025-12-20 05:29
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_non_working(from:servers.txt) | 2025-12-20 02:54
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 81 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-19 20:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 81 🇰🇷 | moved_to_main(servers.txt) | 2025-12-19 20:53
