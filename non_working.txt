@@ -1,1 +1,2 @@
+vless://30dd2eea-fe78-4660-a04f-096a7dac41e3@yt.ducks.tel:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=mirror.yandex.ru&fp=chrome&pbk=IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU&sid=916a&type=tcp&headerType=none#Server 78 🇷🇺 | servers.txt | 2025-12-22 17:08
 vless://ff84dbed-bbfb-42d8-b397-b0ec025fb570@nodegcf.azurka.org:443?security=tls&sni=nodegcf.azurka.org&fp=chrome&type=ws&path=/ws&host=nodegcf.azurka.org&packetEncoding=xudp&encryption=none#Server 3 🇨🇦 | servers.txt | 2025-12-19 20:04

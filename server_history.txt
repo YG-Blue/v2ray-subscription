@@ -1,3 +1,4 @@
+vless://30dd2eea-fe78-4660-a04f-096a7dac41e3@yt.ducks.tel:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=mirror.yandex.ru&fp=chrome&pbk=IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU&sid=916a&type=tcp&headerType=none#Server 78 🇷🇺 | moved_to_non_working(from:servers.txt) | 2025-12-22 17:08
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Server 63 🇧🇭 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-22 14:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@38.54.2.182:990#Server 63 🇧🇭 | moved_to_main(servers.txt) | 2025-12-22 14:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 77 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-22 14:53
