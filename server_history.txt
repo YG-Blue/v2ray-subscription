@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 79 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-12-25 18:57
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 72 🇲🇹 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-25 17:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 72 🇲🇹 | moved_to_main(servers.txt) | 2025-12-25 17:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 72 🇲🇹 | moved_to_non_working(from:servers.txt) | 2025-12-25 17:06
