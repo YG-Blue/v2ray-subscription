@@ -1,3 +1,4 @@
+vless://7fe7aca2-124e-4d0b-9911-8a5312f0be34@us1.projecthope.ir:2053?security=tls&sni=us1.projecthope.ir&alpn=h2,http/1.1&fp=chrome&type=grpc&serviceName=@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven&packetEncoding=xudp&encryption=none#Server 43 🇺🇸 | moved_to_non_working(from:servers.txt) | 2025-12-30 09:00
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 63 🇲🇹 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-29 22:08
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 63 🇲🇹 | moved_to_main(servers.txt) | 2025-12-29 22:08
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@171.22.254.129:990#Server 63 🇲🇹 | moved_to_non_working(from:servers.txt) | 2025-12-29 20:54
@@ -248,22 +249,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-20 05:29
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_main(servers.txt) | 2025-12-20 05:29
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_non_working(from:servers.txt) | 2025-12-20 02:54
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 81 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-19 20:53
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 81 🇰🇷 | moved_to_main(servers.txt) | 2025-12-19 20:53
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 81 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-19 20:53
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 81 🇳🇱 | moved_to_main(servers.txt) | 2025-12-19 20:53
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 81 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-12-19 20:04
-vless://ff84dbed-bbfb-42d8-b397-b0ec025fb570@nodegcf.azurka.org:443?security=tls&sni=nodegcf.azurka.org&fp=chrome&type=ws&path=/ws&host=nodegcf.azurka.org&packetEncoding=xudp&encryption=none#Server 3 🇨🇦 | moved_to_non_working(from:servers.txt) | 2025-12-19 20:04
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 81 🇰🇷 | moved_to_non_working(from:servers.txt) | 2025-12-19 18:59
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 81 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-19 18:59
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 81 🇳🇱 | moved_to_main(servers.txt) | 2025-12-19 18:59
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 81 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-12-19 17:58
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 79 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-19 17:07
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 79 🇳🇱 | moved_to_main(servers.txt) | 2025-12-19 17:07
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 79 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-12-19 16:25
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 66 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-19 13:59
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 66 🇰🇷 | moved_to_main(servers.txt) | 2025-12-19 13:59
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 66 🇰🇷 | moved_to_non_working(from:servers.txt) | 2025-12-19 13:00
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 78 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2025-12-19 13:00
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 78 🇳🇱 | moved_to_main(servers.txt) | 2025-12-19 13:00
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 78 🇳🇱 | moved_to_non_working(from:servers.txt) | 2025-12-19 12:06
