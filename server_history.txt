@@ -1,3 +1,4 @@
+vless://7fe7aca2-124e-4d0b-9911-8a5312f0be34@us1.projecthope.ir:2053?security=tls&sni=us1.projecthope.ir&alpn=h2,http/1.1&fp=chrome&type=grpc&serviceName=@NoForcedHeaven@NoForcedHeaven@NoForcedHeaven&packetEncoding=xudp&encryption=none#Server 43 🇺🇸 | removed_after_3_days(from:servers.txt) | 2026-01-02 09:01
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWblNMNVltWXVzRG1Nc1VWMlk5ZGg3@45.12.150.199:39447#Server 43 🇪🇸 | moved_to_non_working(from:servers.txt) | 2026-01-02 05:40
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 79 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-02 01:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 79 🇳🇱 | moved_to_main(servers.txt) | 2026-01-02 01:56
