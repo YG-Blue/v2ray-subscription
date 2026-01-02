@@ -1,3 +1,7 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWblNMNVltWXVzRG1Nc1VWMlk5ZGg3@45.12.150.199:39447#Server 43 🇪🇸 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-02 16:24
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWblNMNVltWXVzRG1Nc1VWMlk5ZGg3@45.12.150.199:39447#Server 43 🇪🇸 | moved_to_main(servers.txt) | 2026-01-02 16:24
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 68 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-02 16:24
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 68 🇳🇱 | moved_to_main(servers.txt) | 2026-01-02 16:24
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 68 🇳🇱 | moved_to_non_working(from:servers.txt) | 2026-01-02 14:53
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 53 🇹🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-02 13:00
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 53 🇹🇷 | moved_to_main(servers.txt) | 2026-01-02 13:00
