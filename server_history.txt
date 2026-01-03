@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 77 🇳🇱 | moved_to_non_working(from:servers.txt) | 2026-01-03 08:57
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-03 01:56
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_main(servers.txt) | 2026-01-03 01:56
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_non_working(from:servers.txt) | 2026-01-03 00:50
