@@ -1,0 +1,4 @@
+vless://500f3d46-1cef-4ddd-ac91-60e5cbcabf39@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 17 | servers.txt | 2026-01-05 20:58
+vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 16 🇨🇦 | servers.txt | 2026-01-05 20:58
+vless://cc0e0185-f199-4194-9164-6bc15a0e2a29@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 15 🇨🇦 | servers.txt | 2026-01-05 20:58
+vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?security=tls&sni=latte.gejeh683bm.ir.&type=ws&path=/index.html?ed%3D2560&host=latte.gejeh683bm.ir&packetEncoding=xudp&encryption=none#Server 3 🇨🇦 | servers.txt | 2026-01-05 20:58
