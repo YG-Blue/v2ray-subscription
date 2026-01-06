@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Server 39 🇱🇻 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-06 11:02
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Server 39 🇱🇻 | moved_to_main(servers.txt) | 2026-01-06 11:02
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4YWZjNjMzZWI2MzIyN2U5@lv.vpnsparta.pro:57456#Server 39 🇱🇻 | moved_to_non_working(from:servers.txt) | 2026-01-06 10:14
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 69 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-06 09:01
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 69 🇰🇷 | moved_to_main(servers.txt) | 2026-01-06 09:01
