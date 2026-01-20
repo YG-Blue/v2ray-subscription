@@ -1,3 +1,7 @@
+vless://cc0e0185-f199-4194-9164-6bc15a0e2a29@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 48 | moved_to_non_working(from:servers.txt) | 2026-01-20 21:06
+vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 47 | moved_to_non_working(from:servers.txt) | 2026-01-20 21:06
+vless://500f3d46-1cef-4ddd-ac91-60e5cbcabf39@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 46 | moved_to_non_working(from:servers.txt) | 2026-01-20 21:06
+vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?security=tls&sni=latte.gejeh683bm.ir.&type=ws&path=/index.html?ed%3D2560&host=latte.gejeh683bm.ir&packetEncoding=xudp&encryption=none#Server 45 🇦🇲 | moved_to_non_working(from:servers.txt) | 2026-01-20 21:06
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-20 01:58
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_main(servers.txt) | 2026-01-20 01:58
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 78 🇨🇳 | moved_to_non_working(from:servers.txt) | 2026-01-20 00:56
