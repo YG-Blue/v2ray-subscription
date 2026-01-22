@@ -74,3 +74,4 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-
 vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 74 🇦🇲
 ss://YWVzLTI1Ni1nY206MTIz@14.18.106.88:6100#Server 75 🇨🇳
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 76 🇰🇷
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@154.205.146.153:990#Server 77 🇧🇭
