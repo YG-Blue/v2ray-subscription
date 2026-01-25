@@ -1,3 +1,8 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-01-26 02:57
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-26 02:56
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_main(servers.txt) | 2026-01-26 02:56
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 59 🇹🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-26 02:56
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 59 🇹🇷 | moved_to_main(servers.txt) | 2026-01-26 02:56
 vless://c924d667-d2da-40fe-bbb5-52e3eeef6c48@s2.cloudconvert.top:443?security=reality&sni=s2.cloudconvert.top&fp=chrome&pbk=X8bSZA_Q-ReshpPEd17oMU7YfZlHWoOEGB7HM8ZSmXk&sid=abc82912&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 24 🇩🇪 | removed_after_3_days(from:servers.txt) | 2026-01-25 22:52
 vless://c924d667-d2da-40fe-bbb5-52e3eeef6c48@s5.cloudconvert.top:443?security=reality&sni=s5.cloudconvert.top&pbk=X8bSZA_Q-ReshpPEd17oMU7YfZlHWoOEGB7HM8ZSmXk&sid=abc82912&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 42 🇩🇪 | removed_after_3_days(from:servers.txt) | 2026-01-25 22:52
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 59 🇹🇷 | moved_to_non_working(from:servers.txt) | 2026-01-25 20:53
@@ -198,15 +203,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 7
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 78 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-16 14:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 78 🇰🇷 | moved_to_main(servers.txt) | 2026-01-16 14:56
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 78 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-01-16 13:03
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@145.14.131.37:990#Server 17 🇨🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-15 21:08
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@145.14.131.37:990#Server 17 🇨🇷 | moved_to_main(servers.txt) | 2026-01-15 21:08
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@145.14.131.37:990#Server 62 🇨🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-15 21:08
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@145.14.131.37:990#Server 62 🇨🇷 | moved_to_main(servers.txt) | 2026-01-15 21:08
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@145.14.131.37:990#Server 62 🇨🇷 | moved_to_non_working(from:servers.txt) | 2026-01-15 20:12
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@145.14.131.37:990#Server 17 🇨🇷 | moved_to_non_working(from:servers.txt) | 2026-01-15 20:12
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 79 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-15 14:02
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 79 🇰🇷 | moved_to_main(servers.txt) | 2026-01-15 14:02
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 79 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-01-15 12:09
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 44 🇹🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-15 12:09
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 44 🇹🇷 | moved_to_main(servers.txt) | 2026-01-15 12:09
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 44 🇹🇷 | moved_to_non_working(from:servers.txt) | 2026-01-15 05:39
