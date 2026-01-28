@@ -1,1 +1,1 @@
-vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.6:443?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=_KiM4lu8Em0mJFmY8t2XRYGL-H2jbCtfKaFB0Io6JCE&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 70 🇳🇱 | servers.txt | 2026-01-29 02:04
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 76 🇰🇷 | servers.txt | 2026-01-29 03:02
