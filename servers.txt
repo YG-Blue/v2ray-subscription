@@ -7,7 +7,7 @@ trojan://trojan@104.26.12.31:8443?security=tls&sni=fofang.pages.dev&type=tcp#Ser
 vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 7 🇨🇦
 trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 8 🇨🇦
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp#Server 9 🇨🇦
-vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 10 🇨🇦
+vless://a02fd758-c58b-48a8-bfb3-2b451ab44bb5@colin.ns.cloudflare.com:443?security=tls&sni=638971674693810969.brussels-prmpl-aaaad.com&type=ws&path=/fiedpnws&host=638971674693810969.brussels-prmpl-aaaad.com&packetEncoding=xudp&encryption=none#Server 10 🇨🇷
 vless://8c0b0995-5a37-4144-893e-cceb6a9a3e36@172.66.156.81:80?security=none&type=ws&path=/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy&host=websocket.network.www.speedtest.net.flutter.dev.russia.pyt.digitalcity5.store.&packetEncoding=xudp&encryption=none#Server 11 🇺🇸
 trojan://YwuvGJk36B@creativecommons.org:2053?security=tls&sni=kotlet.arshiacomplus.dpdns.org&alpn=http%2F1.1&fp=firefox&type=ws&host=kotlet.arshiacomplus.dpdns.org&path=%2Fyamtekodasayahhh#Server 12 🇨🇦
 vless://2456f90c-5183-476d-b069-16ae74ce120f@198.71.191.253:2096?encryption=none&security=tls&sni=fast01.0860852.xyz&fp=chrome&type=ws&host=fast01.0860852.xyz&path=%2F#Server 13 🇺🇸
@@ -71,4 +71,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRTFhrRXE1OTdpM29HQUd6akU0cVM2NHVQR2hqeFdwUGl
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UGJad3k0Q3NObVNtaEdZam9VVzQ3aVJnbks3VVMzY1o5ZzdvNVllZm5uVEFNems3NHVwWVY4azI5WGRRYWVmUHdHTTdIQW1odnFMWFNvdlZBMUhIOEw4cG9kU0FaM1g%3D@imap.roomyinmita.name:40565#Server 71 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpha3ZKUXpaQ2FUZGlzU3l1U3kzYVJteXZLQzUzWDFkM1BhQXNiOXhVOG41VFk5aFNCMURLNWU2U1BtOTIxaWdIY1JzQ1RDdmYxcFd1ZlRKNUxpOFBpaVFHNHZZZHl5TTc%3D@imap.roomyinmita.name:40565#Server 72 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyQUpvZ0t1RnNpVmE1U3JoRDd2UG44UDI4c2U5REJBVDU2NFhUR0RuRTloNUhaUGg1OTNiekpSeFlhdld6cnlhY3I2Q0FONW5IRm04UnBzSGZxUm5hc3loYnNSelk0TnA%3D@imap.roomyinmita.name:40565#Server 73 🇺🇸
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 74 🇰🇷
