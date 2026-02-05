@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@154.205.146.153:990#Server 60 🇧🇭 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-02-06 00:11
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@154.205.146.153:990#Server 60 🇧🇭 | moved_to_main(servers.txt) | 2026-02-06 00:11
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@154.205.146.153:990#Server 60 🇧🇭 | moved_to_non_working(from:servers.txt) | 2026-02-05 23:15
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 74 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-02-05 14:20
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 74 🇰🇷 | moved_to_main(servers.txt) | 2026-02-05 14:20
@@ -129,14 +131,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 7
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-01-27 00:04
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-27 00:04
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_main(servers.txt) | 2026-01-27 00:04
-vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.3:443?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=LthJBtl69pQPsGvMQNNe100a9YyqaTXdaIY8gzOF2HU&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 23 🇫🇮 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-26 22:59
-vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.3:443?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=LthJBtl69pQPsGvMQNNe100a9YyqaTXdaIY8gzOF2HU&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 23 🇫🇮 | moved_to_main(servers.txt) | 2026-01-26 22:59
-vless://40730d97-ffa7-1108-2c53-761516eb5fda@166.1.131.3:443?security=reality&sni=speed.cloudflare.com&fp=chrome&pbk=LthJBtl69pQPsGvMQNNe100a9YyqaTXdaIY8gzOF2HU&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 23 🇫🇮 | moved_to_non_working(from:servers.txt) | 2026-01-26 22:16
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-01-26 14:04
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-26 05:58
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_main(servers.txt) | 2026-01-26 05:58
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-01-26 02:57
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-26 02:56
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 77 🇰🇷 | moved_to_main(servers.txt) | 2026-01-26 02:56
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 59 🇹🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-01-26 02:56
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 59 🇹🇷 | moved_to_main(servers.txt) | 2026-01-26 02:56
