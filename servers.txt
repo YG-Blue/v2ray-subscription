@@ -35,7 +35,7 @@ vless://cd79807f-bcef-46b8-93b6-229676a0c1a0@64.188.70.0:443?security=reality&sn
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsS2xrRng5b1BCaWNBcWVidVU1TVBF@h110vpnde.outlinekeys.net:7048#Server 35 🇩🇪
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp&headerType=none#Server 36 🇨🇦
 trojan://YwuvGJk36B@creativecommons.org:2053?security=tls&sni=kotlet.arshiacomplus.dpdns.org&alpn=http%2F1.1&type=ws&host=kotlet.arshiacomplus.dpdns.org&path=%2Fyamtekodasayahhh#Server 37 🇨🇦
-vless://0423f7a2-87bd-4302-95e2-c3c01881bdc7@ipw.gfdv54cvghhgfhgj-njhgj64.info:2087?encryption=none&security=tls&sni=DfVrMvWc3.SoLeRiOs.nEt&alpn=h3h2&type=ws&host=DfVrMvWc3.SoLeRiOs.nEt&path=%2F#Server 38 🇺🇸
+vless://0423f7a2-87bd-4302-95e2-c3c01881bdc7@ipw.gfdv54cvghhgfhgj-njhgj64.info:2087?encryption=none&security=tls&sni=DfVrMvWc3.SoLeRiOs.nEt&alpn=h3h2&type=ws&host=DfVrMvWc3.SoLeRiOs.nEt&path=%2F#Server 38 🇨🇦
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@104.192.226.106:990#Server 39 🇺🇸
 vless://9daf8f3e-089b-4989-9502-dd3d727edb6c@usa32.clearorbitllc.com:443?security=reality&sni=usa32.clearorbitllc.com&fp=firefox&pbk=9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns&sid=c7f3cc&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 40 🇺🇸
 vless://9daf8f3e-089b-4989-9502-dd3d727edb6c@usa32.clearorbitllc.com:443?security=reality&sni=usa32.clearorbitllc.com&fp=chrome&pbk=9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns&sid=c7f3cc&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 41 🇺🇸
