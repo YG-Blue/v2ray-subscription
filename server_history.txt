@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 60 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-02-24 12:27
 vless://4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2@uk29.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=uk29.clearorbitllc.com&fp=chrome&pbk=ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw&sid=7286&type=tcp&headerType=none#Server 25 🇬🇧 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-02-23 22:43
 vless://4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2@uk29.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=uk29.clearorbitllc.com&fp=chrome&pbk=ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw&sid=7286&type=tcp&headerType=none#Server 25 🇬🇧 | moved_to_main(servers.txt) | 2026-02-23 22:43
 vless://4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2@uk29.clearorbitllc.com:443?security=reality&sni=uk29.clearorbitllc.com&fp=chrome&pbk=ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw&sid=7286&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 26 🇬🇧 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-02-23 22:43
@@ -150,6 +151,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 7
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 63 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-02-14 13:07
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 63 🇰🇷 | moved_to_main(servers.txt) | 2026-02-14 13:07
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 63 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-02-14 12:10
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 46 🇹🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-02-13 19:21
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 46 🇹🇷 | moved_to_main(servers.txt) | 2026-02-13 19:21
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjNDA2NDFjMWY4OWU3YWNi@tr.vpnsparta.pro:57456#Server 46 🇹🇷 | moved_to_non_working(from:servers.txt) | 2026-02-13 18:19
