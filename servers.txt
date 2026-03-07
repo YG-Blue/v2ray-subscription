@@ -2,7 +2,7 @@ vless://29187857-4a1f-4d1e-88eb-0016771e0dbb@104.18.82.55:443?type=ws&security=t
 vless://f131ad3a-0579-4850-bfe3-35d53a4c84bd@38.180.218.167:57533?security=reality&sni=yahoo.com&fp=firefox&pbk=0JBdyyXm54GRRZC_a7nRRgNS8KBVYoFEgCH1k348-A8&sid=287db472&type=tcp&packetEncoding=xudp&encryption=none#Server 2 🇩🇪
 vless://ddab5550-3938-4aba-943c-f23a08d07dc5@alhilal.com:443?security=tls&sni=rAyAn-cOnFiG-pl-1.pArSa.dPdNs.oRg&fp=chrome&type=ws&path=/ws&host=rAyAn-cOnFiG-pl-1.pArSa.dPdNs.oRg&packetEncoding=xudp&encryption=none#Server 3 🇨🇦
 vless://0423f7a2-87bd-4302-95e2-c3c01881bdc7@ipw.gfdv54cvghhgfhgj-njhgj64.info:2087?security=tls&sni=DdLxDxZc3.VeLiNtO.OrG&alpn=h3h2&type=ws&path=/&host=DdLxDxZc3.VeLiNtO.OrG&packetEncoding=xudp&encryption=none#Server 4 🇺🇸
-vless://0423f7a2-87bd-4302-95e2-c3c01881bdc7@ipw.gfdv54cvghhgfhgj-njhgj64.info:2087?security=tls&sni=DdLxDxZc3.VeLiNtO.OrG&type=ws&path=/&host=DdLxDxZc3.VeLiNtO.OrG&packetEncoding=xudp&encryption=none#Server 5 🇺🇸
+vless://0423f7a2-87bd-4302-95e2-c3c01881bdc7@ipw.gfdv54cvghhgfhgj-njhgj64.info:2087?security=tls&sni=DdLxDxZc3.VeLiNtO.OrG&type=ws&path=/&host=DdLxDxZc3.VeLiNtO.OrG&packetEncoding=xudp&encryption=none#Server 5 🇸🇬
 trojan://trojan@104.26.12.31:8443?security=tls&sni=fofang.pages.dev&type=tcp#Server 6 🇺🇸
 vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 7 🇨🇦
 trojan://trojan@22b.net:2087?security=tls&type=tcp#Server 8 🇨🇦
@@ -43,7 +43,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpqWjAzYU9GRE1VUWxpUUlSa2ZpQUhx@193.23.221.9:1
 vless://500f3d46-1cef-4ddd-ac91-60e5cbcabf39@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 43 🇦🇲
 vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?security=tls&sni=latte.gejeh683bm.ir.&type=ws&path=/index.html?ed%3D2560&host=latte.gejeh683bm.ir&packetEncoding=xudp&encryption=none#Server 44 🇦🇲
 vless://cc0e0185-f199-4194-9164-6bc15a0e2a29@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 45 🇦🇲
-vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 46
+vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 46 🇦🇲
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTppdlFZVGlTeVVHeVJpVmhxY2JhRXRNalhDOGRqcnNjUGJuaGpuVTlvVEV1VndoNkxoSlNrUU5Zanh0S3g1WDJpUlJDSkh1N2UzVUZ3VzlTOWlBeWhQMnJYNm90NkxjN3g%3D@imap.roomyinmita.name:40565#Server 47 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRTFhrRXE1OTdpM29HQUd6akU0cVM2NHVQR2hqeFdwUGlxd3dCQXJLYnNxWVBVTnBRQndkZ0hMNktvRFNSR0U5YmpTZG4zcDRVYURZTVZtNnMxd01vaWZhdm5pclI1Tjg%3D@imap.roomyinmita.name:40565#Server 48 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UGJad3k0Q3NObVNtaEdZam9VVzQ3aVJnbks3VVMzY1o5ZzdvNVllZm5uVEFNems3NHVwWVY4azI5WGRRYWVmUHdHTTdIQW1odnFMWFNvdlZBMUhIOEw4cG9kU0FaM1g%3D@imap.roomyinmita.name:40565#Server 49 🇺🇸
