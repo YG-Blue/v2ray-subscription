@@ -26,7 +26,7 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvait
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@38.60.171.254:990#Server 26 🇮🇩
 trojan://trojan@www.visa.com.sg:8443?security=tls&type=tcp&headerType=none#Server 27 🇨🇦
 trojan://YwuvGJk36B@creativecommons.org:2053?security=tls&sni=kotlet.arshiacomplus.dpdns.org&alpn=http%2F1.1&type=ws&host=kotlet.arshiacomplus.dpdns.org&path=%2Fyamtekodasayahhh#Server 28 🇨🇦
-vless://0423f7a2-87bd-4302-95e2-c3c01881bdc7@ipw.gfdv54cvghhgfhgj-njhgj64.info:2087?encryption=none&security=tls&sni=DfVrMvWc3.SoLeRiOs.nEt&alpn=h3h2&type=ws&host=DfVrMvWc3.SoLeRiOs.nEt&path=%2F#Server 29 🇸🇬
+vless://0423f7a2-87bd-4302-95e2-c3c01881bdc7@ipw.gfdv54cvghhgfhgj-njhgj64.info:2087?encryption=none&security=tls&sni=DfVrMvWc3.SoLeRiOs.nEt&alpn=h3h2&type=ws&host=DfVrMvWc3.SoLeRiOs.nEt&path=%2F#Server 29 🇺🇸
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@104.192.226.106:990#Server 30 🇺🇸
 vless://9daf8f3e-089b-4989-9502-dd3d727edb6c@usa32.clearorbitllc.com:443?security=reality&sni=usa32.clearorbitllc.com&fp=firefox&pbk=9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns&sid=c7f3cc&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 31 🇺🇸
 vless://9daf8f3e-089b-4989-9502-dd3d727edb6c@usa32.clearorbitllc.com:443?security=reality&sni=usa32.clearorbitllc.com&fp=chrome&pbk=9VgEU9n4XfImCSwSdLXEAqotO7zVvZRSaolrtxJKEns&sid=c7f3cc&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 32 🇺🇸
@@ -58,4 +58,3 @@ vless://049ef59e-7d3b-44f2-9dfe-e381140d187e@axe.soyet2j.ir:2087?security=tls&sn
 vless://500f3d46-1cef-4ddd-ac91-60e5cbcabf39@axe.soyet2j.ir:2087?encryption=none&security=tls&sni=latte.gejeh683bm.ir.&type=ws&host=latte.gejeh683bm.ir&path=%2Findex.html%3Fed%3D2560#Server 58 🇦🇲
 vless://26c99015-b58e-47d2-a4ce-4f4b05b70400@sweden11.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=sweden11.clearorbitllc.com&fp=firefox&pbk=6i0TALpH7qy8-xzwJkI13mRsgi2e7lHqKQyAcDSg8Uc&sid=4af2&type=tcp&headerType=none#Server 59 🇸🇪
 vless://30dd2eea-fe78-4660-a04f-096a7dac41e3@yt.ducks.tel:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=mirror.yandex.ru&fp=chrome&pbk=IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU&sid=916a&type=tcp&headerType=none#Server 60 🇷🇺
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 61 🇰🇷
