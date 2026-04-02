@@ -1,4 +1,3 @@
 vless://4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2@uk29.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=uk29.clearorbitllc.com&fp=chrome&pbk=ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw&sid=7286&type=tcp&headerType=none#Server 37 🇬🇧 | servers.txt | 2026-04-02 15:23
 vless://4f8b80d1-667e-4ab5-9285-0fbd0e3dcab2@uk29.clearorbitllc.com:443?security=reality&sni=uk29.clearorbitllc.com&fp=chrome&pbk=ypGN6MzbIpHm_fdhVIIUS-vLCXlNkOZrxZ4VNMxcxWw&sid=7286&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 36 🇬🇧 | servers.txt | 2026-04-02 15:23
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpMVkJZUmtTa0hsVHFlYlNKckdjMkM3@81.19.141.45:443#Server 23 🇩🇪 | servers.txt | 2026-04-02 15:23
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWblNMNVltWXVzRG1Nc1VWMlk5ZGg3@45.12.150.199:39447#Server 43 🇪🇸 | servers.txt | 2026-04-02 06:21
