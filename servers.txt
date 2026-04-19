@@ -53,4 +53,3 @@ vless://26c99015-b58e-47d2-a4ce-4f4b05b70400@sweden11.clearorbitllc.com:443?encr
 vless://30dd2eea-fe78-4660-a04f-096a7dac41e3@yt.ducks.tel:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=mirror.yandex.ru&fp=chrome&pbk=IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU&sid=916a&type=tcp&headerType=none#Server 53 🇷🇺
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@188.214.157.58:990#Server 54 🇪🇸
 vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 55 🇨🇿
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷
