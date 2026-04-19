@@ -1,3 +1,5 @@
+vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 55 🇨🇿 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-20 00:16
+vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 55 🇨🇿 | moved_to_main(servers.txt) | 2026-04-20 00:16
 vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 55 🇨🇿 | moved_to_non_working(from:servers.txt) | 2026-04-19 22:30
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-19 19:13
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_main(servers.txt) | 2026-04-19 19:13
@@ -96,10 +98,3 @@ vless://26c99015-b58e-47d2-a4ce-4f4b05b70400@sweden11.clearorbitllc.com:443?encr
 vless://26c99015-b58e-47d2-a4ce-4f4b05b70400@sweden11.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=sweden11.clearorbitllc.com&fp=firefox&pbk=6i0TALpH7qy8-xzwJkI13mRsgi2e7lHqKQyAcDSg8Uc&sid=4af2&type=tcp&headerType=none#Server 52 🇸🇪 | moved_to_main(servers.txt) | 2026-04-10 00:28
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-10 00:28
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_main(servers.txt) | 2026-04-10 00:28
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-04-09 22:47
-vless://26c99015-b58e-47d2-a4ce-4f4b05b70400@sweden11.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=sweden11.clearorbitllc.com&fp=firefox&pbk=6i0TALpH7qy8-xzwJkI13mRsgi2e7lHqKQyAcDSg8Uc&sid=4af2&type=tcp&headerType=none#Server 52 🇸🇪 | moved_to_non_working(from:servers.txt) | 2026-04-09 22:47
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-09 22:47
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_main(servers.txt) | 2026-04-09 22:47
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-04-09 19:16
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 55 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-09 02:20
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 55 🇰🇷 | moved_to_main(servers.txt) | 2026-04-09 02:20
