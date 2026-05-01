@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 54 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-05-02 00:29
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 43 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-05-01 18:31
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 43 🇳🇱 | moved_to_main(servers.txt) | 2026-05-01 18:31
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@92.112.126.90:443#Server 43 🇳🇱 | moved_to_non_working(from:servers.txt) | 2026-05-01 17:11
@@ -73,6 +74,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 5
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-23 09:40
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_main(servers.txt) | 2026-04-23 09:40
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-04-23 03:22
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 54 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-21 21:33
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 54 🇰🇷 | moved_to_main(servers.txt) | 2026-04-21 21:33
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 54 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-04-21 19:45
