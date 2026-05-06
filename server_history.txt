@@ -1,3 +1,5 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 54 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-05-07 00:09
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 54 🇰🇷 | moved_to_main(servers.txt) | 2026-05-07 00:09
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 54 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-05-06 21:52
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@145.14.131.37:990#Server 27 🇨🇷 | removed_after_3_days(from:servers.txt) | 2026-05-06 21:52
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmOGY3YUN6Y1BLYnNGOHAz@145.14.131.37:990#Server 28 🇨🇷 | removed_after_3_days(from:servers.txt) | 2026-05-06 21:52
@@ -84,9 +86,3 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 5
 vless://6206bf1d-068d-4186-9eee-d534a01cb98e@kazakhstan22.clearorbitllc.com:443?security=reality&sni=kazakhstan22.clearorbitllc.com&fp=firefox&pbk=fHpH9g6a4LZOICjPOq7yFgqKWNG5a_idjfoDBGk_OwQ&sid=aee3&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 20 🇰🇿 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-27 01:16
 vless://6206bf1d-068d-4186-9eee-d534a01cb98e@kazakhstan22.clearorbitllc.com:443?security=reality&sni=kazakhstan22.clearorbitllc.com&fp=firefox&pbk=fHpH9g6a4LZOICjPOq7yFgqKWNG5a_idjfoDBGk_OwQ&sid=aee3&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 20 🇰🇿 | moved_to_main(servers.txt) | 2026-04-27 01:16
 vless://6206bf1d-068d-4186-9eee-d534a01cb98e@kazakhstan22.clearorbitllc.com:443?security=reality&sni=kazakhstan22.clearorbitllc.com&fp=firefox&pbk=fHpH9g6a4LZOICjPOq7yFgqKWNG5a_idjfoDBGk_OwQ&sid=aee3&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#Server 20 🇰🇿 | moved_to_non_working(from:servers.txt) | 2026-04-27 00:19
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-26 20:23
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_main(servers.txt) | 2026-04-26 20:23
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-04-26 19:20
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-04-26 02:15
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_main(servers.txt) | 2026-04-26 02:15
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 56 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-04-26 01:12
