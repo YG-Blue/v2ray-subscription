@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 48 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-05-17 08:25
 vless://8bc1deee-1136-4533-f5d0-0b5751803107@host17.sheydayeman.nl:8880?security=none&type=ws&path=/&packetEncoding=xudp&encryption=none#Server 6 🇨🇦 | moved_to_non_working(from:servers.txt) | 2026-05-17 02:27
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 48 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-05-17 00:27
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 48 🇰🇷 | moved_to_main(servers.txt) | 2026-05-17 00:27
