@@ -39,3 +39,4 @@ vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?enc
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 39 🇰🇷
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 40 🇳🇱
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ%3D%3D@185.93.173.60:990#Server 41 🇧🇴
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 42 🇳🇱
