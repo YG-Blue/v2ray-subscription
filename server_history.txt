@@ -1,3 +1,4 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 42 🇳🇱 | moved_to_non_working(from:servers.txt) | 2026-08-04 10:02
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 38 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-08-02 11:04
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 38 🇳🇱 | moved_to_main(servers.txt) | 2026-08-02 11:04
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 38 🇳🇱 | moved_to_non_working(from:servers.txt) | 2026-08-02 07:57
@@ -60,9 +61,3 @@ vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?enc
 vless://72fa752b-7731-4390-98cb-62b57344e847@germany85.clearorbitllc.com:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=germany85.clearorbitllc.com&fp=firefox&pbk=n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY&sid=80dc32ed&type=tcp&headerType=none#Server 37 🇨🇿 | moved_to_non_working(from:servers.txt) | 2026-07-25 20:36
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 39 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-07-25 00:40
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 39 🇳🇱 | moved_to_main(servers.txt) | 2026-07-25 00:40
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp3d3pWbjJabkhmcVlhNmw4RVdoM2VZ@switcher-nick-croquet.freesocks.work:443#Server 39 🇳🇱 | moved_to_non_working(from:servers.txt) | 2026-07-24 23:08
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 41 🇰🇷 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-07-24 06:52
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 41 🇰🇷 | moved_to_main(servers.txt) | 2026-07-24 06:52
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxMjI0Mg%3D%3D@115.161.136.145:10099#Server 41 🇰🇷 | moved_to_non_working(from:servers.txt) | 2026-07-24 02:32
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 38 🇳🇱 | recovered_to_main(from:servers.txt,to:servers.txt) | 2026-07-23 01:39
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSRkszOENnN0FQbmVTQjVjV0RjcGJt@switcher-nick-croquet.freesocks.work:443#Server 38 🇳🇱 | moved_to_main(servers.txt) | 2026-07-23 01:39
